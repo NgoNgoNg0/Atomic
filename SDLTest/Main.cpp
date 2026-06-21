@@ -12,4 +12,5 @@ int main()
     SDL_Quit();
 
     return 0;
+
 }
