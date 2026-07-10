@@ -1,9 +1,0 @@
-{
-	"InstallScripts" : 
-	[
-		"E:/\u500b\u4eba\u7528/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/libjpeg-turbo/x64-windows-dbg/cmake_install.cmake",
-		"E:/\u500b\u4eba\u7528/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/libjpeg-turbo/x64-windows-dbg/simd/cmake_install.cmake",
-		"E:/\u500b\u4eba\u7528/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/libjpeg-turbo/x64-windows-dbg/sharedlib/cmake_install.cmake"
-	],
-	"Parallel" : false
-}
