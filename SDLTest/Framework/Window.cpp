@@ -4,7 +4,8 @@
 Window::Window(const std::string& title, int width, int height)
 	: m_window(nullptr)
 {
-	m_window = SDL_CreateWindow(title.c_str(), width, height, 0);
+	m_window = SDL_CreateWindow(title.c_str(), width, height, SDL_WINDOW_RESIZABLE);
+	SDL_SetWindowAspectRatio(m_window, 16.0f / 9.0f, 16.0f / 9.0f);
 }
 
 Window::~Window()

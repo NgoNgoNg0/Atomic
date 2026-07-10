@@ -1,4 +1,5 @@
 #pragma once
+#include "Window.h"
 
 class Game
 {
@@ -18,5 +19,6 @@ protected:
 private:
 	void ProcessEvents();
 	bool m_isRunning;
+	Window m_window;
 
 };

@@ -1,5 +1,9 @@
 #pragma once
 
+#include "Rect.h"
+#include "Color.h"
+#include "Texture.h"
+
 #include <SDL3/SDL.h>
 
 class Graphics
@@ -9,7 +13,8 @@ public:
 	static void Finalize();
 	static void BeginFrame();
 	static void EndFrame();
-	static void DrawRect(float x, float y, float width, float height);
+	static void DrawRect(Rect rect, Color color);
+	static void DrawTexture(const Texture& texture, Rect rect);
 	// static void DrawTexture(TextureHandle texture, float x, float y);
 
 	static SDL_Renderer* GetRenderer();

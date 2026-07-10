@@ -2,14 +2,14 @@ Package: vcpkg-cmake-config
 Version: 2024-05-23
 Architecture: x64-windows
 Multi-Arch: same
-Abi: 0e5dffdcdb0258b73202f5b7032b14f8623df54092f633c9adeb701a65206f72
+Abi: 860b72e5e2dba114fd52454424cd7654cac76b7407435c8592565c9a3b3d878d
 Status: install ok installed
 
 Package: vcpkg-cmake
 Version: 2024-04-23
 Architecture: x64-windows
 Multi-Arch: same
-Abi: 1a60220a58c402d13f527336600bcb2c75bb48ca2830ffb69c8aa3a16a444f9d
+Abi: 34dbd6a0d4151dfa9a8e67b08554b1c6e9448206c4954cfc31ec2ffc26c0f6ef
 Status: install ok installed
 
 Package: sdl3
@@ -17,7 +17,16 @@ Version: 3.4.0
 Depends: vcpkg-cmake, vcpkg-cmake-config
 Architecture: x64-windows
 Multi-Arch: same
-Abi: a2529cdfe28b08974dc69fd5fc93626f4c1859445e7a922efc70e41ff38d6fd6
+Abi: dca3ecad4309947343744efbc9b634664402fe6a26b987ad5735227511d6bbfb
 Description: Simple DirectMedia Layer is a cross-platform development library designed to provide low level access to audio, keyboard, mouse, joystick, and graphics hardware via OpenGL and Direct3D.
+Status: install ok installed
+
+Package: sdl3-image
+Version: 3.4.0
+Depends: sdl3, vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 8ea4654019655c81cf9d03a4e5bd99743f1b2769873ee086e33895a178bf7c6e
+Description: SDL_image is an image file loading library. It loads images as SDL surfaces and textures, and supports the following formats: BMP, GIF, JPEG, LBM, PCX, PNG, PNM, TGA, TIFF, WEBP, XCF, XPM, XV
 Status: install ok installed
 

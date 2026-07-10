@@ -1,0 +1,2 @@
+E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/pkgs/zlib_x64-windows/debug/lib/zlibd.lib
+E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/pkgs/zlib_x64-windows/debug/bin/zlibd1.dll

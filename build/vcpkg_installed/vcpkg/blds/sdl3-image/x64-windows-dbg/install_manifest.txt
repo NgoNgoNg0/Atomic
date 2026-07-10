@@ -1,0 +1,10 @@
+E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/pkgs/sdl3-image_x64-windows/debug/lib/SDL3_image.lib
+E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/pkgs/sdl3-image_x64-windows/debug/bin/SDL3_image.dll
+E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/pkgs/sdl3-image_x64-windows/debug/include/SDL3_image/SDL_image.h
+E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/pkgs/sdl3-image_x64-windows/debug/bin/SDL3_image.pdb
+E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/pkgs/sdl3-image_x64-windows/debug/cmake/SDL3_imageConfig.cmake
+E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/pkgs/sdl3-image_x64-windows/debug/cmake/SDL3_imageConfigVersion.cmake
+E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/pkgs/sdl3-image_x64-windows/debug/cmake/SDL3_image-shared-targets.cmake
+E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/pkgs/sdl3-image_x64-windows/debug/cmake/SDL3_image-shared-targets-debug.cmake
+E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/pkgs/sdl3-image_x64-windows/debug/lib/pkgconfig/sdl3-image.pc
+E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/pkgs/sdl3-image_x64-windows/debug/share/licenses/SDL3_image/LICENSE.txt

@@ -3334,8 +3334,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "E:/\u500b\u4eba\u7528/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-d4hu6u"
-      binary: "E:/\u500b\u4eba\u7528/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-d4hu6u"
+      source: "E:/\u500b\u4eba\u7528/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-bobb73"
+      binary: "E:/\u500b\u4eba\u7528/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-bobb73"
     cmakeVariables:
       CMAKE_C_FLAGS: " /nologo /DWIN32 /D_WINDOWS /utf-8 /MP "
       CMAKE_C_FLAGS_DEBUG: "/MDd /Z7 /Ob0 /Od /RTC1 "
@@ -3364,11 +3364,11 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-d4hu6u'
+        Change Dir: 'E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-bobb73'
         
-        Run Build Command(s): C:\\Users\\kengo\\AppData\\Local\\vcpkg\\downloads\\tools\\ninja-1.13.2-windows\\ninja.exe -v cmTC_e46b4
-        [1/2] C:\\PROGRA~1\\MIB055~1\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\cl.exe  /nologo -D_MBCS  /nologo /DWIN32 /D_WINDOWS /utf-8 /MP   /MDd /Z7 /Ob0 /Od /RTC1  -MDd /showIncludes /FoCMakeFiles\\cmTC_e46b4.dir\\CMakeCCompilerABI.c.obj /FdCMakeFiles\\cmTC_e46b4.dir\\ /FS -c "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-4.3\\Modules\\CMakeCCompilerABI.c"
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --msvc-ver=1951 --intdir=CMakeFiles\\cmTC_e46b4.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_e46b4.dir\\CMakeCCompilerABI.c.obj  /out:cmTC_e46b4.exe /implib:cmTC_e46b4.lib /pdb:cmTC_e46b4.pdb /version:0.0 /machine:x64 /nologo /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): C:\\Users\\kengo\\AppData\\Local\\vcpkg\\downloads\\tools\\ninja-1.13.2-windows\\ninja.exe -v cmTC_a53d6
+        [1/2] C:\\PROGRA~1\\MIB055~1\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\cl.exe  /nologo -D_MBCS  /nologo /DWIN32 /D_WINDOWS /utf-8 /MP   /MDd /Z7 /Ob0 /Od /RTC1  -MDd /showIncludes /FoCMakeFiles\\cmTC_a53d6.dir\\CMakeCCompilerABI.c.obj /FdCMakeFiles\\cmTC_a53d6.dir\\ /FS -c "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-4.3\\Modules\\CMakeCCompilerABI.c"
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --msvc-ver=1951 --intdir=CMakeFiles\\cmTC_a53d6.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_a53d6.dir\\CMakeCCompilerABI.c.obj  /out:cmTC_a53d6.exe /implib:cmTC_a53d6.lib /pdb:cmTC_a53d6.pdb /version:0.0 /machine:x64 /nologo /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
   -
@@ -3397,7 +3397,7 @@ events:
       - "CMakeLists.txt:8 (project)"
     message: |
       Running the C compiler's linker: "C:/PROGRA~1/MIB055~1/18/COMMUN~1/VC/Tools/MSVC/1451~1.362/bin/Hostx64/x64/link.exe" "-v"
-      Microsoft (R) Incremental Linker Version 14.51.36247.0
+      Microsoft (R) Incremental Linker Version 14.51.36248.0
       Copyright (C) Microsoft Corporation.  All rights reserved.
   -
     kind: "find-v1"
@@ -4821,9 +4821,9 @@ events:
       stdout: |
         Change Dir: 'E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeTmp/SDL_detect_arch/CMakeFiles/CMakeTmp'
         
-        Run Build Command(s): C:\\Users\\kengo\\AppData\\Local\\vcpkg\\downloads\\tools\\ninja-1.13.2-windows\\ninja.exe -v cmTC_696ba
-        [1/2] C:\\PROGRA~1\\MIB055~1\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\cl.exe  /nologo -D_MBCS  /nologo /DWIN32 /D_WINDOWS /utf-8 /MP   /MDd /Z7 /Ob0 /Od /RTC1  -MDd /showIncludes /FoCMakeFiles\\cmTC_696ba.dir\\SDL_detect_arch.c.obj /FdCMakeFiles\\cmTC_696ba.dir\\cmTC_696ba.pdb /FS -c E:\\個人用\\SDL\\SDLTest\\build\\vcpkg_installed\\vcpkg\\blds\\sdl3\\x64-windows-rel\\CMakeFiles\\CMakeTmp\\SDL_detect_arch.c
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\MIB055~1\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\lib.exe /nologo /machine:x64 /nologo /out:cmTC_696ba.lib CMakeFiles\\cmTC_696ba.dir\\SDL_detect_arch.c.obj && cd ."
+        Run Build Command(s): C:\\Users\\kengo\\AppData\\Local\\vcpkg\\downloads\\tools\\ninja-1.13.2-windows\\ninja.exe -v cmTC_f12b6
+        [1/2] C:\\PROGRA~1\\MIB055~1\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\cl.exe  /nologo -D_MBCS  /nologo /DWIN32 /D_WINDOWS /utf-8 /MP   /MDd /Z7 /Ob0 /Od /RTC1  -MDd /showIncludes /FoCMakeFiles\\cmTC_f12b6.dir\\SDL_detect_arch.c.obj /FdCMakeFiles\\cmTC_f12b6.dir\\cmTC_f12b6.pdb /FS -c E:\\個人用\\SDL\\SDLTest\\build\\vcpkg_installed\\vcpkg\\blds\\sdl3\\x64-windows-rel\\CMakeFiles\\CMakeTmp\\SDL_detect_arch.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\MIB055~1\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\lib.exe /nologo /machine:x64 /nologo /out:cmTC_f12b6.lib CMakeFiles\\cmTC_f12b6.dir\\SDL_detect_arch.c.obj && cd ."
         
       exitCode: 0
   -
@@ -4836,8 +4836,8 @@ events:
     checks:
       - "Performing Test CAN_PRESEED"
     directories:
-      source: "E:/\u500b\u4eba\u7528/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-d4ootr"
-      binary: "E:/\u500b\u4eba\u7528/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-d4ootr"
+      source: "E:/\u500b\u4eba\u7528/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-n9yp19"
+      binary: "E:/\u500b\u4eba\u7528/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-n9yp19"
     cmakeVariables:
       CMAKE_C_FLAGS: " /nologo /DWIN32 /D_WINDOWS /utf-8 /MP "
       CMAKE_C_FLAGS_DEBUG: "/MDd /Z7 /Ob0 /Od /RTC1 "
@@ -4867,11 +4867,11 @@ events:
       variable: "CAN_PRESEED"
       cached: true
       stdout: |
-        Change Dir: 'E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-d4ootr'
+        Change Dir: 'E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-n9yp19'
         
-        Run Build Command(s): C:\\Users\\kengo\\AppData\\Local\\vcpkg\\downloads\\tools\\ninja-1.13.2-windows\\ninja.exe -v cmTC_bc07e
-        [1/2] C:\\PROGRA~1\\MIB055~1\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCAN_PRESEED -D_MBCS  /nologo /DWIN32 /D_WINDOWS /utf-8 /MP   -D_GNU_SOURCE=1 /MDd /Z7 /Ob0 /Od /RTC1  -MDd /showIncludes /FoCMakeFiles\\cmTC_bc07e.dir\\src.c.obj /FdCMakeFiles\\cmTC_bc07e.dir\\ /FS -c E:\\個人用\\SDL\\SDLTest\\build\\vcpkg_installed\\vcpkg\\blds\\sdl3\\x64-windows-rel\\CMakeFiles\\CMakeScratch\\TryCompile-d4ootr\\src.c
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --msvc-ver=1951 --intdir=CMakeFiles\\cmTC_bc07e.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_bc07e.dir\\src.c.obj  /out:cmTC_bc07e.exe /implib:cmTC_bc07e.lib /pdb:cmTC_bc07e.pdb /version:0.0 /machine:x64 /nologo /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): C:\\Users\\kengo\\AppData\\Local\\vcpkg\\downloads\\tools\\ninja-1.13.2-windows\\ninja.exe -v cmTC_98fd3
+        [1/2] C:\\PROGRA~1\\MIB055~1\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCAN_PRESEED -D_MBCS  /nologo /DWIN32 /D_WINDOWS /utf-8 /MP   -D_GNU_SOURCE=1 /MDd /Z7 /Ob0 /Od /RTC1  -MDd /showIncludes /FoCMakeFiles\\cmTC_98fd3.dir\\src.c.obj /FdCMakeFiles\\cmTC_98fd3.dir\\ /FS -c E:\\個人用\\SDL\\SDLTest\\build\\vcpkg_installed\\vcpkg\\blds\\sdl3\\x64-windows-rel\\CMakeFiles\\CMakeScratch\\TryCompile-n9yp19\\src.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --msvc-ver=1951 --intdir=CMakeFiles\\cmTC_98fd3.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_98fd3.dir\\src.c.obj  /out:cmTC_98fd3.exe /implib:cmTC_98fd3.lib /pdb:cmTC_98fd3.pdb /version:0.0 /machine:x64 /nologo /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
   -
@@ -4884,8 +4884,8 @@ events:
     checks:
       - "Performing Test COMPILER_SUPPORTS_MMX"
     directories:
-      source: "E:/\u500b\u4eba\u7528/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-fqkox5"
-      binary: "E:/\u500b\u4eba\u7528/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-fqkox5"
+      source: "E:/\u500b\u4eba\u7528/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-ubfvlg"
+      binary: "E:/\u500b\u4eba\u7528/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-ubfvlg"
     cmakeVariables:
       CMAKE_C_FLAGS: " /nologo /DWIN32 /D_WINDOWS /utf-8 /MP "
       CMAKE_C_FLAGS_DEBUG: "/MDd /Z7 /Ob0 /Od /RTC1 "
@@ -4915,13 +4915,13 @@ events:
       variable: "COMPILER_SUPPORTS_MMX"
       cached: true
       stdout: |
-        Change Dir: 'E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-fqkox5'
+        Change Dir: 'E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-ubfvlg'
         
-        Run Build Command(s): C:\\Users\\kengo\\AppData\\Local\\vcpkg\\downloads\\tools\\ninja-1.13.2-windows\\ninja.exe -v cmTC_d02d1
-        [1/2] C:\\PROGRA~1\\MIB055~1\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCOMPILER_SUPPORTS_MMX -D_MBCS  /nologo /DWIN32 /D_WINDOWS /utf-8 /MP   -D_GNU_SOURCE=1 /MDd /Z7 /Ob0 /Od /RTC1  -MDd /showIncludes /FoCMakeFiles\\cmTC_d02d1.dir\\src.c.obj /FdCMakeFiles\\cmTC_d02d1.dir\\ /FS -c E:\\個人用\\SDL\\SDLTest\\build\\vcpkg_installed\\vcpkg\\blds\\sdl3\\x64-windows-rel\\CMakeFiles\\CMakeScratch\\TryCompile-fqkox5\\src.c
-        FAILED: [code=2] CMakeFiles/cmTC_d02d1.dir/src.c.obj 
-        C:\\PROGRA~1\\MIB055~1\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCOMPILER_SUPPORTS_MMX -D_MBCS  /nologo /DWIN32 /D_WINDOWS /utf-8 /MP   -D_GNU_SOURCE=1 /MDd /Z7 /Ob0 /Od /RTC1  -MDd /showIncludes /FoCMakeFiles\\cmTC_d02d1.dir\\src.c.obj /FdCMakeFiles\\cmTC_d02d1.dir\\ /FS -c E:\\個人用\\SDL\\SDLTest\\build\\vcpkg_installed\\vcpkg\\blds\\sdl3\\x64-windows-rel\\CMakeFiles\\CMakeScratch\\TryCompile-fqkox5\\src.c
-        E:\\個人用\\SDL\\SDLTest\\build\\vcpkg_installed\\vcpkg\\blds\\sdl3\\x64-windows-rel\\CMakeFiles\\CMakeScratch\\TryCompile-fqkox5\\src.c(15): error C2440: '=': 'int' から '__m64' に変換できません。
+        Run Build Command(s): C:\\Users\\kengo\\AppData\\Local\\vcpkg\\downloads\\tools\\ninja-1.13.2-windows\\ninja.exe -v cmTC_e243b
+        [1/2] C:\\PROGRA~1\\MIB055~1\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCOMPILER_SUPPORTS_MMX -D_MBCS  /nologo /DWIN32 /D_WINDOWS /utf-8 /MP   -D_GNU_SOURCE=1 /MDd /Z7 /Ob0 /Od /RTC1  -MDd /showIncludes /FoCMakeFiles\\cmTC_e243b.dir\\src.c.obj /FdCMakeFiles\\cmTC_e243b.dir\\ /FS -c E:\\個人用\\SDL\\SDLTest\\build\\vcpkg_installed\\vcpkg\\blds\\sdl3\\x64-windows-rel\\CMakeFiles\\CMakeScratch\\TryCompile-ubfvlg\\src.c
+        FAILED: [code=2] CMakeFiles/cmTC_e243b.dir/src.c.obj 
+        C:\\PROGRA~1\\MIB055~1\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCOMPILER_SUPPORTS_MMX -D_MBCS  /nologo /DWIN32 /D_WINDOWS /utf-8 /MP   -D_GNU_SOURCE=1 /MDd /Z7 /Ob0 /Od /RTC1  -MDd /showIncludes /FoCMakeFiles\\cmTC_e243b.dir\\src.c.obj /FdCMakeFiles\\cmTC_e243b.dir\\ /FS -c E:\\個人用\\SDL\\SDLTest\\build\\vcpkg_installed\\vcpkg\\blds\\sdl3\\x64-windows-rel\\CMakeFiles\\CMakeScratch\\TryCompile-ubfvlg\\src.c
+        E:\\個人用\\SDL\\SDLTest\\build\\vcpkg_installed\\vcpkg\\blds\\sdl3\\x64-windows-rel\\CMakeFiles\\CMakeScratch\\TryCompile-ubfvlg\\src.c(15): error C2440: '=': 'int' から '__m64' に変換できません。
         ninja: build stopped: subcommand failed.
         
       exitCode: 2
@@ -4935,8 +4935,8 @@ events:
     checks:
       - "Performing Test COMPILER_SUPPORTS_SSE"
     directories:
-      source: "E:/\u500b\u4eba\u7528/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-zguduo"
-      binary: "E:/\u500b\u4eba\u7528/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-zguduo"
+      source: "E:/\u500b\u4eba\u7528/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-exfkd1"
+      binary: "E:/\u500b\u4eba\u7528/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-exfkd1"
     cmakeVariables:
       CMAKE_C_FLAGS: " /nologo /DWIN32 /D_WINDOWS /utf-8 /MP "
       CMAKE_C_FLAGS_DEBUG: "/MDd /Z7 /Ob0 /Od /RTC1 "
@@ -4966,11 +4966,11 @@ events:
       variable: "COMPILER_SUPPORTS_SSE"
       cached: true
       stdout: |
-        Change Dir: 'E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-zguduo'
+        Change Dir: 'E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-exfkd1'
         
-        Run Build Command(s): C:\\Users\\kengo\\AppData\\Local\\vcpkg\\downloads\\tools\\ninja-1.13.2-windows\\ninja.exe -v cmTC_2896e
-        [1/2] C:\\PROGRA~1\\MIB055~1\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCOMPILER_SUPPORTS_SSE -D_MBCS  /nologo /DWIN32 /D_WINDOWS /utf-8 /MP   -D_GNU_SOURCE=1 /MDd /Z7 /Ob0 /Od /RTC1  -MDd /showIncludes /FoCMakeFiles\\cmTC_2896e.dir\\src.c.obj /FdCMakeFiles\\cmTC_2896e.dir\\ /FS -c E:\\個人用\\SDL\\SDLTest\\build\\vcpkg_installed\\vcpkg\\blds\\sdl3\\x64-windows-rel\\CMakeFiles\\CMakeScratch\\TryCompile-zguduo\\src.c
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --msvc-ver=1951 --intdir=CMakeFiles\\cmTC_2896e.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_2896e.dir\\src.c.obj  /out:cmTC_2896e.exe /implib:cmTC_2896e.lib /pdb:cmTC_2896e.pdb /version:0.0 /machine:x64 /nologo /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): C:\\Users\\kengo\\AppData\\Local\\vcpkg\\downloads\\tools\\ninja-1.13.2-windows\\ninja.exe -v cmTC_08999
+        [1/2] C:\\PROGRA~1\\MIB055~1\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCOMPILER_SUPPORTS_SSE -D_MBCS  /nologo /DWIN32 /D_WINDOWS /utf-8 /MP   -D_GNU_SOURCE=1 /MDd /Z7 /Ob0 /Od /RTC1  -MDd /showIncludes /FoCMakeFiles\\cmTC_08999.dir\\src.c.obj /FdCMakeFiles\\cmTC_08999.dir\\ /FS -c E:\\個人用\\SDL\\SDLTest\\build\\vcpkg_installed\\vcpkg\\blds\\sdl3\\x64-windows-rel\\CMakeFiles\\CMakeScratch\\TryCompile-exfkd1\\src.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --msvc-ver=1951 --intdir=CMakeFiles\\cmTC_08999.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_08999.dir\\src.c.obj  /out:cmTC_08999.exe /implib:cmTC_08999.lib /pdb:cmTC_08999.pdb /version:0.0 /machine:x64 /nologo /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
   -
@@ -4983,8 +4983,8 @@ events:
     checks:
       - "Performing Test COMPILER_SUPPORTS_SSE2"
     directories:
-      source: "E:/\u500b\u4eba\u7528/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-curktc"
-      binary: "E:/\u500b\u4eba\u7528/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-curktc"
+      source: "E:/\u500b\u4eba\u7528/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-fxlnyl"
+      binary: "E:/\u500b\u4eba\u7528/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-fxlnyl"
     cmakeVariables:
       CMAKE_C_FLAGS: " /nologo /DWIN32 /D_WINDOWS /utf-8 /MP "
       CMAKE_C_FLAGS_DEBUG: "/MDd /Z7 /Ob0 /Od /RTC1 "
@@ -5014,11 +5014,11 @@ events:
       variable: "COMPILER_SUPPORTS_SSE2"
       cached: true
       stdout: |
-        Change Dir: 'E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-curktc'
+        Change Dir: 'E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-fxlnyl'
         
-        Run Build Command(s): C:\\Users\\kengo\\AppData\\Local\\vcpkg\\downloads\\tools\\ninja-1.13.2-windows\\ninja.exe -v cmTC_85e09
-        [1/2] C:\\PROGRA~1\\MIB055~1\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCOMPILER_SUPPORTS_SSE2 -D_MBCS  /nologo /DWIN32 /D_WINDOWS /utf-8 /MP   -D_GNU_SOURCE=1 /MDd /Z7 /Ob0 /Od /RTC1  -MDd /showIncludes /FoCMakeFiles\\cmTC_85e09.dir\\src.c.obj /FdCMakeFiles\\cmTC_85e09.dir\\ /FS -c E:\\個人用\\SDL\\SDLTest\\build\\vcpkg_installed\\vcpkg\\blds\\sdl3\\x64-windows-rel\\CMakeFiles\\CMakeScratch\\TryCompile-curktc\\src.c
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --msvc-ver=1951 --intdir=CMakeFiles\\cmTC_85e09.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_85e09.dir\\src.c.obj  /out:cmTC_85e09.exe /implib:cmTC_85e09.lib /pdb:cmTC_85e09.pdb /version:0.0 /machine:x64 /nologo /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): C:\\Users\\kengo\\AppData\\Local\\vcpkg\\downloads\\tools\\ninja-1.13.2-windows\\ninja.exe -v cmTC_8703a
+        [1/2] C:\\PROGRA~1\\MIB055~1\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCOMPILER_SUPPORTS_SSE2 -D_MBCS  /nologo /DWIN32 /D_WINDOWS /utf-8 /MP   -D_GNU_SOURCE=1 /MDd /Z7 /Ob0 /Od /RTC1  -MDd /showIncludes /FoCMakeFiles\\cmTC_8703a.dir\\src.c.obj /FdCMakeFiles\\cmTC_8703a.dir\\ /FS -c E:\\個人用\\SDL\\SDLTest\\build\\vcpkg_installed\\vcpkg\\blds\\sdl3\\x64-windows-rel\\CMakeFiles\\CMakeScratch\\TryCompile-fxlnyl\\src.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --msvc-ver=1951 --intdir=CMakeFiles\\cmTC_8703a.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_8703a.dir\\src.c.obj  /out:cmTC_8703a.exe /implib:cmTC_8703a.lib /pdb:cmTC_8703a.pdb /version:0.0 /machine:x64 /nologo /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
   -
@@ -5031,8 +5031,8 @@ events:
     checks:
       - "Performing Test COMPILER_SUPPORTS_SSE3"
     directories:
-      source: "E:/\u500b\u4eba\u7528/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-pnt6fl"
-      binary: "E:/\u500b\u4eba\u7528/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-pnt6fl"
+      source: "E:/\u500b\u4eba\u7528/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-licjgw"
+      binary: "E:/\u500b\u4eba\u7528/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-licjgw"
     cmakeVariables:
       CMAKE_C_FLAGS: " /nologo /DWIN32 /D_WINDOWS /utf-8 /MP "
       CMAKE_C_FLAGS_DEBUG: "/MDd /Z7 /Ob0 /Od /RTC1 "
@@ -5062,11 +5062,11 @@ events:
       variable: "COMPILER_SUPPORTS_SSE3"
       cached: true
       stdout: |
-        Change Dir: 'E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-pnt6fl'
+        Change Dir: 'E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-licjgw'
         
-        Run Build Command(s): C:\\Users\\kengo\\AppData\\Local\\vcpkg\\downloads\\tools\\ninja-1.13.2-windows\\ninja.exe -v cmTC_e56fc
-        [1/2] C:\\PROGRA~1\\MIB055~1\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCOMPILER_SUPPORTS_SSE3 -D_MBCS  /nologo /DWIN32 /D_WINDOWS /utf-8 /MP   -D_GNU_SOURCE=1 /MDd /Z7 /Ob0 /Od /RTC1  -MDd /showIncludes /FoCMakeFiles\\cmTC_e56fc.dir\\src.c.obj /FdCMakeFiles\\cmTC_e56fc.dir\\ /FS -c E:\\個人用\\SDL\\SDLTest\\build\\vcpkg_installed\\vcpkg\\blds\\sdl3\\x64-windows-rel\\CMakeFiles\\CMakeScratch\\TryCompile-pnt6fl\\src.c
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --msvc-ver=1951 --intdir=CMakeFiles\\cmTC_e56fc.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_e56fc.dir\\src.c.obj  /out:cmTC_e56fc.exe /implib:cmTC_e56fc.lib /pdb:cmTC_e56fc.pdb /version:0.0 /machine:x64 /nologo /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): C:\\Users\\kengo\\AppData\\Local\\vcpkg\\downloads\\tools\\ninja-1.13.2-windows\\ninja.exe -v cmTC_ab0f7
+        [1/2] C:\\PROGRA~1\\MIB055~1\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCOMPILER_SUPPORTS_SSE3 -D_MBCS  /nologo /DWIN32 /D_WINDOWS /utf-8 /MP   -D_GNU_SOURCE=1 /MDd /Z7 /Ob0 /Od /RTC1  -MDd /showIncludes /FoCMakeFiles\\cmTC_ab0f7.dir\\src.c.obj /FdCMakeFiles\\cmTC_ab0f7.dir\\ /FS -c E:\\個人用\\SDL\\SDLTest\\build\\vcpkg_installed\\vcpkg\\blds\\sdl3\\x64-windows-rel\\CMakeFiles\\CMakeScratch\\TryCompile-licjgw\\src.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --msvc-ver=1951 --intdir=CMakeFiles\\cmTC_ab0f7.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_ab0f7.dir\\src.c.obj  /out:cmTC_ab0f7.exe /implib:cmTC_ab0f7.lib /pdb:cmTC_ab0f7.pdb /version:0.0 /machine:x64 /nologo /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
   -
@@ -5079,8 +5079,8 @@ events:
     checks:
       - "Performing Test COMPILER_SUPPORTS_SSE4_1"
     directories:
-      source: "E:/\u500b\u4eba\u7528/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-exw92m"
-      binary: "E:/\u500b\u4eba\u7528/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-exw92m"
+      source: "E:/\u500b\u4eba\u7528/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-vj1e1j"
+      binary: "E:/\u500b\u4eba\u7528/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-vj1e1j"
     cmakeVariables:
       CMAKE_C_FLAGS: " /nologo /DWIN32 /D_WINDOWS /utf-8 /MP "
       CMAKE_C_FLAGS_DEBUG: "/MDd /Z7 /Ob0 /Od /RTC1 "
@@ -5110,11 +5110,11 @@ events:
       variable: "COMPILER_SUPPORTS_SSE4_1"
       cached: true
       stdout: |
-        Change Dir: 'E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-exw92m'
+        Change Dir: 'E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-vj1e1j'
         
-        Run Build Command(s): C:\\Users\\kengo\\AppData\\Local\\vcpkg\\downloads\\tools\\ninja-1.13.2-windows\\ninja.exe -v cmTC_38328
-        [1/2] C:\\PROGRA~1\\MIB055~1\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCOMPILER_SUPPORTS_SSE4_1 -D_MBCS  /nologo /DWIN32 /D_WINDOWS /utf-8 /MP   -D_GNU_SOURCE=1 /MDd /Z7 /Ob0 /Od /RTC1  -MDd /showIncludes /FoCMakeFiles\\cmTC_38328.dir\\src.c.obj /FdCMakeFiles\\cmTC_38328.dir\\ /FS -c E:\\個人用\\SDL\\SDLTest\\build\\vcpkg_installed\\vcpkg\\blds\\sdl3\\x64-windows-rel\\CMakeFiles\\CMakeScratch\\TryCompile-exw92m\\src.c
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --msvc-ver=1951 --intdir=CMakeFiles\\cmTC_38328.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_38328.dir\\src.c.obj  /out:cmTC_38328.exe /implib:cmTC_38328.lib /pdb:cmTC_38328.pdb /version:0.0 /machine:x64 /nologo /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): C:\\Users\\kengo\\AppData\\Local\\vcpkg\\downloads\\tools\\ninja-1.13.2-windows\\ninja.exe -v cmTC_0047e
+        [1/2] C:\\PROGRA~1\\MIB055~1\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCOMPILER_SUPPORTS_SSE4_1 -D_MBCS  /nologo /DWIN32 /D_WINDOWS /utf-8 /MP   -D_GNU_SOURCE=1 /MDd /Z7 /Ob0 /Od /RTC1  -MDd /showIncludes /FoCMakeFiles\\cmTC_0047e.dir\\src.c.obj /FdCMakeFiles\\cmTC_0047e.dir\\ /FS -c E:\\個人用\\SDL\\SDLTest\\build\\vcpkg_installed\\vcpkg\\blds\\sdl3\\x64-windows-rel\\CMakeFiles\\CMakeScratch\\TryCompile-vj1e1j\\src.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --msvc-ver=1951 --intdir=CMakeFiles\\cmTC_0047e.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_0047e.dir\\src.c.obj  /out:cmTC_0047e.exe /implib:cmTC_0047e.lib /pdb:cmTC_0047e.pdb /version:0.0 /machine:x64 /nologo /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
   -
@@ -5127,8 +5127,8 @@ events:
     checks:
       - "Performing Test COMPILER_SUPPORTS_SSE4_2"
     directories:
-      source: "E:/\u500b\u4eba\u7528/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-qi3rgx"
-      binary: "E:/\u500b\u4eba\u7528/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-qi3rgx"
+      source: "E:/\u500b\u4eba\u7528/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-szy6pb"
+      binary: "E:/\u500b\u4eba\u7528/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-szy6pb"
     cmakeVariables:
       CMAKE_C_FLAGS: " /nologo /DWIN32 /D_WINDOWS /utf-8 /MP "
       CMAKE_C_FLAGS_DEBUG: "/MDd /Z7 /Ob0 /Od /RTC1 "
@@ -5158,11 +5158,11 @@ events:
       variable: "COMPILER_SUPPORTS_SSE4_2"
       cached: true
       stdout: |
-        Change Dir: 'E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-qi3rgx'
+        Change Dir: 'E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-szy6pb'
         
-        Run Build Command(s): C:\\Users\\kengo\\AppData\\Local\\vcpkg\\downloads\\tools\\ninja-1.13.2-windows\\ninja.exe -v cmTC_6b9dd
-        [1/2] C:\\PROGRA~1\\MIB055~1\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCOMPILER_SUPPORTS_SSE4_2 -D_MBCS  /nologo /DWIN32 /D_WINDOWS /utf-8 /MP   -D_GNU_SOURCE=1 /MDd /Z7 /Ob0 /Od /RTC1  -MDd /showIncludes /FoCMakeFiles\\cmTC_6b9dd.dir\\src.c.obj /FdCMakeFiles\\cmTC_6b9dd.dir\\ /FS -c E:\\個人用\\SDL\\SDLTest\\build\\vcpkg_installed\\vcpkg\\blds\\sdl3\\x64-windows-rel\\CMakeFiles\\CMakeScratch\\TryCompile-qi3rgx\\src.c
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --msvc-ver=1951 --intdir=CMakeFiles\\cmTC_6b9dd.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_6b9dd.dir\\src.c.obj  /out:cmTC_6b9dd.exe /implib:cmTC_6b9dd.lib /pdb:cmTC_6b9dd.pdb /version:0.0 /machine:x64 /nologo /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): C:\\Users\\kengo\\AppData\\Local\\vcpkg\\downloads\\tools\\ninja-1.13.2-windows\\ninja.exe -v cmTC_760d9
+        [1/2] C:\\PROGRA~1\\MIB055~1\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCOMPILER_SUPPORTS_SSE4_2 -D_MBCS  /nologo /DWIN32 /D_WINDOWS /utf-8 /MP   -D_GNU_SOURCE=1 /MDd /Z7 /Ob0 /Od /RTC1  -MDd /showIncludes /FoCMakeFiles\\cmTC_760d9.dir\\src.c.obj /FdCMakeFiles\\cmTC_760d9.dir\\ /FS -c E:\\個人用\\SDL\\SDLTest\\build\\vcpkg_installed\\vcpkg\\blds\\sdl3\\x64-windows-rel\\CMakeFiles\\CMakeScratch\\TryCompile-szy6pb\\src.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --msvc-ver=1951 --intdir=CMakeFiles\\cmTC_760d9.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_760d9.dir\\src.c.obj  /out:cmTC_760d9.exe /implib:cmTC_760d9.lib /pdb:cmTC_760d9.pdb /version:0.0 /machine:x64 /nologo /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
   -
@@ -5175,8 +5175,8 @@ events:
     checks:
       - "Performing Test COMPILER_SUPPORTS_AVX"
     directories:
-      source: "E:/\u500b\u4eba\u7528/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-c1knmc"
-      binary: "E:/\u500b\u4eba\u7528/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-c1knmc"
+      source: "E:/\u500b\u4eba\u7528/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-h4r3e5"
+      binary: "E:/\u500b\u4eba\u7528/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-h4r3e5"
     cmakeVariables:
       CMAKE_C_FLAGS: " /nologo /DWIN32 /D_WINDOWS /utf-8 /MP "
       CMAKE_C_FLAGS_DEBUG: "/MDd /Z7 /Ob0 /Od /RTC1 "
@@ -5206,11 +5206,11 @@ events:
       variable: "COMPILER_SUPPORTS_AVX"
       cached: true
       stdout: |
-        Change Dir: 'E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-c1knmc'
+        Change Dir: 'E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-h4r3e5'
         
-        Run Build Command(s): C:\\Users\\kengo\\AppData\\Local\\vcpkg\\downloads\\tools\\ninja-1.13.2-windows\\ninja.exe -v cmTC_bde08
-        [1/2] C:\\PROGRA~1\\MIB055~1\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCOMPILER_SUPPORTS_AVX -D_MBCS  /nologo /DWIN32 /D_WINDOWS /utf-8 /MP   -D_GNU_SOURCE=1 /MDd /Z7 /Ob0 /Od /RTC1  -MDd /showIncludes /FoCMakeFiles\\cmTC_bde08.dir\\src.c.obj /FdCMakeFiles\\cmTC_bde08.dir\\ /FS -c E:\\個人用\\SDL\\SDLTest\\build\\vcpkg_installed\\vcpkg\\blds\\sdl3\\x64-windows-rel\\CMakeFiles\\CMakeScratch\\TryCompile-c1knmc\\src.c
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --msvc-ver=1951 --intdir=CMakeFiles\\cmTC_bde08.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_bde08.dir\\src.c.obj  /out:cmTC_bde08.exe /implib:cmTC_bde08.lib /pdb:cmTC_bde08.pdb /version:0.0 /machine:x64 /nologo /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): C:\\Users\\kengo\\AppData\\Local\\vcpkg\\downloads\\tools\\ninja-1.13.2-windows\\ninja.exe -v cmTC_4d363
+        [1/2] C:\\PROGRA~1\\MIB055~1\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCOMPILER_SUPPORTS_AVX -D_MBCS  /nologo /DWIN32 /D_WINDOWS /utf-8 /MP   -D_GNU_SOURCE=1 /MDd /Z7 /Ob0 /Od /RTC1  -MDd /showIncludes /FoCMakeFiles\\cmTC_4d363.dir\\src.c.obj /FdCMakeFiles\\cmTC_4d363.dir\\ /FS -c E:\\個人用\\SDL\\SDLTest\\build\\vcpkg_installed\\vcpkg\\blds\\sdl3\\x64-windows-rel\\CMakeFiles\\CMakeScratch\\TryCompile-h4r3e5\\src.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --msvc-ver=1951 --intdir=CMakeFiles\\cmTC_4d363.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_4d363.dir\\src.c.obj  /out:cmTC_4d363.exe /implib:cmTC_4d363.lib /pdb:cmTC_4d363.pdb /version:0.0 /machine:x64 /nologo /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
   -
@@ -5223,8 +5223,8 @@ events:
     checks:
       - "Performing Test COMPILER_SUPPORTS_AVX2"
     directories:
-      source: "E:/\u500b\u4eba\u7528/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-ohkpoq"
-      binary: "E:/\u500b\u4eba\u7528/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-ohkpoq"
+      source: "E:/\u500b\u4eba\u7528/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-l5dcvz"
+      binary: "E:/\u500b\u4eba\u7528/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-l5dcvz"
     cmakeVariables:
       CMAKE_C_FLAGS: " /nologo /DWIN32 /D_WINDOWS /utf-8 /MP "
       CMAKE_C_FLAGS_DEBUG: "/MDd /Z7 /Ob0 /Od /RTC1 "
@@ -5254,11 +5254,11 @@ events:
       variable: "COMPILER_SUPPORTS_AVX2"
       cached: true
       stdout: |
-        Change Dir: 'E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-ohkpoq'
+        Change Dir: 'E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-l5dcvz'
         
-        Run Build Command(s): C:\\Users\\kengo\\AppData\\Local\\vcpkg\\downloads\\tools\\ninja-1.13.2-windows\\ninja.exe -v cmTC_31f30
-        [1/2] C:\\PROGRA~1\\MIB055~1\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCOMPILER_SUPPORTS_AVX2 -D_MBCS  /nologo /DWIN32 /D_WINDOWS /utf-8 /MP   -D_GNU_SOURCE=1 /MDd /Z7 /Ob0 /Od /RTC1  -MDd /showIncludes /FoCMakeFiles\\cmTC_31f30.dir\\src.c.obj /FdCMakeFiles\\cmTC_31f30.dir\\ /FS -c E:\\個人用\\SDL\\SDLTest\\build\\vcpkg_installed\\vcpkg\\blds\\sdl3\\x64-windows-rel\\CMakeFiles\\CMakeScratch\\TryCompile-ohkpoq\\src.c
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --msvc-ver=1951 --intdir=CMakeFiles\\cmTC_31f30.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_31f30.dir\\src.c.obj  /out:cmTC_31f30.exe /implib:cmTC_31f30.lib /pdb:cmTC_31f30.pdb /version:0.0 /machine:x64 /nologo /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): C:\\Users\\kengo\\AppData\\Local\\vcpkg\\downloads\\tools\\ninja-1.13.2-windows\\ninja.exe -v cmTC_2b3a7
+        [1/2] C:\\PROGRA~1\\MIB055~1\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCOMPILER_SUPPORTS_AVX2 -D_MBCS  /nologo /DWIN32 /D_WINDOWS /utf-8 /MP   -D_GNU_SOURCE=1 /MDd /Z7 /Ob0 /Od /RTC1  -MDd /showIncludes /FoCMakeFiles\\cmTC_2b3a7.dir\\src.c.obj /FdCMakeFiles\\cmTC_2b3a7.dir\\ /FS -c E:\\個人用\\SDL\\SDLTest\\build\\vcpkg_installed\\vcpkg\\blds\\sdl3\\x64-windows-rel\\CMakeFiles\\CMakeScratch\\TryCompile-l5dcvz\\src.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --msvc-ver=1951 --intdir=CMakeFiles\\cmTC_2b3a7.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_2b3a7.dir\\src.c.obj  /out:cmTC_2b3a7.exe /implib:cmTC_2b3a7.lib /pdb:cmTC_2b3a7.pdb /version:0.0 /machine:x64 /nologo /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
   -
@@ -5271,8 +5271,8 @@ events:
     checks:
       - "Performing Test COMPILER_SUPPORTS_AVX512F"
     directories:
-      source: "E:/\u500b\u4eba\u7528/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-1bbr66"
-      binary: "E:/\u500b\u4eba\u7528/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-1bbr66"
+      source: "E:/\u500b\u4eba\u7528/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-2fc0ui"
+      binary: "E:/\u500b\u4eba\u7528/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-2fc0ui"
     cmakeVariables:
       CMAKE_C_FLAGS: " /nologo /DWIN32 /D_WINDOWS /utf-8 /MP "
       CMAKE_C_FLAGS_DEBUG: "/MDd /Z7 /Ob0 /Od /RTC1 "
@@ -5302,11 +5302,11 @@ events:
       variable: "COMPILER_SUPPORTS_AVX512F"
       cached: true
       stdout: |
-        Change Dir: 'E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-1bbr66'
+        Change Dir: 'E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-2fc0ui'
         
-        Run Build Command(s): C:\\Users\\kengo\\AppData\\Local\\vcpkg\\downloads\\tools\\ninja-1.13.2-windows\\ninja.exe -v cmTC_e6caf
-        [1/2] C:\\PROGRA~1\\MIB055~1\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCOMPILER_SUPPORTS_AVX512F -D_MBCS  /nologo /DWIN32 /D_WINDOWS /utf-8 /MP   -D_GNU_SOURCE=1 /MDd /Z7 /Ob0 /Od /RTC1  -MDd /showIncludes /FoCMakeFiles\\cmTC_e6caf.dir\\src.c.obj /FdCMakeFiles\\cmTC_e6caf.dir\\ /FS -c E:\\個人用\\SDL\\SDLTest\\build\\vcpkg_installed\\vcpkg\\blds\\sdl3\\x64-windows-rel\\CMakeFiles\\CMakeScratch\\TryCompile-1bbr66\\src.c
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --msvc-ver=1951 --intdir=CMakeFiles\\cmTC_e6caf.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_e6caf.dir\\src.c.obj  /out:cmTC_e6caf.exe /implib:cmTC_e6caf.lib /pdb:cmTC_e6caf.pdb /version:0.0 /machine:x64 /nologo /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): C:\\Users\\kengo\\AppData\\Local\\vcpkg\\downloads\\tools\\ninja-1.13.2-windows\\ninja.exe -v cmTC_bd1ef
+        [1/2] C:\\PROGRA~1\\MIB055~1\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCOMPILER_SUPPORTS_AVX512F -D_MBCS  /nologo /DWIN32 /D_WINDOWS /utf-8 /MP   -D_GNU_SOURCE=1 /MDd /Z7 /Ob0 /Od /RTC1  -MDd /showIncludes /FoCMakeFiles\\cmTC_bd1ef.dir\\src.c.obj /FdCMakeFiles\\cmTC_bd1ef.dir\\ /FS -c E:\\個人用\\SDL\\SDLTest\\build\\vcpkg_installed\\vcpkg\\blds\\sdl3\\x64-windows-rel\\CMakeFiles\\CMakeScratch\\TryCompile-2fc0ui\\src.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --msvc-ver=1951 --intdir=CMakeFiles\\cmTC_bd1ef.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_bd1ef.dir\\src.c.obj  /out:cmTC_bd1ef.exe /implib:cmTC_bd1ef.lib /pdb:cmTC_bd1ef.pdb /version:0.0 /machine:x64 /nologo /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
   -
@@ -5318,8 +5318,8 @@ events:
     checks:
       - "Looking for _copysign"
     directories:
-      source: "E:/\u500b\u4eba\u7528/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-r8c8nk"
-      binary: "E:/\u500b\u4eba\u7528/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-r8c8nk"
+      source: "E:/\u500b\u4eba\u7528/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-enjjc1"
+      binary: "E:/\u500b\u4eba\u7528/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-enjjc1"
     cmakeVariables:
       CMAKE_C_FLAGS: " /nologo /DWIN32 /D_WINDOWS /utf-8 /MP "
       CMAKE_C_FLAGS_DEBUG: "/MDd /Z7 /Ob0 /Od /RTC1 "
@@ -5349,11 +5349,11 @@ events:
       variable: "LIBC_HAS__COPYSIGN"
       cached: true
       stdout: |
-        Change Dir: 'E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-r8c8nk'
+        Change Dir: 'E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-enjjc1'
         
-        Run Build Command(s): C:\\Users\\kengo\\AppData\\Local\\vcpkg\\downloads\\tools\\ninja-1.13.2-windows\\ninja.exe -v cmTC_aa048
-        [1/2] C:\\PROGRA~1\\MIB055~1\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\cl.exe  /nologo -D_MBCS  /nologo /DWIN32 /D_WINDOWS /utf-8 /MP   -D_GNU_SOURCE=1 /MDd /Z7 /Ob0 /Od /RTC1  -MDd /showIncludes /FoCMakeFiles\\cmTC_aa048.dir\\CheckSymbolExists.c.obj /FdCMakeFiles\\cmTC_aa048.dir\\ /FS -c E:\\個人用\\SDL\\SDLTest\\build\\vcpkg_installed\\vcpkg\\blds\\sdl3\\x64-windows-rel\\CMakeFiles\\CMakeScratch\\TryCompile-r8c8nk\\CheckSymbolExists.c
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --msvc-ver=1951 --intdir=CMakeFiles\\cmTC_aa048.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_aa048.dir\\CheckSymbolExists.c.obj  /out:cmTC_aa048.exe /implib:cmTC_aa048.lib /pdb:cmTC_aa048.pdb /version:0.0 /machine:x64 /nologo /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): C:\\Users\\kengo\\AppData\\Local\\vcpkg\\downloads\\tools\\ninja-1.13.2-windows\\ninja.exe -v cmTC_73463
+        [1/2] C:\\PROGRA~1\\MIB055~1\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\cl.exe  /nologo -D_MBCS  /nologo /DWIN32 /D_WINDOWS /utf-8 /MP   -D_GNU_SOURCE=1 /MDd /Z7 /Ob0 /Od /RTC1  -MDd /showIncludes /FoCMakeFiles\\cmTC_73463.dir\\CheckSymbolExists.c.obj /FdCMakeFiles\\cmTC_73463.dir\\ /FS -c E:\\個人用\\SDL\\SDLTest\\build\\vcpkg_installed\\vcpkg\\blds\\sdl3\\x64-windows-rel\\CMakeFiles\\CMakeScratch\\TryCompile-enjjc1\\CheckSymbolExists.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --msvc-ver=1951 --intdir=CMakeFiles\\cmTC_73463.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_73463.dir\\CheckSymbolExists.c.obj  /out:cmTC_73463.exe /implib:cmTC_73463.lib /pdb:cmTC_73463.pdb /version:0.0 /machine:x64 /nologo /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
   -
@@ -5365,8 +5365,8 @@ events:
     checks:
       - "Looking for _fseeki64"
     directories:
-      source: "E:/\u500b\u4eba\u7528/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-a1e4w8"
-      binary: "E:/\u500b\u4eba\u7528/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-a1e4w8"
+      source: "E:/\u500b\u4eba\u7528/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-lkpd4f"
+      binary: "E:/\u500b\u4eba\u7528/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-lkpd4f"
     cmakeVariables:
       CMAKE_C_FLAGS: " /nologo /DWIN32 /D_WINDOWS /utf-8 /MP "
       CMAKE_C_FLAGS_DEBUG: "/MDd /Z7 /Ob0 /Od /RTC1 "
@@ -5396,11 +5396,11 @@ events:
       variable: "LIBC_HAS__FSEEKI64"
       cached: true
       stdout: |
-        Change Dir: 'E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-a1e4w8'
+        Change Dir: 'E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-lkpd4f'
         
-        Run Build Command(s): C:\\Users\\kengo\\AppData\\Local\\vcpkg\\downloads\\tools\\ninja-1.13.2-windows\\ninja.exe -v cmTC_5833f
-        [1/2] C:\\PROGRA~1\\MIB055~1\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\cl.exe  /nologo -D_MBCS  /nologo /DWIN32 /D_WINDOWS /utf-8 /MP   -D_GNU_SOURCE=1 /MDd /Z7 /Ob0 /Od /RTC1  -MDd /showIncludes /FoCMakeFiles\\cmTC_5833f.dir\\CheckSymbolExists.c.obj /FdCMakeFiles\\cmTC_5833f.dir\\ /FS -c E:\\個人用\\SDL\\SDLTest\\build\\vcpkg_installed\\vcpkg\\blds\\sdl3\\x64-windows-rel\\CMakeFiles\\CMakeScratch\\TryCompile-a1e4w8\\CheckSymbolExists.c
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --msvc-ver=1951 --intdir=CMakeFiles\\cmTC_5833f.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_5833f.dir\\CheckSymbolExists.c.obj  /out:cmTC_5833f.exe /implib:cmTC_5833f.lib /pdb:cmTC_5833f.pdb /version:0.0 /machine:x64 /nologo /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): C:\\Users\\kengo\\AppData\\Local\\vcpkg\\downloads\\tools\\ninja-1.13.2-windows\\ninja.exe -v cmTC_b6d79
+        [1/2] C:\\PROGRA~1\\MIB055~1\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\cl.exe  /nologo -D_MBCS  /nologo /DWIN32 /D_WINDOWS /utf-8 /MP   -D_GNU_SOURCE=1 /MDd /Z7 /Ob0 /Od /RTC1  -MDd /showIncludes /FoCMakeFiles\\cmTC_b6d79.dir\\CheckSymbolExists.c.obj /FdCMakeFiles\\cmTC_b6d79.dir\\ /FS -c E:\\個人用\\SDL\\SDLTest\\build\\vcpkg_installed\\vcpkg\\blds\\sdl3\\x64-windows-rel\\CMakeFiles\\CMakeScratch\\TryCompile-lkpd4f\\CheckSymbolExists.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --msvc-ver=1951 --intdir=CMakeFiles\\cmTC_b6d79.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_b6d79.dir\\CheckSymbolExists.c.obj  /out:cmTC_b6d79.exe /implib:cmTC_b6d79.lib /pdb:cmTC_b6d79.pdb /version:0.0 /machine:x64 /nologo /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
   -
@@ -6151,8 +6151,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "E:/\u500b\u4eba\u7528/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-h1qp3m"
-      binary: "E:/\u500b\u4eba\u7528/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-h1qp3m"
+      source: "E:/\u500b\u4eba\u7528/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-tbu1ti"
+      binary: "E:/\u500b\u4eba\u7528/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-tbu1ti"
     cmakeVariables:
       CMAKE_CXX_FLAGS: " /nologo /DWIN32 /D_WINDOWS /utf-8 /GR /EHsc /MP "
       CMAKE_CXX_FLAGS_DEBUG: "/MDd /Z7 /Ob0 /Od /RTC1 "
@@ -6184,11 +6184,11 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-h1qp3m'
+        Change Dir: 'E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-tbu1ti'
         
-        Run Build Command(s): C:\\Users\\kengo\\AppData\\Local\\vcpkg\\downloads\\tools\\ninja-1.13.2-windows\\ninja.exe -v cmTC_99a98
-        [1/2] C:\\PROGRA~1\\MIB055~1\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -D_MBCS  /nologo /DWIN32 /D_WINDOWS /utf-8 /GR /EHsc /MP   /MDd /Z7 /Ob0 /Od /RTC1  -MDd /showIncludes /FoCMakeFiles\\cmTC_99a98.dir\\CMakeCXXCompilerABI.cpp.obj /FdCMakeFiles\\cmTC_99a98.dir\\ /FS -c "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp"
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --msvc-ver=1951 --intdir=CMakeFiles\\cmTC_99a98.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_99a98.dir\\CMakeCXXCompilerABI.cpp.obj  /out:cmTC_99a98.exe /implib:cmTC_99a98.lib /pdb:cmTC_99a98.pdb /version:0.0 /machine:x64 /nologo /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): C:\\Users\\kengo\\AppData\\Local\\vcpkg\\downloads\\tools\\ninja-1.13.2-windows\\ninja.exe -v cmTC_a307e
+        [1/2] C:\\PROGRA~1\\MIB055~1\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -D_MBCS  /nologo /DWIN32 /D_WINDOWS /utf-8 /GR /EHsc /MP   /MDd /Z7 /Ob0 /Od /RTC1  -MDd /showIncludes /FoCMakeFiles\\cmTC_a307e.dir\\CMakeCXXCompilerABI.cpp.obj /FdCMakeFiles\\cmTC_a307e.dir\\ /FS -c "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp"
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --msvc-ver=1951 --intdir=CMakeFiles\\cmTC_a307e.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_a307e.dir\\CMakeCXXCompilerABI.cpp.obj  /out:cmTC_a307e.exe /implib:cmTC_a307e.lib /pdb:cmTC_a307e.pdb /version:0.0 /machine:x64 /nologo /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
   -
@@ -6217,7 +6217,7 @@ events:
       - "CMakeLists.txt:2158 (enable_language)"
     message: |
       Running the CXX compiler's linker: "C:/PROGRA~1/MIB055~1/18/COMMUN~1/VC/Tools/MSVC/1451~1.362/bin/Hostx64/x64/link.exe" "-v"
-      Microsoft (R) Incremental Linker Version 14.51.36247.0
+      Microsoft (R) Incremental Linker Version 14.51.36248.0
       Copyright (C) Microsoft Corporation.  All rights reserved.
   -
     kind: "try_compile-v1"
@@ -6228,8 +6228,8 @@ events:
     checks:
       - "Performing Test HAVE_GAMEINPUT_H"
     directories:
-      source: "E:/\u500b\u4eba\u7528/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-kqbmlq"
-      binary: "E:/\u500b\u4eba\u7528/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-kqbmlq"
+      source: "E:/\u500b\u4eba\u7528/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-wlsk9f"
+      binary: "E:/\u500b\u4eba\u7528/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-wlsk9f"
     cmakeVariables:
       CMAKE_CXX_STDLIB_MODULES_JSON: ""
       CMAKE_C_FLAGS: " /nologo /DWIN32 /D_WINDOWS /utf-8 /MP "
@@ -6260,11 +6260,11 @@ events:
       variable: "HAVE_GAMEINPUT_H"
       cached: true
       stdout: |
-        Change Dir: 'E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-kqbmlq'
+        Change Dir: 'E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-wlsk9f'
         
-        Run Build Command(s): C:\\Users\\kengo\\AppData\\Local\\vcpkg\\downloads\\tools\\ninja-1.13.2-windows\\ninja.exe -v cmTC_4ddd5
-        [1/2] C:\\PROGRA~1\\MIB055~1\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\cl.exe  /nologo -DHAVE_GAMEINPUT_H -D_MBCS  /nologo /DWIN32 /D_WINDOWS /utf-8 /MP   -D_GNU_SOURCE=1 /MDd /Z7 /Ob0 /Od /RTC1  -MDd /showIncludes /FoCMakeFiles\\cmTC_4ddd5.dir\\src.c.obj /FdCMakeFiles\\cmTC_4ddd5.dir\\ /FS -c E:\\個人用\\SDL\\SDLTest\\build\\vcpkg_installed\\vcpkg\\blds\\sdl3\\x64-windows-rel\\CMakeFiles\\CMakeScratch\\TryCompile-kqbmlq\\src.c
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --msvc-ver=1951 --intdir=CMakeFiles\\cmTC_4ddd5.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_4ddd5.dir\\src.c.obj  /out:cmTC_4ddd5.exe /implib:cmTC_4ddd5.lib /pdb:cmTC_4ddd5.pdb /version:0.0 /machine:x64 /nologo /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): C:\\Users\\kengo\\AppData\\Local\\vcpkg\\downloads\\tools\\ninja-1.13.2-windows\\ninja.exe -v cmTC_039ea
+        [1/2] C:\\PROGRA~1\\MIB055~1\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\cl.exe  /nologo -DHAVE_GAMEINPUT_H -D_MBCS  /nologo /DWIN32 /D_WINDOWS /utf-8 /MP   -D_GNU_SOURCE=1 /MDd /Z7 /Ob0 /Od /RTC1  -MDd /showIncludes /FoCMakeFiles\\cmTC_039ea.dir\\src.c.obj /FdCMakeFiles\\cmTC_039ea.dir\\ /FS -c E:\\個人用\\SDL\\SDLTest\\build\\vcpkg_installed\\vcpkg\\blds\\sdl3\\x64-windows-rel\\CMakeFiles\\CMakeScratch\\TryCompile-wlsk9f\\src.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --msvc-ver=1951 --intdir=CMakeFiles\\cmTC_039ea.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_039ea.dir\\src.c.obj  /out:cmTC_039ea.exe /implib:cmTC_039ea.lib /pdb:cmTC_039ea.pdb /version:0.0 /machine:x64 /nologo /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
   -
@@ -6275,8 +6275,8 @@ events:
     checks:
       - "Looking for dxgi1_5.h"
     directories:
-      source: "E:/\u500b\u4eba\u7528/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-04ysv3"
-      binary: "E:/\u500b\u4eba\u7528/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-04ysv3"
+      source: "E:/\u500b\u4eba\u7528/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-oy8y70"
+      binary: "E:/\u500b\u4eba\u7528/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-oy8y70"
     cmakeVariables:
       CMAKE_CXX_STDLIB_MODULES_JSON: ""
       CMAKE_C_FLAGS: " /nologo /DWIN32 /D_WINDOWS /utf-8 /MP "
@@ -6307,11 +6307,11 @@ events:
       variable: "HAVE_DXGI1_5_H"
       cached: true
       stdout: |
-        Change Dir: 'E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-04ysv3'
+        Change Dir: 'E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-oy8y70'
         
-        Run Build Command(s): C:\\Users\\kengo\\AppData\\Local\\vcpkg\\downloads\\tools\\ninja-1.13.2-windows\\ninja.exe -v cmTC_939ad
-        [1/2] C:\\PROGRA~1\\MIB055~1\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\cl.exe  /nologo -D_MBCS  /nologo /DWIN32 /D_WINDOWS /utf-8 /MP   -D_GNU_SOURCE=1 /MDd /Z7 /Ob0 /Od /RTC1  -MDd /showIncludes /FoCMakeFiles\\cmTC_939ad.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_939ad.dir\\ /FS -c E:\\個人用\\SDL\\SDLTest\\build\\vcpkg_installed\\vcpkg\\blds\\sdl3\\x64-windows-rel\\CMakeFiles\\CMakeScratch\\TryCompile-04ysv3\\CheckIncludeFile.c
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --msvc-ver=1951 --intdir=CMakeFiles\\cmTC_939ad.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_939ad.dir\\CheckIncludeFile.c.obj  /out:cmTC_939ad.exe /implib:cmTC_939ad.lib /pdb:cmTC_939ad.pdb /version:0.0 /machine:x64 /nologo /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): C:\\Users\\kengo\\AppData\\Local\\vcpkg\\downloads\\tools\\ninja-1.13.2-windows\\ninja.exe -v cmTC_ef2c3
+        [1/2] C:\\PROGRA~1\\MIB055~1\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\cl.exe  /nologo -D_MBCS  /nologo /DWIN32 /D_WINDOWS /utf-8 /MP   -D_GNU_SOURCE=1 /MDd /Z7 /Ob0 /Od /RTC1  -MDd /showIncludes /FoCMakeFiles\\cmTC_ef2c3.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_ef2c3.dir\\ /FS -c E:\\個人用\\SDL\\SDLTest\\build\\vcpkg_installed\\vcpkg\\blds\\sdl3\\x64-windows-rel\\CMakeFiles\\CMakeScratch\\TryCompile-oy8y70\\CheckIncludeFile.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --msvc-ver=1951 --intdir=CMakeFiles\\cmTC_ef2c3.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_ef2c3.dir\\CheckIncludeFile.c.obj  /out:cmTC_ef2c3.exe /implib:cmTC_ef2c3.lib /pdb:cmTC_ef2c3.pdb /version:0.0 /machine:x64 /nologo /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
   -
@@ -6322,8 +6322,8 @@ events:
     checks:
       - "Looking for dxgi1_6.h"
     directories:
-      source: "E:/\u500b\u4eba\u7528/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-xwukf7"
-      binary: "E:/\u500b\u4eba\u7528/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-xwukf7"
+      source: "E:/\u500b\u4eba\u7528/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-nogfzz"
+      binary: "E:/\u500b\u4eba\u7528/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-nogfzz"
     cmakeVariables:
       CMAKE_CXX_STDLIB_MODULES_JSON: ""
       CMAKE_C_FLAGS: " /nologo /DWIN32 /D_WINDOWS /utf-8 /MP "
@@ -6354,11 +6354,11 @@ events:
       variable: "HAVE_DXGI1_6_H"
       cached: true
       stdout: |
-        Change Dir: 'E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-xwukf7'
+        Change Dir: 'E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-nogfzz'
         
-        Run Build Command(s): C:\\Users\\kengo\\AppData\\Local\\vcpkg\\downloads\\tools\\ninja-1.13.2-windows\\ninja.exe -v cmTC_0708a
-        [1/2] C:\\PROGRA~1\\MIB055~1\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\cl.exe  /nologo -D_MBCS  /nologo /DWIN32 /D_WINDOWS /utf-8 /MP   -D_GNU_SOURCE=1 /MDd /Z7 /Ob0 /Od /RTC1  -MDd /showIncludes /FoCMakeFiles\\cmTC_0708a.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_0708a.dir\\ /FS -c E:\\個人用\\SDL\\SDLTest\\build\\vcpkg_installed\\vcpkg\\blds\\sdl3\\x64-windows-rel\\CMakeFiles\\CMakeScratch\\TryCompile-xwukf7\\CheckIncludeFile.c
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --msvc-ver=1951 --intdir=CMakeFiles\\cmTC_0708a.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_0708a.dir\\CheckIncludeFile.c.obj  /out:cmTC_0708a.exe /implib:cmTC_0708a.lib /pdb:cmTC_0708a.pdb /version:0.0 /machine:x64 /nologo /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): C:\\Users\\kengo\\AppData\\Local\\vcpkg\\downloads\\tools\\ninja-1.13.2-windows\\ninja.exe -v cmTC_3d343
+        [1/2] C:\\PROGRA~1\\MIB055~1\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\cl.exe  /nologo -D_MBCS  /nologo /DWIN32 /D_WINDOWS /utf-8 /MP   -D_GNU_SOURCE=1 /MDd /Z7 /Ob0 /Od /RTC1  -MDd /showIncludes /FoCMakeFiles\\cmTC_3d343.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_3d343.dir\\ /FS -c E:\\個人用\\SDL\\SDLTest\\build\\vcpkg_installed\\vcpkg\\blds\\sdl3\\x64-windows-rel\\CMakeFiles\\CMakeScratch\\TryCompile-nogfzz\\CheckIncludeFile.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --msvc-ver=1951 --intdir=CMakeFiles\\cmTC_3d343.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_3d343.dir\\CheckIncludeFile.c.obj  /out:cmTC_3d343.exe /implib:cmTC_3d343.lib /pdb:cmTC_3d343.pdb /version:0.0 /machine:x64 /nologo /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
   -
@@ -6370,8 +6370,8 @@ events:
     checks:
       - "Performing Test HAVE_MFAPI_H"
     directories:
-      source: "E:/\u500b\u4eba\u7528/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-39e4tp"
-      binary: "E:/\u500b\u4eba\u7528/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-39e4tp"
+      source: "E:/\u500b\u4eba\u7528/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-ea101z"
+      binary: "E:/\u500b\u4eba\u7528/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-ea101z"
     cmakeVariables:
       CMAKE_CXX_STDLIB_MODULES_JSON: ""
       CMAKE_C_FLAGS: " /nologo /DWIN32 /D_WINDOWS /utf-8 /MP "
@@ -6402,11 +6402,11 @@ events:
       variable: "HAVE_MFAPI_H"
       cached: true
       stdout: |
-        Change Dir: 'E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-39e4tp'
+        Change Dir: 'E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-rel/CMakeFiles/CMakeScratch/TryCompile-ea101z'
         
-        Run Build Command(s): C:\\Users\\kengo\\AppData\\Local\\vcpkg\\downloads\\tools\\ninja-1.13.2-windows\\ninja.exe -v cmTC_6f7e2
-        [1/2] C:\\PROGRA~1\\MIB055~1\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\cl.exe  /nologo -DHAVE_MFAPI_H -D_MBCS  /nologo /DWIN32 /D_WINDOWS /utf-8 /MP   -D_GNU_SOURCE=1 /MDd /Z7 /Ob0 /Od /RTC1  -MDd /showIncludes /FoCMakeFiles\\cmTC_6f7e2.dir\\src.c.obj /FdCMakeFiles\\cmTC_6f7e2.dir\\ /FS -c E:\\個人用\\SDL\\SDLTest\\build\\vcpkg_installed\\vcpkg\\blds\\sdl3\\x64-windows-rel\\CMakeFiles\\CMakeScratch\\TryCompile-39e4tp\\src.c
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --msvc-ver=1951 --intdir=CMakeFiles\\cmTC_6f7e2.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_6f7e2.dir\\src.c.obj  /out:cmTC_6f7e2.exe /implib:cmTC_6f7e2.lib /pdb:cmTC_6f7e2.pdb /version:0.0 /machine:x64 /nologo /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): C:\\Users\\kengo\\AppData\\Local\\vcpkg\\downloads\\tools\\ninja-1.13.2-windows\\ninja.exe -v cmTC_ea112
+        [1/2] C:\\PROGRA~1\\MIB055~1\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\cl.exe  /nologo -DHAVE_MFAPI_H -D_MBCS  /nologo /DWIN32 /D_WINDOWS /utf-8 /MP   -D_GNU_SOURCE=1 /MDd /Z7 /Ob0 /Od /RTC1  -MDd /showIncludes /FoCMakeFiles\\cmTC_ea112.dir\\src.c.obj /FdCMakeFiles\\cmTC_ea112.dir\\ /FS -c E:\\個人用\\SDL\\SDLTest\\build\\vcpkg_installed\\vcpkg\\blds\\sdl3\\x64-windows-rel\\CMakeFiles\\CMakeScratch\\TryCompile-ea101z\\src.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --msvc-ver=1951 --intdir=CMakeFiles\\cmTC_ea112.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\18\\COMMUN~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_ea112.dir\\src.c.obj  /out:cmTC_ea112.exe /implib:cmTC_ea112.lib /pdb:cmTC_ea112.pdb /version:0.0 /machine:x64 /nologo /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
 ...

@@ -9,7 +9,7 @@ class Texture
 public:
 	explicit Texture(const std::filesystem::path& path);
 	~Texture();
-
+	
 	SDL_Texture* Get() const;
 
 private:

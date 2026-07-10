@@ -1,15 +1,18 @@
 #pragma once
 
 #include "Framework/Game.h"
+#include "Framework/Rect.h"
 
 class TestGame : public Game
 {
+public:
+    TestGame();
+
 protected:
     void Initialize() override;
     void Update() override;
     void Draw() override;
 
 private:
-    float m_x = 100.0f;
-    float m_y = 100.0f;
+    Rect m_rect;
 };

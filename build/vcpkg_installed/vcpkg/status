@@ -2,14 +2,14 @@ Package: vcpkg-cmake-config
 Version: 2024-05-23
 Architecture: x64-windows
 Multi-Arch: same
-Abi: a9b99f219dbfa771526a1af9dfa35bb687b75d152cb23af4e5b834713ca7e163
+Abi: 860b72e5e2dba114fd52454424cd7654cac76b7407435c8592565c9a3b3d878d
 Status: install ok installed
 
 Package: vcpkg-cmake
 Version: 2024-04-23
 Architecture: x64-windows
 Multi-Arch: same
-Abi: b0e39f8148376aa382d2fb9ddbe3c162927c74ef53087c095d19fdf7bd0fe262
+Abi: 34dbd6a0d4151dfa9a8e67b08554b1c6e9448206c4954cfc31ec2ffc26c0f6ef
 Status: install ok installed
 
 Package: sdl3
@@ -17,7 +17,90 @@ Version: 3.4.0
 Depends: vcpkg-cmake, vcpkg-cmake-config
 Architecture: x64-windows
 Multi-Arch: same
-Abi: 516135957a0eff934b65c607b1e04e7cda7b838cd698ad36c863c263e44826a4
+Abi: dca3ecad4309947343744efbc9b634664402fe6a26b987ad5735227511d6bbfb
 Description: Simple DirectMedia Layer is a cross-platform development library designed to provide low level access to audio, keyboard, mouse, joystick, and graphics hardware via OpenGL and Direct3D.
 Status: install ok installed
+
+Package: sdl3-image
+Version: 3.4.0
+Depends: sdl3, vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 9aae620481e70063107f9a5aadee1aafed09f8b9ff39a6168cb051e405bc9eb4
+Description: SDL_image is an image file loading library. It loads images as SDL surfaces and textures, and supports the following formats: BMP, GIF, JPEG, LBM, PCX, PNG, PNM, TGA, TIFF, WEBP, XCF, XPM, XV
+Status: install ok installed
+
+Package: zlib
+Version: 1.3.1
+Depends: vcpkg-cmake
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 93e4e35f62b9171b8540da89b6fbd145fe308b3385707fcd0e85d82023bdc2c3
+Description: A compression library
+Status: install ok installed
+
+Package: libpng
+Version: 1.6.55
+Depends: vcpkg-cmake, vcpkg-cmake-config, zlib
+Architecture: x64-windows
+Multi-Arch: same
+Abi: e3cc77cbe5794a0a9b106e1dc5eb2617a8f8f10e6ab16404d1de2b3fe5e5987c
+Description: libpng is a library implementing an interface for reading and writing PNG (Portable Network Graphics) format files
+Status: install ok installed
+
+Package: sdl3-image
+Feature: png
+Depends: libpng
+Architecture: x64-windows
+Multi-Arch: same
+Description: Support for PNG image format
+Status: install ok installed
+
+Package: libwebp
+Version: 1.6.0
+Port-Version: 2
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: ae73ed20228fc7b754428a3d77b1ec808b4934aea83da4dffcf1519ee9f0fbb9
+Description: WebP codec: library to encode and decode images in WebP format
+Default-Features: libwebpmux, nearlossless, simd
+Status: purge ok not-installed
+
+Package: libwebp
+Feature: libwebpmux
+Architecture: x64-windows
+Multi-Arch: same
+Description: Build the libwebpmux library
+Status: purge ok not-installed
+
+Package: libwebp
+Feature: nearlossless
+Architecture: x64-windows
+Multi-Arch: same
+Description: Enable near-lossless encoding
+Status: purge ok not-installed
+
+Package: libwebp
+Feature: simd
+Architecture: x64-windows
+Multi-Arch: same
+Description: Enable any SIMD optimization.
+Status: purge ok not-installed
+
+Package: libwebp
+Feature: unicode
+Architecture: x64-windows
+Multi-Arch: same
+Description: Build Unicode executables. (Adds definition UNICODE and _UNICODE)
+Status: purge ok not-installed
+
+Package: liblzma
+Version: 5.8.2
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 284ef0a9944355d30ef9cf949947e560b4aff006ae283bbb6cf0f7b9714dca30
+Description: Compression library with an API similar to that of zlib.
+Status: purge ok not-installed
 

@@ -1,10 +1,23 @@
 #include "TestGame.h"
 
 #include "Framework/Graphics.h"
+#include "Framework/Texture.h"
+#include "Framework/ResourceManager.h"
 #include "Framework/Input.h"
+#include "Framework/Mouse.h"
+#include "Framework/Rect.h"
+#include "Framework/Color.h"
+
+TestGame::TestGame()
+    : m_rect(100, 100, 100, 100)
+{
+
+}
 
 void TestGame::Initialize()
-{}
+{
+    ResourceManager<Texture>::Register("S", "./S.png");
+}
 
 void TestGame::Update()
 {
@@ -12,22 +25,22 @@ void TestGame::Update()
 
     if (Input::GetKey(KeyCode::Left))
     {
-        m_x -= Speed;
+        m_rect.x -= Speed;
     }
 
     if (Input::GetKey(KeyCode::Right))
     {
-        m_x += Speed;
+        m_rect.x += Speed;
     }
 
     if (Input::GetKey(KeyCode::Up))
     {
-        m_y -= Speed;
+        m_rect.y -= Speed;
     }
 
     if (Input::GetKey(KeyCode::Down))
     {
-        m_y += Speed;
+        m_rect.y += Speed;
     }
 
     if (Input::GetKeyDown(KeyCode::Escape))
@@ -38,10 +51,6 @@ void TestGame::Update()
 
 void TestGame::Draw()
 {
-    Graphics::DrawRect(
-        m_x,
-        m_y,
-        100,
-        100
-    );
+    Graphics::DrawRect(m_rect, Colors::Blue);
+    Graphics::DrawTexture(ResourceManager<Texture>::Get("S"), Rect{Mouse::GetPos().x, Mouse::GetPos().y, m_rect.width, m_rect.height});
 }

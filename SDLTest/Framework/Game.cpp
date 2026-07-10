@@ -3,9 +3,12 @@
 #include "Game.h"
 #include "Graphics.h"
 #include "Input.h"
+#include "Mouse.h"
+#include "Time.h"
 
 Game::Game()
 	: m_isRunning(true)
+	, m_window("Atomic", 1280, 720)
 {
 	SDL_Init(SDL_INIT_VIDEO);
 }
@@ -13,11 +16,14 @@ Game::Game()
 void Game::Run()
 {
 	Initialize();
+	Graphics::Initialize(m_window.Get());
 
 	while (m_isRunning)
 	{
 		ProcessEvents();
+		Time::Update();
 		Input::Update();
+		Mouse::Update();
 		Update();
 		Graphics::BeginFrame();
 		Draw();
@@ -25,6 +31,8 @@ void Game::Run()
 	}
 
 	Finalize();
+	Graphics::Finalize();
+	SDL_Quit();
 
 }
 
