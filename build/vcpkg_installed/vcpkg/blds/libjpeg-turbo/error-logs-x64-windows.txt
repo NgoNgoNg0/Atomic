@@ -1,1 +1,0 @@
-E:\個人用\SDL\SDLTest\build\vcpkg_installed\vcpkg\blds\libjpeg-turbo\install-x64-windows-dbg-out.log

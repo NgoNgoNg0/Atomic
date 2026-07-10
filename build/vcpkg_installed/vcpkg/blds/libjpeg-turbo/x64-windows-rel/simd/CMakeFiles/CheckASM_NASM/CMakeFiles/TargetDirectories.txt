@@ -1,2 +1,0 @@
-E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/libjpeg-turbo/x64-windows-rel/simd/CMakeFiles/CheckASM_NASM/CMakeFiles/edit_cache.dir
-E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/libjpeg-turbo/x64-windows-rel/simd/CMakeFiles/CheckASM_NASM/CMakeFiles/rebuild_cache.dir
