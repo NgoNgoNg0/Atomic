@@ -1,65 +1,80 @@
 #pragma once
-#include "Loader.h"
 
+#include <functional>
 #include <memory>
 #include <string>
+#include <tuple>
 #include <unordered_map>
-#include <filesystem>
+#include <utility>
 #include <stdexcept>
-
-template<class T>
-struct Loader;
 
 template<class T>
 class ResourceManager
 {
 public:
-	static void Register(const std::string& name, const std::filesystem::path& path)
-	{
-		if (m_resourcePaths.contains(name))
-		{
-			throw std::runtime_error("Resource already registered: " + name);
-		}
+    template<class... Args>
+    static void Register(const std::string& name, Args&&... args)
+    {
+        if (m_factories.contains(name))
+        {
+            throw std::runtime_error("Resource already registered: " + name);
+        }
 
-		m_resourcePaths.emplace(name, path);
-	}
+        auto tuple = std::make_tuple(std::forward<Args>(args)...);
 
-	static T& Get(const std::string& name)
-	{
-		auto it = m_resources.find(name);
-		if (it != m_resources.end())
-		{
-			return *it->second;
-		}
+        m_factories.emplace(
+            name,
+            [tuple = std::move(tuple)]() mutable
+            {
+                return std::apply(
+                    [](auto&&... args)
+                    {
+                        return std::make_unique<T>(
+                            std::forward<decltype(args)>(args)...
+                        );
+                    },
+                    std::move(tuple)
+                );
+            });
+    }
 
-		auto pathIt = m_resourcePaths.find(name);
-		if (pathIt == m_resourcePaths.end())
-		{
-			throw std::runtime_error("Resource not found: " + name);
-		}
+    static T& Get(const std::string& name)
+    {
+        if (auto it = m_resources.find(name); it != m_resources.end())
+        {
+            return *it->second;
+        }
 
-		std::unique_ptr<T> resource = Loader<T>::Load(pathIt->second);
+        auto it = m_factories.find(name);
 
-		T& ref = *resource;
+        if (it == m_factories.end())
+        {
+            throw std::runtime_error("Resource not registered: " + name);
+        }
 
-		m_resources.emplace(name, std::move(resource));
+        auto resource = it->second();
 
-		return ref;
-	}
+        T& ref = *resource;
 
-	static void Unload(const std::string& name)
-	{
-		m_resources.erase(name);
-	}
+        m_resources.emplace(name, std::move(resource));
 
-	static void Clear()
-	{
-		m_resources.clear();
-		m_resourcePaths.clear();
-	}
+        return ref;
+    }
+
+    static void Unload(const std::string& name)
+    {
+        m_resources.erase(name);
+    }
+
+    static void Clear()
+    {
+        m_resources.clear();
+        m_factories.clear();
+    }
 
 private:
-	inline static std::unordered_map<std::string, std::filesystem::path> m_resourcePaths;
-	inline static std::unordered_map<std::string, std::unique_ptr<T>> m_resources;
+    using Factory = std::function<std::unique_ptr<T>()>;
 
+    inline static std::unordered_map<std::string, Factory> m_factories;
+    inline static std::unordered_map<std::string, std::unique_ptr<T>> m_resources;
 };

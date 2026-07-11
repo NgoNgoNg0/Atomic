@@ -3,6 +3,8 @@
 #include "Rect.h"
 #include "Color.h"
 #include "Texture.h"
+#include "Font.h"
+#include "Vector2.h"
 
 #include <SDL3/SDL.h>
 
@@ -15,6 +17,7 @@ public:
 	static void EndFrame();
 	static void DrawRect(Rect rect, Color color);
 	static void DrawTexture(const Texture& texture, Rect rect);
+	static void DrawText(const Font& font, const std::string& text, Vector2 pos, Color color);
 	// static void DrawTexture(TextureHandle texture, float x, float y);
 
 	static SDL_Renderer* GetRenderer();

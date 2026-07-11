@@ -2,6 +2,7 @@
 
 #include "Framework/Graphics.h"
 #include "Framework/Texture.h"
+#include "Framework/Font.h"
 #include "Framework/ResourceManager.h"
 #include "Framework/Input.h"
 #include "Framework/Mouse.h"
@@ -16,7 +17,8 @@ TestGame::TestGame()
 
 void TestGame::Initialize()
 {
-    ResourceManager<Texture>::Register("S", "./S.png");
+    ResourceManager<Texture>::Register("S", "./Assets/Image/S.png");
+    ResourceManager<Font>::Register("Default", "Assets/Fonts/HGRPP1.TTC", 32);
 }
 
 void TestGame::Update()
@@ -53,4 +55,5 @@ void TestGame::Draw()
 {
     Graphics::DrawRect(m_rect, Colors::Blue);
     Graphics::DrawTexture(ResourceManager<Texture>::Get("S"), Rect{Mouse::GetPos().x, Mouse::GetPos().y, m_rect.width, m_rect.height});
+    Graphics::DrawText(ResourceManager<Font>::Get("Default"), "こんにちは", Vector2{ 100, 100 }, Colors::Green);
 }

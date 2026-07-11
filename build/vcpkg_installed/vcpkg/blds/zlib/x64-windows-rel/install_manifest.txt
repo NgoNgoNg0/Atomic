@@ -1,0 +1,4 @@
+E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/pkgs/zlib_x64-windows/lib/zlib.lib
+E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/pkgs/zlib_x64-windows/bin/zlib1.dll
+E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/pkgs/zlib_x64-windows/include/zconf.h
+E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/pkgs/zlib_x64-windows/include/zlib.h

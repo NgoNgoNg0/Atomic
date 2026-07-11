@@ -1,0 +1,9 @@
+E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/brotli/x64-windows-rel/CMakeFiles/brotlicommon.dir
+E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/brotli/x64-windows-rel/CMakeFiles/brotlidec.dir
+E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/brotli/x64-windows-rel/CMakeFiles/brotlienc.dir
+E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/brotli/x64-windows-rel/CMakeFiles/brotli.dir
+E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/brotli/x64-windows-rel/CMakeFiles/edit_cache.dir
+E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/brotli/x64-windows-rel/CMakeFiles/rebuild_cache.dir
+E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/brotli/x64-windows-rel/CMakeFiles/list_install_components.dir
+E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/brotli/x64-windows-rel/CMakeFiles/install.dir
+E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/brotli/x64-windows-rel/CMakeFiles/install/local.dir

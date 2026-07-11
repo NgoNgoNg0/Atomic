@@ -1,5 +1,6 @@
 ﻿find_package(SDL3 CONFIG REQUIRED)
 find_package(SDL3_image CONFIG REQUIRED)
+find_package(SDL3_ttf CONFIG REQUIRED)
 
 add_executable(SDLTest
     "Main.cpp"
@@ -19,12 +20,19 @@ add_executable(SDLTest
     "Framework/Rect.h"
     "Framework/Color.h"
     "Framework/ResourceManager.h"
- "Framework/Loader.h" "Framework/Mouse.cpp" "Framework/Mouse.h" "Framework/Vector2.h" "Framework/Time.cpp" "Framework/Time.h")
+ "Framework/Loader.h" "Framework/Mouse.cpp" "Framework/Mouse.h" "Framework/Vector2.h" "Framework/Time.cpp" "Framework/Time.h" "Framework/Font.cpp" "Framework/Font.h")
 
 target_link_libraries(SDLTest
     PRIVATE
         SDL3::SDL3
         SDL3_image::SDL3_image
+        SDL3_ttf::SDL3_ttf
+)
+
+add_custom_command(TARGET SDLTest POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -E copy_directory
+        ${CMAKE_SOURCE_DIR}/Assets
+        $<TARGET_FILE_DIR:SDLTest>/Assets
 )
 
 if (CMAKE_VERSION VERSION_GREATER 3.12)

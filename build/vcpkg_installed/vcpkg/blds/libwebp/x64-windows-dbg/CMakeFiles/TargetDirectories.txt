@@ -1,0 +1,16 @@
+E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/libwebp/x64-windows-dbg/CMakeFiles/sharpyuv.dir
+E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/libwebp/x64-windows-dbg/CMakeFiles/webpdecode.dir
+E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/libwebp/x64-windows-dbg/CMakeFiles/webpdspdecode.dir
+E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/libwebp/x64-windows-dbg/CMakeFiles/webputilsdecode.dir
+E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/libwebp/x64-windows-dbg/CMakeFiles/webpdecoder.dir
+E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/libwebp/x64-windows-dbg/CMakeFiles/webpencode.dir
+E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/libwebp/x64-windows-dbg/CMakeFiles/webpdsp.dir
+E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/libwebp/x64-windows-dbg/CMakeFiles/webputils.dir
+E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/libwebp/x64-windows-dbg/CMakeFiles/webp.dir
+E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/libwebp/x64-windows-dbg/CMakeFiles/webpdemux.dir
+E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/libwebp/x64-windows-dbg/CMakeFiles/libwebpmux.dir
+E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/libwebp/x64-windows-dbg/CMakeFiles/edit_cache.dir
+E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/libwebp/x64-windows-dbg/CMakeFiles/rebuild_cache.dir
+E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/libwebp/x64-windows-dbg/CMakeFiles/list_install_components.dir
+E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/libwebp/x64-windows-dbg/CMakeFiles/install.dir
+E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/blds/libwebp/x64-windows-dbg/CMakeFiles/install/local.dir

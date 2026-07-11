@@ -1,0 +1,17 @@
+E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/pkgs/brotli_x64-windows/debug/tools/brotli/brotli.exe
+E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/pkgs/brotli_x64-windows/debug/lib/brotlienc.lib
+E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/pkgs/brotli_x64-windows/debug/bin/brotlienc.dll
+E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/pkgs/brotli_x64-windows/debug/lib/brotlidec.lib
+E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/pkgs/brotli_x64-windows/debug/bin/brotlidec.dll
+E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/pkgs/brotli_x64-windows/debug/lib/brotlicommon.lib
+E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/pkgs/brotli_x64-windows/debug/bin/brotlicommon.dll
+E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/pkgs/brotli_x64-windows/debug/share/unofficial-brotli/unofficial-brotli-config.cmake
+E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/pkgs/brotli_x64-windows/debug/share/unofficial-brotli/unofficial-brotli-config-debug.cmake
+E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/pkgs/brotli_x64-windows/debug/lib/pkgconfig/libbrotlicommon.pc
+E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/pkgs/brotli_x64-windows/debug/lib/pkgconfig/libbrotlidec.pc
+E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/pkgs/brotli_x64-windows/debug/lib/pkgconfig/libbrotlienc.pc
+E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/pkgs/brotli_x64-windows/debug/share/man/man1/brotli.1
+E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/pkgs/brotli_x64-windows/debug/share/man/man3/constants.h.3
+E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/pkgs/brotli_x64-windows/debug/share/man/man3/decode.h.3
+E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/pkgs/brotli_x64-windows/debug/share/man/man3/encode.h.3
+E:/個人用/SDL/SDLTest/build/vcpkg_installed/vcpkg/pkgs/brotli_x64-windows/debug/share/man/man3/types.h.3

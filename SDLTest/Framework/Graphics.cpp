@@ -1,8 +1,12 @@
 #include "Graphics.h"
 #include "Rect.h"
 #include "Color.h"
+#include "Font.h"
+#include "Vector2.h"
 
 #include <SDL3/SDL.h>
+#include <SDL3_image/SDL_image.h>
+#include <SDL3_ttf/SDL_ttf.h>
 
 bool Graphics::Initialize(SDL_Window* window)
 {
@@ -59,6 +63,45 @@ void Graphics::DrawTexture(const Texture& texture, Rect rect)
 	};
 
 	SDL_RenderTexture(m_renderer, texture.Get(), nullptr, &sdlRect);
+}
+
+void Graphics::DrawText(const Font& font, const std::string& text, Vector2 pos, Color color)
+{
+	SDL_Color sdlColor
+	{
+		color.r,
+		color.g,
+		color.b,
+		color.a
+	};
+
+	SDL_Surface* surface = TTF_RenderText_Blended(font.Get(), text.c_str(), text.length(), sdlColor);
+
+	if (!surface)
+	{
+		return;
+	}
+
+	SDL_Texture* texture =SDL_CreateTextureFromSurface(m_renderer, surface);
+
+	if (!texture)
+	{
+		SDL_DestroySurface(surface);
+		return;
+	}
+
+	SDL_FRect dst
+	{
+		pos.x,
+		pos.y,
+		static_cast<float>(surface->w),
+		static_cast<float>(surface->h)
+	};
+
+	SDL_RenderTexture(m_renderer, texture, nullptr, &dst);
+
+	SDL_DestroyTexture(texture);
+	SDL_DestroySurface(surface);
 }
 
 SDL_Renderer* Graphics::GetRenderer()

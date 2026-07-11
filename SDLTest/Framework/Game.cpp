@@ -1,4 +1,5 @@
 #include <SDL3/SDL.h>
+#include <SDL3_ttf/SDL_ttf.h>
 
 #include "Game.h"
 #include "Graphics.h"
@@ -7,10 +8,12 @@
 #include "Time.h"
 
 Game::Game()
-	: m_isRunning(true)
+	: init(SDL_Init(SDL_INIT_VIDEO))
+	, m_isRunning(true)
 	, m_window("Atomic", 1280, 720)
+	, m_targetFPS(120)
 {
-	SDL_Init(SDL_INIT_VIDEO);
+	TTF_Init();
 }
 
 void Game::Run()
@@ -20,6 +23,7 @@ void Game::Run()
 
 	while (m_isRunning)
 	{
+		Uint64 frameStart = SDL_GetPerformanceCounter();
 		ProcessEvents();
 		Time::Update();
 		Input::Update();
@@ -28,6 +32,7 @@ void Game::Run()
 		Graphics::BeginFrame();
 		Draw();
 		Graphics::EndFrame();
+		WaitForNextFrame(frameStart);
 	}
 
 	Finalize();
@@ -53,4 +58,32 @@ void Game::ProcessEvents()
 		}
 	}
 
+}
+
+void Game::WaitForNextFrame(Uint64 frameStart)
+{
+	const Uint64 frequency = SDL_GetPerformanceFrequency();
+
+	const double targetTime = 1.0 / static_cast<double>(m_targetFPS);
+
+	while (true)
+	{
+		Uint64 current = SDL_GetPerformanceCounter();
+
+		double elapsed =
+			static_cast<double>(current - frameStart) /
+			static_cast<double>(frequency);
+
+		if (elapsed >= targetTime)
+		{
+			break;
+		}
+
+		double remain = targetTime - elapsed;
+
+		if (remain > 0.002)
+		{
+			SDL_Delay(1);
+		}
+	}
 }
