@@ -3,13 +3,13 @@
   "spdxVersion": "SPDX-2.2",
   "dataLicense": "CC0-1.0",
   "SPDXID": "SPDXRef-DOCUMENT",
-  "documentNamespace": "https://spdx.org/spdxdocs/sdl3-image-x64-windows-3.4.0-2ef97335-da69-406a-8056-77ffff39cb01",
-  "name": "sdl3-image:x64-windows@3.4.0 9aae620481e70063107f9a5aadee1aafed09f8b9ff39a6168cb051e405bc9eb4",
+  "documentNamespace": "https://spdx.org/spdxdocs/sdl3-image-x64-windows-3.4.4#1-70206c6b-7e0e-4fb9-9634-cd6c4efcdf21",
+  "name": "sdl3-image:x64-windows@3.4.4#1 d29f1114e6fe28d7d1041e40ecb92904274e6a30b76ffe9f416e84270acfe87f",
   "creationInfo": {
     "creators": [
       "Tool: vcpkg-2026-04-08-e0612b42ce44e55a0e630f2ee9d3c533a63d8bc1"
     ],
-    "created": "2026-07-05T07:57:26Z"
+    "created": "2026-07-12T05:41:18Z"
   },
   "relationships": [
     {
@@ -142,19 +142,19 @@
     {
       "name": "sdl3-image",
       "SPDXID": "SPDXRef-port",
-      "versionInfo": "3.4.0",
-      "downloadLocation": "git+https://github.com/microsoft/vcpkg@03ff42d864ca8e4dc391835a5a4819b8178c403c",
+      "versionInfo": "3.4.4#1",
+      "downloadLocation": "git+https://github.com/microsoft/vcpkg@9b42d5467aa2899a40271972eb817d0da82eab05",
       "homepage": "https://github.com/libsdl-org/SDL_image",
       "licenseConcluded": "Zlib",
       "licenseDeclared": "NOASSERTION",
       "copyrightText": "NOASSERTION",
-      "description": "SDL_image is an image file loading library. It loads images as SDL surfaces and textures, and supports the following formats: BMP, GIF, JPEG, LBM, PCX, PNG, PNM, TGA, TIFF, WEBP, XCF, XPM, XV",
+      "description": "SDL_image is an image file loading library. It loads images as SDL surfaces and textures, and supports the following formats: AVIF, BMP, GIF, JPEG, JPEG XL, LBM, PCX, PNG, PNM, TGA, TIFF, WEBP, XCF, XPM, XV",
       "comment": "This is the port (recipe) consumed by vcpkg."
     },
     {
       "name": "sdl3-image:x64-windows",
       "SPDXID": "SPDXRef-binary",
-      "versionInfo": "9aae620481e70063107f9a5aadee1aafed09f8b9ff39a6168cb051e405bc9eb4",
+      "versionInfo": "d29f1114e6fe28d7d1041e40ecb92904274e6a30b76ffe9f416e84270acfe87f",
       "downloadLocation": "NONE",
       "licenseConcluded": "Zlib",
       "licenseDeclared": "NOASSERTION",
@@ -164,14 +164,14 @@
     {
       "SPDXID": "SPDXRef-resource-0",
       "name": "libsdl-org/SDL_image",
-      "downloadLocation": "git+https://github.com/libsdl-org/SDL_image@release-3.4.0",
+      "downloadLocation": "git+https://github.com/libsdl-org/SDL_image@release-3.4.4",
       "licenseConcluded": "NOASSERTION",
       "licenseDeclared": "NOASSERTION",
       "copyrightText": "NOASSERTION",
       "checksums": [
         {
           "algorithm": "SHA512",
-          "checksumValue": "3e98854f92b2fbb3489408b413ce2e0cfbb3e3eea58fa6e7037948a9fa7bf6bf5af38c4087285d4b7340b1115699c2c4b9626ce65a3e3b449bd5d4ec2078c957"
+          "checksumValue": "a20269e064e68dd892084d8d6d6f3d5d44a6a75994808a1579ed7deeedc22c4230ec982d1166a0b85aca0b9a3625ac84e6fe9093dccebb78bf0b7cc01bc6c711"
         }
       ]
     }
@@ -207,7 +207,7 @@
       "checksums": [
         {
           "algorithm": "SHA256",
-          "checksumValue": "a71a4931b058d8025cd4427806e1eae92cabfe97a3227ec924751a6f2d13b1bf"
+          "checksumValue": "7c416681f554222f1f2b71deee6cdde2e0bfd80d7d8a61ebcec9341bbce0e001"
         }
       ],
       "licenseConcluded": "NOASSERTION",
@@ -231,7 +231,7 @@
       "checksums": [
         {
           "algorithm": "SHA256",
-          "checksumValue": "08157d27c8c64d281c8cd1eeb92ffd5269c269c62b97eb08718b2c844104782d"
+          "checksumValue": "8b7c4d1f9b2b5a46ccd36c9f30135ce8dce8d3c40823fe0cbc45f4221309c134"
         }
       ],
       "licenseConcluded": "NOASSERTION",
@@ -255,7 +255,7 @@
       "checksums": [
         {
           "algorithm": "SHA256",
-          "checksumValue": "a379540db3412789e8bce36efa1fcbd96d2b1d4ee55a0a658fc6d1429a5a1d85"
+          "checksumValue": "b59260bfa5089875ed91662faab3c77192f246a03684be37e7311381e6cb45f5"
         }
       ],
       "licenseConcluded": "NOASSERTION",
@@ -267,7 +267,7 @@
       "checksums": [
         {
           "algorithm": "SHA256",
-          "checksumValue": "3a7225706e55bb54a18747568e3f5eb9141f61477becd423c295213fe2aa55ac"
+          "checksumValue": "7b2610d1a4cab0d6bdf35d59091a0d4f8ec5fc49540d8e66cb7d9e50c9014576"
         }
       ],
       "licenseConcluded": "NOASSERTION",
@@ -279,7 +279,7 @@
       "checksums": [
         {
           "algorithm": "SHA256",
-          "checksumValue": "5809d28fca206fb115887a1251c18e73982e333ca9cf1d322a6e3d084a5002df"
+          "checksumValue": "1c60f3c2d8df3a7c3ca75d4b8fcefd2711bdb89fb127578fea08e61251be1e6d"
         }
       ],
       "licenseConcluded": "NOASSERTION",
@@ -303,7 +303,7 @@
       "checksums": [
         {
           "algorithm": "SHA256",
-          "checksumValue": "c53f922e3dc3588470b7d34fa0cb6aa9274ed62e7846c95c84fa9a1e45f80e81"
+          "checksumValue": "5cee166eb8e6387c67c3de11ee92033ea2c0670b9ee51909cbdc57dd030606ac"
         }
       ],
       "licenseConcluded": "NOASSERTION",
@@ -315,7 +315,7 @@
       "checksums": [
         {
           "algorithm": "SHA256",
-          "checksumValue": "f6a69e1c2dfec76e9cc7ac689724cd5337037e294ff26a48b746ff3f15f6d763"
+          "checksumValue": "21753e2fb74539401e471cf6effb173fbaaf8e1b231002be1630932fb364ba02"
         }
       ],
       "licenseConcluded": "NOASSERTION",
@@ -327,7 +327,7 @@
       "checksums": [
         {
           "algorithm": "SHA256",
-          "checksumValue": "872de7da5b26e2a168c12227442e86c80033acd5795e3aafa7bf3e61fe10b0b9"
+          "checksumValue": "4a608ea48ea611833e43dda9b8b01d2ce077f7ae1611cdb0683a4cfa41125e32"
         }
       ],
       "licenseConcluded": "NOASSERTION",
@@ -339,7 +339,7 @@
       "checksums": [
         {
           "algorithm": "SHA256",
-          "checksumValue": "fb7c1bfce8dbe5057b2c20b4bb63fee2edcd452c0e7e497697b44e9547e6ad51"
+          "checksumValue": "1ded639ab7a8f2b605c655034df397307f0b21dba09696bfe8a02f3404a6705c"
         }
       ],
       "licenseConcluded": "NOASSERTION",
@@ -387,7 +387,7 @@
       "checksums": [
         {
           "algorithm": "SHA256",
-          "checksumValue": "22842eefa548779c7585524fb837c171598eaf7290b763f2f8cf49d3ff623d5d"
+          "checksumValue": "2ca947817adff85c10fde04ca77cdf8d43704b6d1b7224f7c065a9f547299edf"
         }
       ],
       "licenseConcluded": "NOASSERTION",
@@ -399,7 +399,7 @@
       "checksums": [
         {
           "algorithm": "SHA256",
-          "checksumValue": "293a93b0e0682fe02988ec1f8da54d93a07dc30dfd7c06192e579d5eab50ba52"
+          "checksumValue": "a43ef3d5a0804bea828f131e52318ca6e2e7985d0afc03416afd1000e5ca9985"
         }
       ],
       "licenseConcluded": "NOASSERTION",

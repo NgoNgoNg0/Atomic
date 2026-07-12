@@ -1,4 +1,4 @@
-#line 1 "E:\\個人用\\SDL\\SDLTest\\vcpkg_installed\\vcpkg\\blds\\sdl3\\src\\ease-3.4.0-5126657c3e.clean\\src\\core\\windows\\version.rc"
+#line 1 "E:\\個人用\\SDL\\SDLTest\\vcpkg_installed\\vcpkg\\blds\\sdl3\\src\\ase-3.4.12-441a9855e8.clean\\src\\core\\windows\\version.rc"
 
 #line 1 "C:\\Program Files (x86)\\Windows Kits\\10\\include\\10.0.26100.0\\um\\winresrc.h"
 
@@ -3404,7 +3404,7 @@
 
 
 
-#line 1 "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\include\\sal.h"
+#line 1 "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\include\\sal.h"
 
 
 
@@ -3554,11 +3554,11 @@
 
 
 
-#line 151 "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\include\\sal.h"
+#line 151 "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\include\\sal.h"
 
 
 
-#line 155 "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\include\\sal.h"
+#line 155 "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\include\\sal.h"
 
 
 
@@ -3588,29 +3588,29 @@
 
 
 
-#line 185 "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\include\\sal.h"
+#line 185 "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\include\\sal.h"
 
 
-#line 188 "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\include\\sal.h"
+#line 188 "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\include\\sal.h"
 
-#line 190 "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\include\\sal.h"
+#line 190 "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\include\\sal.h"
 
 
 
 
 
-#line 196 "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\include\\sal.h"
+#line 196 "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\include\\sal.h"
 
 
 
-#line 200 "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\include\\sal.h"
+#line 200 "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\include\\sal.h"
 
 
 
 
 
 
-#line 207 "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\include\\sal.h"
+#line 207 "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\include\\sal.h"
 
 
 
@@ -3622,7 +3622,7 @@
 
 
 
-#line 219 "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\include\\sal.h"
+#line 219 "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\include\\sal.h"
 
 
 
@@ -3632,7 +3632,7 @@
 
 
 
-#line 229 "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\include\\sal.h"
+#line 229 "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\include\\sal.h"
 
 
 
@@ -4958,7 +4958,7 @@
 
 
 
-#line 1555 "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\include\\sal.h"
+#line 1555 "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\include\\sal.h"
 
 
 
@@ -4989,7 +4989,7 @@
 
 
 
-#line 1586 "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\include\\sal.h"
+#line 1586 "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\include\\sal.h"
 
 
 
@@ -5014,7 +5014,7 @@
 
 
 
-#line 1611 "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\include\\sal.h"
+#line 1611 "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\include\\sal.h"
 
 
 
@@ -5027,7 +5027,7 @@
 
 
 
-#line 1624 "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\include\\sal.h"
+#line 1624 "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\include\\sal.h"
 
 
 
@@ -5066,7 +5066,7 @@
 
 
 
-#line 1663 "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\include\\sal.h"
+#line 1663 "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\include\\sal.h"
 
 
 
@@ -5178,7 +5178,7 @@
 
 
 
-#line 1775 "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\include\\sal.h"
+#line 1775 "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\include\\sal.h"
 
 
 
@@ -5281,7 +5281,7 @@
 
 
 
-#line 1878 "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\include\\sal.h"
+#line 1878 "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\include\\sal.h"
 
 
 
@@ -5450,7 +5450,7 @@
 
 
 
-#line 2047 "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\include\\sal.h"
+#line 2047 "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\include\\sal.h"
 
 
 
@@ -5552,7 +5552,7 @@
 
 
 
-#line 2149 "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\include\\sal.h"
+#line 2149 "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\include\\sal.h"
 
 
 
@@ -5769,8 +5769,8 @@
 
 
 
-#line 2366 "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\include\\sal.h"
-#line 2367 "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\include\\sal.h"
+#line 2366 "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\include\\sal.h"
+#line 2367 "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\include\\sal.h"
 
 
 
@@ -5998,7 +5998,7 @@
 
 
 
-#line 2595 "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\include\\sal.h"
+#line 2595 "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\include\\sal.h"
     
     
     
@@ -6037,7 +6037,7 @@
     
     
 
-#line 2634 "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\include\\sal.h"
+#line 2634 "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\include\\sal.h"
 
 
 
@@ -6271,7 +6271,7 @@
 
 
 
-#line 2868 "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\include\\sal.h"
+#line 2868 "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\include\\sal.h"
 
 
 
@@ -6281,7 +6281,7 @@
 
 
 
-#line 2878 "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\include\\sal.h"
+#line 2878 "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\include\\sal.h"
 
 
 
@@ -6289,24 +6289,24 @@
     
 
 
-#line 2886 "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\include\\sal.h"
-#line 2887 "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\include\\sal.h"
+#line 2886 "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\include\\sal.h"
+#line 2887 "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\include\\sal.h"
 
 
 
 
 
 
-#line 2894 "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\include\\sal.h"
-#line 2895 "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\include\\sal.h"
+#line 2894 "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\include\\sal.h"
+#line 2895 "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\include\\sal.h"
 
 
 
 
 
 
-#line 2902 "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\include\\sal.h"
-#line 2903 "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\include\\sal.h"
+#line 2902 "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\include\\sal.h"
+#line 2903 "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\include\\sal.h"
 
 
 
@@ -6318,7 +6318,7 @@
 
 
 
-#line 2915 "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\include\\sal.h"
+#line 2915 "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\include\\sal.h"
 
 
 
@@ -6352,7 +6352,7 @@
 
 
 
-#line 2949 "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\include\\sal.h"
+#line 2949 "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\include\\sal.h"
 
 
 
@@ -6378,7 +6378,7 @@
 
 
 
-#line 1 "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\include\\concurrencysal.h"
+#line 1 "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\include\\concurrencysal.h"
 
 
 
@@ -6669,11 +6669,11 @@
 
 
 
-#line 292 "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\include\\concurrencysal.h"
+#line 292 "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\include\\concurrencysal.h"
 
 
 
-#line 296 "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\include\\concurrencysal.h"
+#line 296 "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\include\\concurrencysal.h"
 
 
 
@@ -6766,14 +6766,14 @@
 
 
 
-#line 389 "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\include\\concurrencysal.h"
+#line 389 "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\include\\concurrencysal.h"
 
 
 
 
 
-#line 395 "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\include\\concurrencysal.h"
-#line 2975 "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\include\\sal.h"
+#line 395 "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\include\\concurrencysal.h"
+#line 2975 "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\include\\sal.h"
 #line 62 "C:\\Program Files (x86)\\Windows Kits\\10\\include\\10.0.26100.0\\shared\\SpecStrings.h"
 
 
@@ -8771,7 +8771,7 @@
 #line 42 "C:\\Program Files (x86)\\Windows Kits\\10\\include\\10.0.26100.0\\um\\winresrc.h"
 
 #line 44 "C:\\Program Files (x86)\\Windows Kits\\10\\include\\10.0.26100.0\\um\\winresrc.h"
-#line 3 "E:\\個人用\\SDL\\SDLTest\\vcpkg_installed\\vcpkg\\blds\\sdl3\\src\\ease-3.4.0-5126657c3e.clean\\src\\core\\windows\\version.rc"
+#line 3 "E:\\個人用\\SDL\\SDLTest\\vcpkg_installed\\vcpkg\\blds\\sdl3\\src\\ase-3.4.12-441a9855e8.clean\\src\\core\\windows\\version.rc"
 
 LANGUAGE 0x09, 0x01
 
@@ -8781,8 +8781,8 @@ LANGUAGE 0x09, 0x01
 
 
 1 VERSIONINFO
- FILEVERSION 3,4,0,0
- PRODUCTVERSION 3,4,0,0
+ FILEVERSION 3,4,12,0
+ PRODUCTVERSION 3,4,12,0
  FILEFLAGSMASK 0x3fL
  FILEFLAGS 0x0L
  FILEOS 0x40004L
@@ -8795,12 +8795,12 @@ BEGIN
         BEGIN
             VALUE "CompanyName", "\0"
             VALUE "FileDescription", "SDL\0"
-            VALUE "FileVersion", "3, 4, 0, 0\0"
+            VALUE "FileVersion", "3, 4, 12, 0\0"
             VALUE "InternalName", "SDL\0"
-            VALUE "LegalCopyright", "Copyright (C) 2025 Sam Lantinga\0"
+            VALUE "LegalCopyright", "Copyright (C) 2026 Sam Lantinga\0"
             VALUE "OriginalFilename", "SDL3.dll\0"
             VALUE "ProductName", "Simple DirectMedia Layer\0"
-            VALUE "ProductVersion", "3, 4, 0, 0\0"
+            VALUE "ProductVersion", "3, 4, 12, 0\0"
         END
     END
     BLOCK "VarFileInfo"

@@ -1,6 +1,7 @@
 ﻿find_package(SDL3 CONFIG REQUIRED)
 find_package(SDL3_image CONFIG REQUIRED)
 find_package(SDL3_ttf CONFIG REQUIRED)
+find_package(SDL3_mixer CONFIG REQUIRED)
 
 add_executable(SDLTest
     "Main.cpp"
@@ -20,13 +21,26 @@ add_executable(SDLTest
     "Framework/Rect.h"
     "Framework/Color.h"
     "Framework/ResourceManager.h"
- "Framework/Loader.h" "Framework/Mouse.cpp" "Framework/Mouse.h" "Framework/Vector2.h" "Framework/Time.cpp" "Framework/Time.h" "Framework/Font.cpp" "Framework/Font.h")
+     
+    "Framework/Mouse.cpp" 
+    "Framework/Mouse.h" 
+    "Framework/Vector2.h" 
+    "Framework/Time.cpp" 
+    "Framework/Time.h" 
+    "Framework/Font.cpp" 
+    "Framework/Font.h" 
+    "Framework/AudioClip.cpp" 
+    "Framework/AudioClip.h" 
+    "Framework/AudioSource.cpp" 
+    "Framework/AudioSource.h"
+ "Framework/Audio.cpp" "Framework/Audio.h" "Framework/AnimationClip.cpp" "Framework/AnimationClip.h" "Framework/Animator.cpp" "Framework/Animator.h")
 
 target_link_libraries(SDLTest
     PRIVATE
         SDL3::SDL3
         SDL3_image::SDL3_image
         SDL3_ttf::SDL3_ttf
+        SDL3_mixer::SDL3_mixer
 )
 
 add_custom_command(TARGET SDLTest POST_BUILD

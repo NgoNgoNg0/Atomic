@@ -1171,6 +1171,8 @@ events:
     search_context:
       CMAKE_PROGRAM_PATH:
         - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/tools"
+        - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/tools/brotli"
+        - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/tools/bzip2"
       CMAKE_PREFIX_PATH:
         - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows"
         - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/debug"
@@ -1678,6 +1680,8 @@ events:
     search_context:
       CMAKE_PROGRAM_PATH:
         - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/tools"
+        - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/tools/brotli"
+        - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/tools/bzip2"
       CMAKE_PREFIX_PATH:
         - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows"
         - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/debug"
@@ -2185,6 +2189,8 @@ events:
     search_context:
       CMAKE_PROGRAM_PATH:
         - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/tools"
+        - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/tools/brotli"
+        - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/tools/bzip2"
       CMAKE_PREFIX_PATH:
         - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows"
         - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/debug"
@@ -2580,6 +2586,8 @@ events:
     search_context:
       CMAKE_PROGRAM_PATH:
         - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/tools"
+        - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/tools/brotli"
+        - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/tools/bzip2"
       CMAKE_PREFIX_PATH:
         - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows"
         - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/debug"
@@ -2999,6 +3007,8 @@ events:
     search_context:
       CMAKE_PROGRAM_PATH:
         - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/tools"
+        - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/tools/brotli"
+        - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/tools/bzip2"
       CMAKE_PREFIX_PATH:
         - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows"
         - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/debug"
@@ -3394,6 +3404,8 @@ events:
     search_context:
       CMAKE_PROGRAM_PATH:
         - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/tools"
+        - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/tools/brotli"
+        - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/tools/bzip2"
       CMAKE_PREFIX_PATH:
         - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows"
         - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/debug"
@@ -3460,6 +3472,8 @@ events:
       - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/debug/sbin/"
       - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/debug/"
       - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/tools/"
+      - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/tools/brotli/"
+      - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/tools/bzip2/"
       - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/"
       - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/VC/vcpackages/"
       - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/TestWindow/"
@@ -3504,6 +3518,8 @@ events:
       - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/debug/sbin/"
       - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/debug/"
       - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/debug/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/tools/"
+      - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/debug/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/tools/brotli/"
+      - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/debug/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/tools/bzip2/"
       - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/debug/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/"
       - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/debug/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/VC/vcpackages/"
       - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/debug/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/TestWindow/"
@@ -3548,6 +3564,8 @@ events:
       - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/debug/sbin/"
       - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/debug/"
       - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/tools/"
+      - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/tools/brotli/"
+      - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/tools/bzip2/"
       - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/"
       - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/VC/vcpackages/"
       - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/TestWindow/"
@@ -3607,6 +3625,12 @@ events:
       - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/tools/rc.com"
       - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/tools/rc.exe"
       - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/tools/rc"
+      - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/tools/brotli/rc.com"
+      - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/tools/brotli/rc.exe"
+      - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/tools/brotli/rc"
+      - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/tools/bzip2/rc.com"
+      - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/tools/bzip2/rc.exe"
+      - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/tools/bzip2/rc"
       - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/rc.com"
       - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/rc.exe"
       - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/rc"
@@ -3739,6 +3763,12 @@ events:
       - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/debug/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/tools/rc.com"
       - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/debug/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/tools/rc.exe"
       - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/debug/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/tools/rc"
+      - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/debug/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/tools/brotli/rc.com"
+      - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/debug/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/tools/brotli/rc.exe"
+      - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/debug/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/tools/brotli/rc"
+      - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/debug/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/tools/bzip2/rc.com"
+      - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/debug/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/tools/bzip2/rc.exe"
+      - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/debug/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/tools/bzip2/rc"
       - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/debug/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/rc.com"
       - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/debug/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/rc.exe"
       - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/debug/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/rc"
@@ -3871,6 +3901,12 @@ events:
       - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/tools/rc.com"
       - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/tools/rc.exe"
       - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/tools/rc"
+      - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/tools/brotli/rc.com"
+      - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/tools/brotli/rc.exe"
+      - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/tools/brotli/rc"
+      - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/tools/bzip2/rc.com"
+      - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/tools/bzip2/rc.exe"
+      - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/tools/bzip2/rc"
       - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/rc.com"
       - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/rc.exe"
       - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/rc"
@@ -3900,6 +3936,8 @@ events:
     search_context:
       CMAKE_PROGRAM_PATH:
         - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/tools"
+        - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/tools/brotli"
+        - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/tools/bzip2"
       CMAKE_PREFIX_PATH:
         - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows"
         - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/debug"
@@ -4021,6 +4059,8 @@ events:
     search_context:
       CMAKE_PROGRAM_PATH:
         - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/tools"
+        - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/tools/brotli"
+        - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/tools/bzip2"
       CMAKE_PREFIX_PATH:
         - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows"
         - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/debug"
@@ -4638,6 +4678,8 @@ events:
     search_context:
       CMAKE_PROGRAM_PATH:
         - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/tools"
+        - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/tools/brotli"
+        - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/tools/bzip2"
       CMAKE_PREFIX_PATH:
         - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows"
         - "E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/x64-windows/debug"

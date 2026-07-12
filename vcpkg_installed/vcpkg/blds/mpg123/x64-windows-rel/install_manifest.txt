@@ -1,0 +1,17 @@
+E:/個人用/SDL/SDLTest/vcpkg_installed/vcpkg/pkgs/mpg123_x64-windows/lib/cmake/mpg123/targets.cmake
+E:/個人用/SDL/SDLTest/vcpkg_installed/vcpkg/pkgs/mpg123_x64-windows/lib/cmake/mpg123/targets-release.cmake
+E:/個人用/SDL/SDLTest/vcpkg_installed/vcpkg/pkgs/mpg123_x64-windows/lib/cmake/mpg123/mpg123-config.cmake
+E:/個人用/SDL/SDLTest/vcpkg_installed/vcpkg/pkgs/mpg123_x64-windows/lib/cmake/mpg123/mpg123-config-version.cmake
+E:/個人用/SDL/SDLTest/vcpkg_installed/vcpkg/pkgs/mpg123_x64-windows/lib/pkgconfig/libmpg123.pc
+E:/個人用/SDL/SDLTest/vcpkg_installed/vcpkg/pkgs/mpg123_x64-windows/lib/pkgconfig/libsyn123.pc
+E:/個人用/SDL/SDLTest/vcpkg_installed/vcpkg/pkgs/mpg123_x64-windows/lib/pkgconfig/libout123.pc
+E:/個人用/SDL/SDLTest/vcpkg_installed/vcpkg/pkgs/mpg123_x64-windows/lib/mpg123.lib
+E:/個人用/SDL/SDLTest/vcpkg_installed/vcpkg/pkgs/mpg123_x64-windows/bin/mpg123.dll
+E:/個人用/SDL/SDLTest/vcpkg_installed/vcpkg/pkgs/mpg123_x64-windows/include/mpg123.h
+E:/個人用/SDL/SDLTest/vcpkg_installed/vcpkg/pkgs/mpg123_x64-windows/include/fmt123.h
+E:/個人用/SDL/SDLTest/vcpkg_installed/vcpkg/pkgs/mpg123_x64-windows/lib/out123.lib
+E:/個人用/SDL/SDLTest/vcpkg_installed/vcpkg/pkgs/mpg123_x64-windows/bin/out123.dll
+E:/個人用/SDL/SDLTest/vcpkg_installed/vcpkg/pkgs/mpg123_x64-windows/include/out123.h
+E:/個人用/SDL/SDLTest/vcpkg_installed/vcpkg/pkgs/mpg123_x64-windows/lib/syn123.lib
+E:/個人用/SDL/SDLTest/vcpkg_installed/vcpkg/pkgs/mpg123_x64-windows/bin/syn123.dll
+E:/個人用/SDL/SDLTest/vcpkg_installed/vcpkg/pkgs/mpg123_x64-windows/include/syn123.h

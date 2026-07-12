@@ -1,0 +1,26 @@
+# ninja log v7
+49	227	8055381520000000	CMakeFiles/SDL3_mixer-shared.dir/src/decoder_drmp3.c.obj	bfa386ca2c213bfc
+87	231	8055381520000000	CMakeFiles/SDL3_mixer-shared.dir/src/decoder_opus.c.obj	d449cfa7c3f6996a
+118	233	8055381520000000	CMakeFiles/SDL3_mixer-shared.dir/src/decoder_timidity.c.obj	9d4986af46a15d27
+42	235	8055381520000000	CMakeFiles/SDL3_mixer-shared.dir/src/decoder_drflac.c.obj	3009be65a67d1088
+64	237	8055381520000000	CMakeFiles/SDL3_mixer-shared.dir/src/decoder_fluidsynth.c.obj	40602b82814a5ed3
+72	237	8055381520000000	CMakeFiles/SDL3_mixer-shared.dir/src/decoder_gme.c.obj	770dc109b735bde7
+57	238	8055381520000000	CMakeFiles/SDL3_mixer-shared.dir/src/decoder_flac.c.obj	cd1c1561433e7ffc
+136	238	8055381520000000	CMakeFiles/SDL3_mixer-shared.dir/src/decoder_vorbis.c.obj	da79a07cf961c7b7
+151	242	8055381520000000	CMakeFiles/SDL3_mixer-shared.dir/src/decoder_wavpack.c.obj	1ffb6c915fcfaedf
+159	248	8055381520000000	CMakeFiles/SDL3_mixer-shared.dir/src/decoder_xmp.c.obj	6de9925ca80c1145
+168	404	8055381520000000	CMakeFiles/SDL3_mixer-shared.dir/src/version.rc.res	af2cec5e2dc2edaf
+18	415	8055381520000000	CMakeFiles/SDL3_mixer-shared.dir/src/SDL_mixer_spatialization.c.obj	109cbd046dfd2dff
+12	434	8055381520000000	CMakeFiles/SDL3_mixer-shared.dir/src/SDL_mixer_metadata_tags.c.obj	278bef9e9ad51e23
+102	444	8055381520000000	CMakeFiles/SDL3_mixer-shared.dir/src/decoder_sinewave.c.obj	c2dabd69d10be94d
+26	446	8055381520000000	CMakeFiles/SDL3_mixer-shared.dir/src/decoder_aiff.c.obj	f9ffc1a71086c0af
+79	451	8055381520000000	CMakeFiles/SDL3_mixer-shared.dir/src/decoder_mpg123.c.obj	6b0513f76fb09087
+95	452	8055381520000000	CMakeFiles/SDL3_mixer-shared.dir/src/decoder_raw.c.obj	4417f387d09522ac
+34	453	8055381520000000	CMakeFiles/SDL3_mixer-shared.dir/src/decoder_au.c.obj	aa9ce22186a9981b
+127	456	8055381520000000	CMakeFiles/SDL3_mixer-shared.dir/src/decoder_voc.c.obj	ae2ee97d7ad80a75
+143	466	8055381520000000	CMakeFiles/SDL3_mixer-shared.dir/src/decoder_wav.c.obj	5f3ea5cb758feb34
+6	467	8055381500400000	CMakeFiles/SDL3_mixer-shared.dir/src/SDL_mixer.c.obj	74bc946ba471733c
+110	492	8055381520000000	CMakeFiles/SDL3_mixer-shared.dir/src/decoder_stb_vorbis.c.obj	c3ec71bca4e6a044
+492	775	8055381520000000	SDL3_mixer.dll	ac1a7243f91f912
+492	775	8055381520000000	SDL3_mixer.lib	ac1a7243f91f912
+775	1004	8055381520000000	CMakeFiles/install.util	efa05bdb1ba588fc

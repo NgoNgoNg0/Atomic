@@ -13,38 +13,40 @@ Abi: 34dbd6a0d4151dfa9a8e67b08554b1c6e9448206c4954cfc31ec2ffc26c0f6ef
 Status: install ok installed
 
 Package: sdl3
-Version: 3.4.0
+Version: 3.4.12
 Depends: vcpkg-cmake, vcpkg-cmake-config
 Architecture: x64-windows
 Multi-Arch: same
-Abi: dca3ecad4309947343744efbc9b634664402fe6a26b987ad5735227511d6bbfb
+Abi: 9d89e20dc4dbca8559ebdfd8169cbc70e19beb9a2210c698487f4f5ba73eda29
 Description: Simple DirectMedia Layer is a cross-platform development library designed to provide low level access to audio, keyboard, mouse, joystick, and graphics hardware via OpenGL and Direct3D.
 Status: install ok installed
 
 Package: sdl3-image
-Version: 3.4.0
+Version: 3.4.4
+Port-Version: 1
 Depends: sdl3, vcpkg-cmake, vcpkg-cmake-config
 Architecture: x64-windows
 Multi-Arch: same
-Abi: 9aae620481e70063107f9a5aadee1aafed09f8b9ff39a6168cb051e405bc9eb4
-Description: SDL_image is an image file loading library. It loads images as SDL surfaces and textures, and supports the following formats: BMP, GIF, JPEG, LBM, PCX, PNG, PNM, TGA, TIFF, WEBP, XCF, XPM, XV
+Abi: d29f1114e6fe28d7d1041e40ecb92904274e6a30b76ffe9f416e84270acfe87f
+Description: SDL_image is an image file loading library. It loads images as SDL surfaces and textures, and supports the following formats: AVIF, BMP, GIF, JPEG, JPEG XL, LBM, PCX, PNG, PNM, TGA, TIFF, WEBP, XCF, XPM, XV
 Status: install ok installed
 
 Package: zlib
-Version: 1.3.1
-Depends: vcpkg-cmake
+Version: 1.3.2
+Port-Version: 1
+Depends: vcpkg-cmake, vcpkg-cmake-config
 Architecture: x64-windows
 Multi-Arch: same
-Abi: 93e4e35f62b9171b8540da89b6fbd145fe308b3385707fcd0e85d82023bdc2c3
+Abi: 848a5c0cb54b6ba9eb0fdf3e75c632beaf9e80a3f11f6d4c376534e30ca07e78
 Description: A compression library
 Status: install ok installed
 
 Package: libpng
-Version: 1.6.55
+Version: 1.6.58
 Depends: vcpkg-cmake, vcpkg-cmake-config, zlib
 Architecture: x64-windows
 Multi-Arch: same
-Abi: e3cc77cbe5794a0a9b106e1dc5eb2617a8f8f10e6ab16404d1de2b3fe5e5987c
+Abi: ac95411ca6c84aadf046a950062dc5ecd2e6f50361bb9b71563b558dcf80d3d2
 Description: libpng is a library implementing an interface for reading and writing PNG (Portable Network Graphics) format files
 Status: install ok installed
 
@@ -84,11 +86,11 @@ Description: a generic-purpose lossless compression algorithm that compresses da
 Status: install ok installed
 
 Package: freetype
-Version: 2.13.3
+Version: 2.14.3
 Depends: vcpkg-cmake, vcpkg-cmake-config
 Architecture: x64-windows
 Multi-Arch: same
-Abi: 0a81b72ecb4ddacfa064b87fab35e2dcedea2f0f78bf51e0f5fde61276f2cc63
+Abi: 3d72146308cf75bd2118a6f46dc915a16c52e54f9148042540744d1a9bdb8cfc
 Description: A library to render fonts.
 Default-Features: brotli, bzip2, png, zlib
 Status: install ok installed
@@ -131,7 +133,51 @@ Port-Version: 1
 Depends: freetype, sdl3, vcpkg-cmake, vcpkg-cmake-config
 Architecture: x64-windows
 Multi-Arch: same
-Abi: 0f1b70fedcb09c38d8a06ef7d2fd4a20e3d366d09eee1bf3fbc481b196d2be3f
+Abi: dd2c7e6f520a8df6cb59215a17a79399806804e16a044dc1f80216c260ece122
 Description: A library for rendering TrueType fonts with SDL
+Status: install ok installed
+
+Package: yasm
+Version: 1.3.0
+Port-Version: 8
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 076c1697cb72ce3c191c7ac55cc3cfe2e2bb4b28c03b023adee4146b43e8b338
+Description: Yasm is a complete rewrite of the NASM assembler under the new BSD License.
+Default-Features: tools
+Status: install ok installed
+
+Package: yasm
+Feature: tools
+Architecture: x64-windows
+Multi-Arch: same
+Description: Build yasm tools
+Status: install ok installed
+
+Package: mpg123
+Version: 1.33.4
+Depends: vcpkg-cmake, vcpkg-cmake-config, yasm
+Architecture: x64-windows
+Multi-Arch: same
+Abi: fddb7f8dead82ae56ef00f234fa64679b438060299d1787f88cb9cd7a11024a1
+Description: mpg123 is a real time MPEG 1.0/2.0/2.5 audio player/decoder for layers 1, 2 and 3 (MPEG 1.0 layer 3 also known as MP3).
+Status: install ok installed
+
+Package: sdl3-mixer
+Version: 3.2.4
+Depends: sdl3, vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 7c4cd7545870dbac3180e836df6c5418fd00fdd61fc494c2e270c3f2799630dc
+Description: An audio mixer that supports various file formats for Simple Directmedia Layer.
+Status: install ok installed
+
+Package: sdl3-mixer
+Feature: mpg123
+Depends: mpg123
+Architecture: x64-windows
+Multi-Arch: same
+Description: Use mpg123 to play MP3 audio format.
 Status: install ok installed
 

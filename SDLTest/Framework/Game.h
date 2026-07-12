@@ -20,6 +20,7 @@ private:
 	void ProcessEvents();
 	void WaitForNextFrame(Uint64 frameStart);
 	bool init;
+	bool initAudio;
 	bool m_isRunning;
 	Window m_window;
 	int m_targetFPS;

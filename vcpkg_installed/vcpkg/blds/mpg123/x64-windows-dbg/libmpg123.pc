@@ -1,0 +1,12 @@
+prefix=E:/個人用/SDL/SDLTest/vcpkg_installed/vcpkg/pkgs/mpg123_x64-windows/debug
+exec_prefix=E:/個人用/SDL/SDLTest/vcpkg_installed/vcpkg/pkgs/mpg123_x64-windows/debug
+libdir=E:/個人用/SDL/SDLTest/vcpkg_installed/vcpkg/pkgs/mpg123_x64-windows/debug/lib
+includedir=E:/個人用/SDL/SDLTest/vcpkg_installed/vcpkg/pkgs/mpg123_x64-windows/debug/include
+
+Name: libmpg123
+Description: An optimised MPEG Audio decoder
+Requires: 
+Version: 1.33.4
+Libs: -L${libdir} -lmpg123 
+Libs.private: -lshlwapi -lshlwapi
+Cflags: -I${includedir} 

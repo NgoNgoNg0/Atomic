@@ -7,7 +7,7 @@ if(CMAKE_VERSION VERSION_LESS "2.8.12")
    message(FATAL_ERROR "CMake >= 2.8.12 required")
 endif()
 cmake_policy(PUSH)
-cmake_policy(VERSION 2.8.12...4.0)
+cmake_policy(VERSION 2.8.12...4.1)
 #----------------------------------------------------------------
 # Generated CMake target import file.
 #----------------------------------------------------------------
@@ -63,6 +63,7 @@ set_target_properties(SDL3::SDL3-shared PROPERTIES
   INTERFACE_LINK_LIBRARIES "SDL3::Headers"
   INTERFACE_SDL3_SHARED "TRUE"
   INTERFACE_SDL_VERSION "SDL3"
+  SDL_FULL_VERSION "3.4.12"
 )
 
 # Load information for each installed configuration.

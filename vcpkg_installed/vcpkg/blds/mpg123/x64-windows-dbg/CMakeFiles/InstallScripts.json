@@ -1,0 +1,13 @@
+{
+	"InstallScripts" : 
+	[
+		"E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/vcpkg/blds/mpg123/x64-windows-dbg/cmake_install.cmake",
+		"E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/vcpkg/blds/mpg123/x64-windows-dbg/src/cmake_install.cmake",
+		"E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/vcpkg/blds/mpg123/x64-windows-dbg/src/compat/cmake_install.cmake",
+		"E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/vcpkg/blds/mpg123/x64-windows-dbg/src/libmpg123/cmake_install.cmake",
+		"E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/vcpkg/blds/mpg123/x64-windows-dbg/src/libout123/cmake_install.cmake",
+		"E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/vcpkg/blds/mpg123/x64-windows-dbg/src/libout123/modules/cmake_install.cmake",
+		"E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/vcpkg/blds/mpg123/x64-windows-dbg/src/libsyn123/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

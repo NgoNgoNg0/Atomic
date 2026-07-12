@@ -1,0 +1,14 @@
+{
+	"InstallScripts" : 
+	[
+		"E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/vcpkg/blds/yasm/x64-windows-dbg/cmake_install.cmake",
+		"E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/vcpkg/blds/yasm/x64-windows-dbg/tools/cmake_install.cmake",
+		"E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/vcpkg/blds/yasm/x64-windows-dbg/tools/genmacro/cmake_install.cmake",
+		"E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/vcpkg/blds/yasm/x64-windows-dbg/tools/genperf/cmake_install.cmake",
+		"E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/vcpkg/blds/yasm/x64-windows-dbg/tools/re2c/cmake_install.cmake",
+		"E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/vcpkg/blds/yasm/x64-windows-dbg/libyasm/cmake_install.cmake",
+		"E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/vcpkg/blds/yasm/x64-windows-dbg/modules/cmake_install.cmake",
+		"E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/vcpkg/blds/yasm/x64-windows-dbg/frontends/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

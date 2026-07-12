@@ -7,6 +7,12 @@
         "png"
       ]
     },
+    {
+      "name": "sdl3-mixer",
+      "features": [
+        "mpg123"
+      ]
+    },
     "sdl3-ttf"
   ]
 }

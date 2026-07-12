@@ -1,0 +1,12 @@
+prefix=E:/個人用/SDL/SDLTest/vcpkg_installed/vcpkg/pkgs/mpg123_x64-windows
+exec_prefix=E:/個人用/SDL/SDLTest/vcpkg_installed/vcpkg/pkgs/mpg123_x64-windows
+libdir=E:/個人用/SDL/SDLTest/vcpkg_installed/vcpkg/pkgs/mpg123_x64-windows/lib
+includedir=E:/個人用/SDL/SDLTest/vcpkg_installed/vcpkg/pkgs/mpg123_x64-windows/include
+
+Name: libout123
+Description: A streaming audio output API derived from mpg123
+Requires: 
+Version: 1.33.4
+Libs: -L${libdir} -lout123 
+Libs.private:  -lshlwapi 
+Cflags: -I${includedir} 

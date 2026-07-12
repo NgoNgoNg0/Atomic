@@ -6,9 +6,11 @@
 #include "Input.h"
 #include "Mouse.h"
 #include "Time.h"
+#include "Audio.h"
 
 Game::Game()
 	: init(SDL_Init(SDL_INIT_VIDEO))
+	, initAudio(Audio::Initialize())
 	, m_isRunning(true)
 	, m_window("Atomic", 1280, 720)
 	, m_targetFPS(120)
@@ -18,8 +20,8 @@ Game::Game()
 
 void Game::Run()
 {
-	Initialize();
 	Graphics::Initialize(m_window.Get());
+	Initialize();
 
 	while (m_isRunning)
 	{
@@ -37,6 +39,7 @@ void Game::Run()
 
 	Finalize();
 	Graphics::Finalize();
+	Audio::Finalize();
 	SDL_Quit();
 
 }

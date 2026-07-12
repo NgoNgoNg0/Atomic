@@ -33,9 +33,30 @@ public:
                             std::forward<decltype(args)>(args)...
                         );
                     },
-                    std::move(tuple)
+                    tuple
                 );
             });
+    }
+
+    static void RegisterSequence(
+        const std::string& resourcePrefix,
+        const std::filesystem::path& filePrefix,
+        const std::string& extension,
+        int first,
+        int last)
+    {
+        if (first > last)
+        {
+            throw std::runtime_error("Invalid sequence range.");
+        }
+
+        for (int i = first; i <= last; ++i)
+        {
+            Register(
+                resourcePrefix + std::to_string(i),
+                filePrefix.string() + std::to_string(i) + extension
+            );
+        }
     }
 
     static T& Get(const std::string& name)

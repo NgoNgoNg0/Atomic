@@ -7,7 +7,7 @@ if(CMAKE_VERSION VERSION_LESS "3.0.0")
    message(FATAL_ERROR "CMake >= 3.0.0 required")
 endif()
 cmake_policy(PUSH)
-cmake_policy(VERSION 3.0.0...4.0)
+cmake_policy(VERSION 3.0.0...4.1)
 #----------------------------------------------------------------
 # Generated CMake target import file.
 #----------------------------------------------------------------
@@ -50,7 +50,7 @@ unset(_cmake_expected_targets)
 add_library(SDL3::Headers INTERFACE IMPORTED)
 
 set_target_properties(SDL3::Headers PROPERTIES
-  INTERFACE_INCLUDE_DIRECTORIES "E:/個人用/SDL/SDLTest/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-dbg/include-revision;E:/個人用/SDL/SDLTest/vcpkg_installed/vcpkg/blds/sdl3/src/ease-3.4.0-5126657c3e.clean/include"
+  INTERFACE_INCLUDE_DIRECTORIES "E:/個人用/SDL/SDLTest/vcpkg_installed/vcpkg/blds/sdl3/x64-windows-dbg/include-revision;E:/個人用/SDL/SDLTest/vcpkg_installed/vcpkg/blds/sdl3/src/ase-3.4.12-441a9855e8.clean/include"
 )
 
 # This file does not depend on other imported targets which have

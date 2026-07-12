@@ -1,0 +1,15 @@
+E:/個人用/SDL/SDLTest/vcpkg_installed/vcpkg/pkgs/sdl3-ttf_x64-windows/lib/SDL3_ttf.lib
+E:/個人用/SDL/SDLTest/vcpkg_installed/vcpkg/pkgs/sdl3-ttf_x64-windows/bin/SDL3_ttf.dll
+E:/個人用/SDL/SDLTest/vcpkg_installed/vcpkg/pkgs/sdl3-ttf_x64-windows/include/SDL3_ttf/SDL_textengine.h
+E:/個人用/SDL/SDLTest/vcpkg_installed/vcpkg/pkgs/sdl3-ttf_x64-windows/include/SDL3_ttf/SDL_ttf.h
+E:/個人用/SDL/SDLTest/vcpkg_installed/vcpkg/pkgs/sdl3-ttf_x64-windows/bin/SDL3_ttf.pdb
+E:/個人用/SDL/SDLTest/vcpkg_installed/vcpkg/pkgs/sdl3-ttf_x64-windows/cmake/SDL3_ttfConfig.cmake
+E:/個人用/SDL/SDLTest/vcpkg_installed/vcpkg/pkgs/sdl3-ttf_x64-windows/cmake/SDL3_ttfConfigVersion.cmake
+E:/個人用/SDL/SDLTest/vcpkg_installed/vcpkg/pkgs/sdl3-ttf_x64-windows/cmake/PkgConfigHelper.cmake
+E:/個人用/SDL/SDLTest/vcpkg_installed/vcpkg/pkgs/sdl3-ttf_x64-windows/cmake/Findharfbuzz.cmake
+E:/個人用/SDL/SDLTest/vcpkg_installed/vcpkg/pkgs/sdl3-ttf_x64-windows/cmake/Findplutosvg.cmake
+E:/個人用/SDL/SDLTest/vcpkg_installed/vcpkg/pkgs/sdl3-ttf_x64-windows/cmake/Findplutovg.cmake
+E:/個人用/SDL/SDLTest/vcpkg_installed/vcpkg/pkgs/sdl3-ttf_x64-windows/cmake/SDL3_ttf-shared-targets.cmake
+E:/個人用/SDL/SDLTest/vcpkg_installed/vcpkg/pkgs/sdl3-ttf_x64-windows/cmake/SDL3_ttf-shared-targets-release.cmake
+E:/個人用/SDL/SDLTest/vcpkg_installed/vcpkg/pkgs/sdl3-ttf_x64-windows/lib/pkgconfig/sdl3-ttf.pc
+E:/個人用/SDL/SDLTest/vcpkg_installed/vcpkg/pkgs/sdl3-ttf_x64-windows/share/licenses/SDL3_ttf/LICENSE.txt

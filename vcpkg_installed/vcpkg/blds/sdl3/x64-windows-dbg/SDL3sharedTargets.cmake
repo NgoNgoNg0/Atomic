@@ -7,7 +7,7 @@ if(CMAKE_VERSION VERSION_LESS "2.8.3")
    message(FATAL_ERROR "CMake >= 2.8.3 required")
 endif()
 cmake_policy(PUSH)
-cmake_policy(VERSION 2.8.3...4.0)
+cmake_policy(VERSION 2.8.3...4.1)
 #----------------------------------------------------------------
 # Generated CMake target import file.
 #----------------------------------------------------------------
@@ -52,10 +52,11 @@ add_library(SDL3::SDL3-shared SHARED IMPORTED)
 set_target_properties(SDL3::SDL3-shared PROPERTIES
   COMPATIBLE_INTERFACE_BOOL "SDL3_SHARED"
   COMPATIBLE_INTERFACE_STRING "SDL_VERSION"
-  INTERFACE_LINK_DEPENDS "E:/個人用/SDL/SDLTest/vcpkg_installed/vcpkg/blds/sdl3/src/ease-3.4.0-5126657c3e.clean/src/dynapi/SDL_dynapi.sym"
+  INTERFACE_LINK_DEPENDS "E:/個人用/SDL/SDLTest/vcpkg_installed/vcpkg/blds/sdl3/src/ase-3.4.12-441a9855e8.clean/src/dynapi/SDL_dynapi.sym"
   INTERFACE_LINK_LIBRARIES "SDL3::Headers"
   INTERFACE_SDL3_SHARED "TRUE"
   INTERFACE_SDL_VERSION "SDL3"
+  SDL_FULL_VERSION "3.4.12"
 )
 
 # Import target "SDL3::SDL3-shared" for configuration "Debug"

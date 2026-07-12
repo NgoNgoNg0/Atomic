@@ -1,0 +1,17 @@
+{
+	"InstallScripts" : 
+	[
+		"E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/vcpkg/blds/yasm/x64-windows-rel/cmake_install.cmake",
+		"E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/vcpkg/blds/yasm/x64-windows-rel/tools/cmake_install.cmake",
+		"E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/vcpkg/blds/yasm/x64-windows-rel/tools/genmacro/cmake_install.cmake",
+		"E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/vcpkg/blds/yasm/x64-windows-rel/tools/genperf/cmake_install.cmake",
+		"E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/vcpkg/blds/yasm/x64-windows-rel/tools/re2c/cmake_install.cmake",
+		"E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/vcpkg/blds/yasm/x64-windows-rel/libyasm/cmake_install.cmake",
+		"E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/vcpkg/blds/yasm/x64-windows-rel/modules/cmake_install.cmake",
+		"E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/vcpkg/blds/yasm/x64-windows-rel/frontends/cmake_install.cmake",
+		"E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/vcpkg/blds/yasm/x64-windows-rel/frontends/yasm/cmake_install.cmake",
+		"E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/vcpkg/blds/yasm/x64-windows-rel/frontends/tasm/cmake_install.cmake",
+		"E:/\u500b\u4eba\u7528/SDL/SDLTest/vcpkg_installed/vcpkg/blds/yasm/x64-windows-rel/frontends/vsyasm/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

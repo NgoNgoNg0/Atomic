@@ -18,7 +18,7 @@
 BUILD_SHARED_LIBS:UNINITIALIZED=ON
 
 //Path to a program.
-CMAKE_AR:FILEPATH=C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/lib.exe
+CMAKE_AR:FILEPATH=C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/lib.exe
 
 //Choose the type of build, options are: None Debug Release RelWithDebInfo
 // MinSizeRel ...
@@ -27,7 +27,7 @@ CMAKE_BUILD_TYPE:STRING=Debug
 CMAKE_CROSSCOMPILING:STRING=OFF
 
 //CXX compiler
-CMAKE_CXX_COMPILER:FILEPATH=C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/cl.exe
+CMAKE_CXX_COMPILER:FILEPATH=C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/cl.exe
 
 CMAKE_CXX_FLAGS:STRING=' /nologo /DWIN32 /D_WINDOWS /utf-8 /GR /EHsc /MP '
 
@@ -45,7 +45,7 @@ CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=/Zi /O2 /Ob1 /DNDEBUG
 CMAKE_CXX_STANDARD_LIBRARIES:STRING=kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
 
 //C compiler
-CMAKE_C_COMPILER:FILEPATH=C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/cl.exe
+CMAKE_C_COMPILER:FILEPATH=C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/cl.exe
 
 CMAKE_C_FLAGS:STRING=' /nologo /DWIN32 /D_WINDOWS /utf-8 /MP '
 
@@ -61,9 +61,6 @@ CMAKE_C_FLAGS_RELWITHDEBINFO:STRING=/Zi /O2 /Ob1 /DNDEBUG
 
 //Libraries linked by default with all C applications.
 CMAKE_C_STANDARD_LIBRARIES:STRING=kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
-
-//No help, variable specified on the command line.
-CMAKE_DISABLE_FIND_PACKAGE_LibUSB:UNINITIALIZED=1
 
 //No help, variable specified on the command line.
 CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION:UNINITIALIZED=ON
@@ -155,7 +152,7 @@ CMAKE_INSTALL_SYSCONFDIR:PATH=etc
 CMAKE_INSTALL_SYSTEM_RUNTIME_LIBS_SKIP:UNINITIALIZED=TRUE
 
 //Path to a program.
-CMAKE_LINKER:FILEPATH=C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/link.exe
+CMAKE_LINKER:FILEPATH=C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/link.exe
 
 //No help, variable specified on the command line.
 CMAKE_MAKE_PROGRAM:UNINITIALIZED=C:\Users\kengo\AppData\Local\vcpkg\downloads\tools\ninja-1.13.2-windows\ninja.exe
@@ -202,7 +199,7 @@ CMAKE_PROJECT_NAME:STATIC=SDL3
 CMAKE_PROJECT_SPDX_LICENSE:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_VERSION:STATIC=3.4.0
+CMAKE_PROJECT_VERSION:STATIC=3.4.12
 
 //Value Computed by CMake
 CMAKE_PROJECT_VERSION_MAJOR:STATIC=3
@@ -211,7 +208,7 @@ CMAKE_PROJECT_VERSION_MAJOR:STATIC=3
 CMAKE_PROJECT_VERSION_MINOR:STATIC=4
 
 //Value Computed by CMake
-CMAKE_PROJECT_VERSION_PATCH:STATIC=0
+CMAKE_PROJECT_VERSION_PATCH:STATIC=12
 
 //Value Computed by CMake
 CMAKE_PROJECT_VERSION_TWEAK:STATIC=
@@ -315,7 +312,7 @@ SDL3_BINARY_DIR:STATIC=E:/個人用/SDL/SDLTest/vcpkg_installed/vcpkg/blds/sdl3/
 SDL3_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
-SDL3_SOURCE_DIR:STATIC=E:/個人用/SDL/SDLTest/vcpkg_installed/vcpkg/blds/sdl3/src/ease-3.4.0-5126657c3e.clean
+SDL3_SOURCE_DIR:STATIC=E:/個人用/SDL/SDLTest/vcpkg_installed/vcpkg/blds/sdl3/src/ase-3.4.12-441a9855e8.clean
 
 //Support the ALSA audio API
 SDL_ALSA:BOOL=OFF
@@ -376,6 +373,12 @@ SDL_CPU_EMSCRIPTEN:BOOL=0
 
 //Detected architecture LOONGARCH64
 SDL_CPU_LOONGARCH64:BOOL=0
+
+//Detected architecture MIPS32
+SDL_CPU_MIPS32:BOOL=0
+
+//Detected architecture MIPS64
+SDL_CPU_MIPS64:BOOL=0
 
 //Detected architecture POWERPC32
 SDL_CPU_POWERPC32:BOOL=0
@@ -441,10 +444,7 @@ SDL_HIDAPI:BOOL=ON
 SDL_HIDAPI_JOYSTICK:BOOL=ON
 
 //Use libusb for low level joystick drivers
-SDL_HIDAPI_LIBUSB:BOOL=ON
-
-//Dynamically load libusb support
-SDL_HIDAPI_LIBUSB_SHARED:BOOL=ON
+SDL_HIDAPI_LIBUSB:BOOL=OFF
 
 //Enable installation of SDL3
 SDL_INSTALL:BOOL=ON
@@ -708,9 +708,9 @@ CMAKE_CACHEFILE_DIR:INTERNAL=e:/個人用/SDL/SDLTest/vcpkg_installed/vcpkg/blds
 //Major version of cmake used to create the current loaded cache
 CMAKE_CACHE_MAJOR_VERSION:INTERNAL=4
 //Minor version of cmake used to create the current loaded cache
-CMAKE_CACHE_MINOR_VERSION:INTERNAL=2
+CMAKE_CACHE_MINOR_VERSION:INTERNAL=3
 //Patch version of cmake used to create the current loaded cache
-CMAKE_CACHE_PATCH_VERSION:INTERNAL=3
+CMAKE_CACHE_PATCH_VERSION:INTERNAL=1
 //Path to CMake executable.
 CMAKE_COMMAND:INTERNAL=C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe
 //Path to cpack program executable.
@@ -773,7 +773,7 @@ CMAKE_GENERATOR_PLATFORM:INTERNAL=
 CMAKE_GENERATOR_TOOLSET:INTERNAL=
 //Source directory with the top level CMakeLists.txt file for this
 // project
-CMAKE_HOME_DIRECTORY:INTERNAL=E:/個人用/SDL/SDLTest/vcpkg_installed/vcpkg/blds/sdl3/src/ease-3.4.0-5126657c3e.clean
+CMAKE_HOME_DIRECTORY:INTERNAL=E:/個人用/SDL/SDLTest/vcpkg_installed/vcpkg/blds/sdl3/src/ase-3.4.12-441a9855e8.clean
 //ADVANCED property for variable: CMAKE_INSTALL_BINDIR
 CMAKE_INSTALL_BINDIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_INSTALL_DATADIR
@@ -844,7 +844,7 @@ CMAKE_RC_FLAGS_RELEASE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_RC_FLAGS_RELWITHDEBINFO
 CMAKE_RC_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //Path to CMake installation.
-CMAKE_ROOT:INTERNAL=C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.2
+CMAKE_ROOT:INTERNAL=C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.3
 //ADVANCED property for variable: CMAKE_SHARED_LINKER_FLAGS
 CMAKE_SHARED_LINKER_FLAGS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_SHARED_LINKER_FLAGS_DEBUG
@@ -1197,8 +1197,6 @@ LIBC_HAS__LTOA:INTERNAL=1
 LIBC_HAS__STRREV:INTERNAL=1
 //Have symbol _ui64toa
 LIBC_HAS__UI64TOA:INTERNAL=1
-//Have symbol _uitoa
-LIBC_HAS__UITOA:INTERNAL=
 //Have symbol _ultoa
 LIBC_HAS__ULTOA:INTERNAL=1
 //Have symbol _wcsdup
@@ -1219,6 +1217,8 @@ SDL_CHECK_REQUIRED_INCLUDES-ADVANCED:INTERNAL=1
 SDL_CHECK_REQUIRED_LINK_OPTIONS-ADVANCED:INTERNAL=1
 //Result of TRY_COMPILE
 SDL_CPU_CHECK_ALL:INTERNAL=TRUE
+//Enable D-Bus support
+SDL_DBUS:INTERNAL=OFF
 //Enable IBus support
 SDL_IBUS:INTERNAL=OFF
 //Build the test directory

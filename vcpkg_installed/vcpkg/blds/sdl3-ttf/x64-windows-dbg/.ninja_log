@@ -1,0 +1,11 @@
+# ninja log v7
+44	192	8055381680000000	CMakeFiles/SDL3_ttf-shared.dir/src/version.rc.res	21ca79d38a4e77e7
+13	200	8055381680000000	CMakeFiles/SDL3_ttf-shared.dir/src/SDL_hashtable_ttf.c.obj	3c08706dfa4abbf0
+6	212	8055381678700000	CMakeFiles/SDL3_ttf-shared.dir/src/SDL_hashtable.c.obj	4e464ba99710c06d
+18	212	8055381680000000	CMakeFiles/SDL3_ttf-shared.dir/src/SDL_gpu_textengine.c.obj	60184ad7bc0c5889
+31	213	8055381680000000	CMakeFiles/SDL3_ttf-shared.dir/src/SDL_surface_textengine.c.obj	eab68d6ece091372
+25	214	8055381680000000	CMakeFiles/SDL3_ttf-shared.dir/src/SDL_renderer_textengine.c.obj	e61be39cce18c3a2
+37	269	8055381680000000	CMakeFiles/SDL3_ttf-shared.dir/src/SDL_ttf.c.obj	b3d2508a2a32ebef
+270	506	8055381700000000	SDL3_ttf.dll	8ee650488cfc1a7e
+270	506	8055381700000000	SDL3_ttf.lib	8ee650488cfc1a7e
+506	718	8055381700000000	CMakeFiles/install.util	b8f2e98fc2d21677
