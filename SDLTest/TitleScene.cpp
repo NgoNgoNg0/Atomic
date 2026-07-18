@@ -7,8 +7,12 @@
 #include "Framework/AudioClip.h"
 #include "Framework/Graphics.h"
 #include "Framework/Mouse.h"
+#include "Framework/Vector2.h"
 
 TitleScene::TitleScene()
+	: m_playButton("Assets/Image/PlayBefor.png", "Assets/Image/PlayAfter.png", Rect{ Graphics::GetWindowSize(0.37f).x, Graphics::GetWindowSize(0.53f).y, Graphics::GetWindowSize(0.40f).x, Graphics::GetWindowSize(0.25f).y })
+	, m_quitButton("Assets/Image/QuitBefor.png", "Assets/Image/QuitAfter.png", Rect{ Graphics::GetWindowSize(0.42f).x, Graphics::GetWindowSize(0.78f).y, Graphics::GetWindowSize(0.30f).x, Graphics::GetWindowSize(0.19f).y })
+	, m_clickPosition(Rect{0, 0, 0, 0})
 {
 	ResourceManager<Texture>::RegisterSequence("Click", "Assets/Moves/SingleClick/SingleClick_", ".png", 0, 52);
 	ResourceManager<Texture>::Register("Back", "Assets/Image/TitleBackGround.png");
@@ -35,6 +39,8 @@ TitleScene::~TitleScene()
 void TitleScene::Update()
 {
 	m_clickAnimation.Update();
+	m_playButton.Update();
+	m_quitButton.Update();
 	if (Mouse::GetButtonDown(MouseButton::Left))
 	{
 		m_clickAnimation.Play(false);
@@ -47,5 +53,7 @@ void TitleScene::Draw()
 {
 	Vector2 size = Graphics::GetWindowSize(1.f);
 	Graphics::DrawTexture(ResourceManager<Texture>::Get("Back"), Rect{ 0, 0, size.x, size.y});
+	m_playButton.Draw();
+	m_quitButton.Draw();
 	Graphics::DrawTexture(m_clickAnimation.GetTexture(), m_clickPosition);
 }
