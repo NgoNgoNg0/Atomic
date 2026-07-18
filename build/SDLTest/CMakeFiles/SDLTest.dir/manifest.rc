@@ -1,0 +1,2 @@
+#pragma code_page(65001)
+1 /* CREATEPROCESS_MANIFEST_RESOURCE_ID */ 24 /* RT_MANIFEST */ "E:/個人用/SDL/SDLTest/build/SDLTest/CMakeFiles/SDLTest.dir/embed.manifest"

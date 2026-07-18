@@ -5,6 +5,7 @@
 #include "Framework/AudioSource.h"
 #include "Framework/Rect.h"
 #include "Framework/Button.h"
+#include "Framework/Timer.h"
 
 class TitleScene : public Scene
 {
@@ -18,8 +19,10 @@ public:
 private:
 	Animator m_clickAnimation;
 	AudioSource m_BGM;
+	AudioSource m_SE;
 	Rect m_clickPosition;
 	Button m_playButton;
 	Button m_quitButton;
+	Timer m_timer;
 
 };
