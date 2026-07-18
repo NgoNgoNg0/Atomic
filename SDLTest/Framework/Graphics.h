@@ -11,17 +11,19 @@
 class Graphics
 {
 public:
-	static bool Initialize(SDL_Window* window);
+	static bool Initialize(SDL_Window* window, Vector2 windowSize);
 	static void Finalize();
 	static void BeginFrame();
 	static void EndFrame();
 	static void DrawRect(Rect rect, Color color);
 	static void DrawTexture(const Texture& texture, Rect rect);
 	static void DrawText(const Font& font, const std::string& text, Vector2 pos, Color color);
+	static Vector2 GetWindowSize(float reito);
 	// static void DrawTexture(TextureHandle texture, float x, float y);
 
 	static SDL_Renderer* GetRenderer();
 
 private:
+	static Vector2 m_windowSize;
 	inline static SDL_Renderer* m_renderer = nullptr;
 };

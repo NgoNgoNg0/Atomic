@@ -29,6 +29,7 @@ Texture::Texture(const std::filesystem::path& path)
 
 	if (!m_texture)
 	{
+		std::cout << "SDL Error    : " << SDL_GetError() << '\n';
 		throw std::runtime_error(SDL_GetError());
 
 	}

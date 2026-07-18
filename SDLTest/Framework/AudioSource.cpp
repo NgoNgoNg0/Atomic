@@ -6,6 +6,7 @@
 #include <SDL3/SDL.h>
 #include <SDL3_mixer/SDL_mixer.h>
 
+#include <iostream>
 #include <stdexcept>
 
 AudioSource::AudioSource()
@@ -14,6 +15,7 @@ AudioSource::AudioSource()
 
     if (!m_track)
     {
+        std::cout << "SDL Error    : " << SDL_GetError() << '\n';
         throw std::runtime_error(SDL_GetError());
     }
 }

@@ -3,6 +3,7 @@
 #include <iostream>
 
 #include "TestGame.h"
+#include "AtomicGame.h"
 
 int main()
 {
@@ -12,9 +13,9 @@ int main()
     version = IMG_Version();
     std::cout << "SDL_image Version : " << version << '\n';
 
-
     std::cout << SDL_GetError() << '\n';
-    TestGame game;
+    //TestGame game;
+    AtomicGame game;
     game.Run();
 
     return 0;

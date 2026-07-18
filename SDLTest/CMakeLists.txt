@@ -33,7 +33,7 @@ add_executable(SDLTest
     "Framework/AudioClip.h" 
     "Framework/AudioSource.cpp" 
     "Framework/AudioSource.h"
- "Framework/Audio.cpp" "Framework/Audio.h" "Framework/AnimationClip.cpp" "Framework/AnimationClip.h" "Framework/Animator.cpp" "Framework/Animator.h")
+ "Framework/Audio.cpp" "Framework/Audio.h" "Framework/AnimationClip.cpp" "Framework/AnimationClip.h" "Framework/Animator.cpp" "Framework/Animator.h" "Framework/Scene.cpp" "Framework/Scene.h" "Framework/SceneManager.cpp" "Framework/SceneManager.h" "TitleScene.cpp" "TitleScene.h" "PlayScene.cpp" "PlayScene.h" "AtomicGame.cpp" "AtomicGame.h")
 
 target_link_libraries(SDLTest
     PRIVATE

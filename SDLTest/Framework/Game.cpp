@@ -8,19 +8,19 @@
 #include "Time.h"
 #include "Audio.h"
 
-Game::Game()
-	: init(SDL_Init(SDL_INIT_VIDEO))
-	, initAudio(Audio::Initialize())
-	, m_isRunning(true)
-	, m_window("Atomic", 1280, 720)
+Game::Game(Vector2 WindowSize)
+	: m_isRunning(true)
+	, m_window("Atomic", WindowSize)
 	, m_targetFPS(120)
 {
+	SDL_Init(SDL_INIT_VIDEO);
+	Audio::Initialize();
 	TTF_Init();
+	Graphics::Initialize(m_window.Get(), WindowSize);
 }
 
 void Game::Run()
 {
-	Graphics::Initialize(m_window.Get());
 	Initialize();
 
 	while (m_isRunning)

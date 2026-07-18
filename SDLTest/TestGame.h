@@ -4,6 +4,7 @@
 #include "Framework/Rect.h"
 #include "Framework/AudioSource.h"
 #include "Framework/Animator.h"
+#include "Framework/SceneManager.h"
 
 class TestGame : public Game
 {

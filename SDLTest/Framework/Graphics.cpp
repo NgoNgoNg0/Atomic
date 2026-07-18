@@ -8,15 +8,18 @@
 #include <SDL3_image/SDL_image.h>
 #include <SDL3_ttf/SDL_ttf.h>
 
-bool Graphics::Initialize(SDL_Window* window)
+Vector2 Graphics::m_windowSize{ 1, 1 };
+
+bool Graphics::Initialize(SDL_Window* window, Vector2 windowSize)
 {
+	m_windowSize = windowSize;
 	m_renderer = SDL_CreateRenderer(window, nullptr); 
 	if (!m_renderer)
 	{
 		return false;
 	}
 	
-	SDL_SetRenderLogicalPresentation(m_renderer, 1280, 720, SDL_LOGICAL_PRESENTATION_LETTERBOX);
+	SDL_SetRenderLogicalPresentation(m_renderer, windowSize.x, windowSize.y, SDL_LOGICAL_PRESENTATION_LETTERBOX);
 
 	return true;
 }
@@ -107,4 +110,9 @@ void Graphics::DrawText(const Font& font, const std::string& text, Vector2 pos, 
 SDL_Renderer* Graphics::GetRenderer()
 {
 	return m_renderer;
+}
+
+Vector2 Graphics::GetWindowSize(float reito)
+{
+	return Vector2{ m_windowSize.x * reito, m_windowSize.y * reito };
 }

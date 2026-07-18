@@ -4,7 +4,7 @@
 class Game
 {
 public:
-	Game();
+	Game(Vector2 windowSize);
 	virtual ~Game() = default;
 
 	void Run();
@@ -19,8 +19,6 @@ protected:
 private:
 	void ProcessEvents();
 	void WaitForNextFrame(Uint64 frameStart);
-	bool init;
-	bool initAudio;
 	bool m_isRunning;
 	Window m_window;
 	int m_targetFPS;

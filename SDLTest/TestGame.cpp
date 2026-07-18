@@ -11,8 +11,12 @@
 #include "Framework/Rect.h"
 #include "Framework/Color.h"
 
+#include "TitleScene.h"
+
+#include <memory>
+
 TestGame::TestGame()
-    : Game()
+    : Game(Vector2{1920, 1080})
     , m_rect(100, 100, 100, 100)
     , m_se()
 {

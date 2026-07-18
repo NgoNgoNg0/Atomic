@@ -227,6 +227,56 @@ build SDLTest\CMakeFiles\SDLTest.dir\Framework\Animator.cpp.obj: CXX_COMPILER__S
   TARGET_PDB = SDLTest\SDLTest.pdb
   TARGET_SUPPORT_DIR = SDLTest\CMakeFiles\SDLTest.dir
 
+build SDLTest\CMakeFiles\SDLTest.dir\Framework\Scene.cpp.obj: CXX_COMPILER__SDLTest_unscanned_Debug E$:\個人用\SDL\SDLTest\SDLTest\Framework\Scene.cpp || cmake_object_order_depends_target_SDLTest
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++20
+  INCLUDES = -external:IE:\個人用\SDL\SDLTest\build\vcpkg_installed\x64-windows\include -external:W0
+  OBJECT_DIR = SDLTest\CMakeFiles\SDLTest.dir
+  OBJECT_FILE_DIR = SDLTest\CMakeFiles\SDLTest.dir\Framework
+  TARGET_COMPILE_PDB = SDLTest\CMakeFiles\SDLTest.dir\
+  TARGET_PDB = SDLTest\SDLTest.pdb
+  TARGET_SUPPORT_DIR = SDLTest\CMakeFiles\SDLTest.dir
+
+build SDLTest\CMakeFiles\SDLTest.dir\Framework\SceneManager.cpp.obj: CXX_COMPILER__SDLTest_unscanned_Debug E$:\個人用\SDL\SDLTest\SDLTest\Framework\SceneManager.cpp || cmake_object_order_depends_target_SDLTest
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++20
+  INCLUDES = -external:IE:\個人用\SDL\SDLTest\build\vcpkg_installed\x64-windows\include -external:W0
+  OBJECT_DIR = SDLTest\CMakeFiles\SDLTest.dir
+  OBJECT_FILE_DIR = SDLTest\CMakeFiles\SDLTest.dir\Framework
+  TARGET_COMPILE_PDB = SDLTest\CMakeFiles\SDLTest.dir\
+  TARGET_PDB = SDLTest\SDLTest.pdb
+  TARGET_SUPPORT_DIR = SDLTest\CMakeFiles\SDLTest.dir
+
+build SDLTest\CMakeFiles\SDLTest.dir\TitleScene.cpp.obj: CXX_COMPILER__SDLTest_unscanned_Debug E$:\個人用\SDL\SDLTest\SDLTest\TitleScene.cpp || cmake_object_order_depends_target_SDLTest
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++20
+  INCLUDES = -external:IE:\個人用\SDL\SDLTest\build\vcpkg_installed\x64-windows\include -external:W0
+  OBJECT_DIR = SDLTest\CMakeFiles\SDLTest.dir
+  OBJECT_FILE_DIR = SDLTest\CMakeFiles\SDLTest.dir
+  TARGET_COMPILE_PDB = SDLTest\CMakeFiles\SDLTest.dir\
+  TARGET_PDB = SDLTest\SDLTest.pdb
+  TARGET_SUPPORT_DIR = SDLTest\CMakeFiles\SDLTest.dir
+
+build SDLTest\CMakeFiles\SDLTest.dir\PlayScene.cpp.obj: CXX_COMPILER__SDLTest_unscanned_Debug E$:\個人用\SDL\SDLTest\SDLTest\PlayScene.cpp || cmake_object_order_depends_target_SDLTest
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++20
+  INCLUDES = -external:IE:\個人用\SDL\SDLTest\build\vcpkg_installed\x64-windows\include -external:W0
+  OBJECT_DIR = SDLTest\CMakeFiles\SDLTest.dir
+  OBJECT_FILE_DIR = SDLTest\CMakeFiles\SDLTest.dir
+  TARGET_COMPILE_PDB = SDLTest\CMakeFiles\SDLTest.dir\
+  TARGET_PDB = SDLTest\SDLTest.pdb
+  TARGET_SUPPORT_DIR = SDLTest\CMakeFiles\SDLTest.dir
+
+build SDLTest\CMakeFiles\SDLTest.dir\AtomicGame.cpp.obj: CXX_COMPILER__SDLTest_unscanned_Debug E$:\個人用\SDL\SDLTest\SDLTest\AtomicGame.cpp || cmake_object_order_depends_target_SDLTest
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++20
+  INCLUDES = -external:IE:\個人用\SDL\SDLTest\build\vcpkg_installed\x64-windows\include -external:W0
+  OBJECT_DIR = SDLTest\CMakeFiles\SDLTest.dir
+  OBJECT_FILE_DIR = SDLTest\CMakeFiles\SDLTest.dir
+  TARGET_COMPILE_PDB = SDLTest\CMakeFiles\SDLTest.dir\
+  TARGET_PDB = SDLTest\SDLTest.pdb
+  TARGET_SUPPORT_DIR = SDLTest\CMakeFiles\SDLTest.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target SDLTest
@@ -235,7 +285,7 @@ build SDLTest\CMakeFiles\SDLTest.dir\Framework\Animator.cpp.obj: CXX_COMPILER__S
 #############################################
 # Link the executable SDLTest\SDLTest.exe
 
-build SDLTest\SDLTest.exe: CXX_EXECUTABLE_LINKER__SDLTest_Debug SDLTest\CMakeFiles\SDLTest.dir\Main.cpp.obj SDLTest\CMakeFiles\SDLTest.dir\Framework\Window.cpp.obj SDLTest\CMakeFiles\SDLTest.dir\Framework\Game.cpp.obj SDLTest\CMakeFiles\SDLTest.dir\Framework\Input.cpp.obj SDLTest\CMakeFiles\SDLTest.dir\Framework\Graphics.cpp.obj SDLTest\CMakeFiles\SDLTest.dir\Framework\Texture.cpp.obj SDLTest\CMakeFiles\SDLTest.dir\TestGame.cpp.obj SDLTest\CMakeFiles\SDLTest.dir\Framework\Mouse.cpp.obj SDLTest\CMakeFiles\SDLTest.dir\Framework\Time.cpp.obj SDLTest\CMakeFiles\SDLTest.dir\Framework\Font.cpp.obj SDLTest\CMakeFiles\SDLTest.dir\Framework\AudioClip.cpp.obj SDLTest\CMakeFiles\SDLTest.dir\Framework\AudioSource.cpp.obj SDLTest\CMakeFiles\SDLTest.dir\Framework\Audio.cpp.obj SDLTest\CMakeFiles\SDLTest.dir\Framework\AnimationClip.cpp.obj SDLTest\CMakeFiles\SDLTest.dir\Framework\Animator.cpp.obj | vcpkg_installed\x64-windows\debug\lib\SDL3_image.lib vcpkg_installed\x64-windows\debug\lib\SDL3_ttf.lib vcpkg_installed\x64-windows\debug\lib\SDL3_mixer.lib vcpkg_installed\x64-windows\debug\lib\SDL3.lib
+build SDLTest\SDLTest.exe: CXX_EXECUTABLE_LINKER__SDLTest_Debug SDLTest\CMakeFiles\SDLTest.dir\Main.cpp.obj SDLTest\CMakeFiles\SDLTest.dir\Framework\Window.cpp.obj SDLTest\CMakeFiles\SDLTest.dir\Framework\Game.cpp.obj SDLTest\CMakeFiles\SDLTest.dir\Framework\Input.cpp.obj SDLTest\CMakeFiles\SDLTest.dir\Framework\Graphics.cpp.obj SDLTest\CMakeFiles\SDLTest.dir\Framework\Texture.cpp.obj SDLTest\CMakeFiles\SDLTest.dir\TestGame.cpp.obj SDLTest\CMakeFiles\SDLTest.dir\Framework\Mouse.cpp.obj SDLTest\CMakeFiles\SDLTest.dir\Framework\Time.cpp.obj SDLTest\CMakeFiles\SDLTest.dir\Framework\Font.cpp.obj SDLTest\CMakeFiles\SDLTest.dir\Framework\AudioClip.cpp.obj SDLTest\CMakeFiles\SDLTest.dir\Framework\AudioSource.cpp.obj SDLTest\CMakeFiles\SDLTest.dir\Framework\Audio.cpp.obj SDLTest\CMakeFiles\SDLTest.dir\Framework\AnimationClip.cpp.obj SDLTest\CMakeFiles\SDLTest.dir\Framework\Animator.cpp.obj SDLTest\CMakeFiles\SDLTest.dir\Framework\Scene.cpp.obj SDLTest\CMakeFiles\SDLTest.dir\Framework\SceneManager.cpp.obj SDLTest\CMakeFiles\SDLTest.dir\TitleScene.cpp.obj SDLTest\CMakeFiles\SDLTest.dir\PlayScene.cpp.obj SDLTest\CMakeFiles\SDLTest.dir\AtomicGame.cpp.obj | vcpkg_installed\x64-windows\debug\lib\SDL3_image.lib vcpkg_installed\x64-windows\debug\lib\SDL3_ttf.lib vcpkg_installed\x64-windows\debug\lib\SDL3_mixer.lib vcpkg_installed\x64-windows\debug\lib\SDL3.lib
   CONFIG = Debug
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
