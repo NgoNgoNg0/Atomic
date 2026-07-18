@@ -1,7 +1,0 @@
-Package: brotli
-Version: 1.2.0
-Depends: vcpkg-cmake, vcpkg-cmake-config
-Architecture: x64-windows
-Multi-Arch: same
-Abi: cca71c90bb404d7dcbbf75956176914411f971086c1ee7ecd30e677bc11aba06
-Description: a generic-purpose lossless compression algorithm that compresses data using a combination of a modern variant of the LZ77 algorithm, Huffman coding and 2nd order context modeling.
