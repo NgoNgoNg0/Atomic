@@ -55,6 +55,28 @@ void Graphics::DrawRect(Rect rect, Color color)
 	SDL_RenderFillRect(m_renderer, &sdlrect);
 }
 
+void Graphics::DrawCircle(const Vector2& center, float radius, Color color)
+{
+	SDL_SetRenderDrawColor(
+		m_renderer,
+		color.r,
+		color.g,
+		color.b,
+		color.a);
+
+	for (int y = -static_cast<int>(radius); y <= radius; ++y)
+	{
+		float x = std::sqrt(radius * radius - y * y);
+
+		SDL_RenderLine(
+			m_renderer,
+			center.x - x,
+			center.y + y,
+			center.x + x,
+			center.y + y);
+	}
+}
+
 void Graphics::DrawTexture(const Texture& texture, Rect rect)
 {
 	SDL_FRect sdlRect
@@ -95,8 +117,8 @@ void Graphics::DrawText(const Font& font, const std::string& text, Vector2 pos, 
 
 	SDL_FRect dst
 	{
-		pos.x,
-		pos.y,
+		pos.x - surface->w * 0.5f,
+		pos.y - surface->h * 0.5f,
 		static_cast<float>(surface->w),
 		static_cast<float>(surface->h)
 	};

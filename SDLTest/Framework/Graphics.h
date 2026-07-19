@@ -16,6 +16,7 @@ public:
 	static void BeginFrame();
 	static void EndFrame();
 	static void DrawRect(Rect rect, Color color);
+	static void DrawCircle(const Vector2& center, float radius, Color color);
 	static void DrawTexture(const Texture& texture, Rect rect);
 	static void DrawText(const Font& font, const std::string& text, Vector2 pos, Color color);
 	static Vector2 GetWindowSize(float reito);

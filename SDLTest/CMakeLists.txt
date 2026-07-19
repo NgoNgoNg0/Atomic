@@ -21,7 +21,6 @@ add_executable(SDLTest
     "Framework/Rect.h"
     "Framework/Color.h"
     "Framework/ResourceManager.h"
-     
     "Framework/Mouse.cpp" 
     "Framework/Mouse.h" 
     "Framework/Vector2.h" 
@@ -33,7 +32,27 @@ add_executable(SDLTest
     "Framework/AudioClip.h" 
     "Framework/AudioSource.cpp" 
     "Framework/AudioSource.h"
- "Framework/Audio.cpp" "Framework/Audio.h" "Framework/AnimationClip.cpp" "Framework/AnimationClip.h" "Framework/Animator.cpp" "Framework/Animator.h" "Framework/Scene.cpp" "Framework/Scene.h" "Framework/SceneManager.cpp" "Framework/SceneManager.h" "TitleScene.cpp" "TitleScene.h" "PlayScene.cpp" "PlayScene.h" "AtomicGame.cpp" "AtomicGame.h" "Framework/Button.cpp" "Framework/Button.h" "Framework/Timer.cpp" "Framework/Timer.h")
+    "Framework/Audio.cpp"
+    "Framework/Audio.h"
+    "Framework/AnimationClip.cpp"
+    "Framework/AnimationClip.h"
+    "Framework/Animator.cpp"
+    "Framework/Animator.h"
+    "Framework/Scene.cpp"
+    "Framework/Scene.h"
+    "Framework/SceneManager.cpp"
+    "Framework/SceneManager.h"
+    "TitleScene.cpp"
+    "TitleScene.h"
+    "PlayScene.cpp"
+    "PlayScene.h"
+    "AtomicGame.cpp"
+    "AtomicGame.h"
+    "Framework/Button.cpp"
+    "Framework/Button.h"
+    "Framework/Timer.cpp"
+    "Framework/Timer.h"
+ "Ball.cpp" "Ball.h" "BallManager.cpp" "BallManager.h")
 
 target_link_libraries(SDLTest
     PRIVATE
