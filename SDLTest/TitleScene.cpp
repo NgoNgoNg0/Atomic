@@ -18,9 +18,13 @@ TitleScene::TitleScene()
 	, m_clickPosition(Rect{0, 0, 0, 0})
 	, m_timer(2.0f)
 {
+	ResourceManager<Texture>::RegisterSequence("ResultMovie", "Assets/Moves/Result/ResultMovie_", ".png", 0, 43);
 	ResourceManager<Texture>::RegisterSequence("Click", "Assets/Moves/SingleClick/SingleClick_", ".png", 0, 52);
 	ResourceManager<Texture>::Register("Back", "Assets/Image/TitleBackGround.png");
 	ResourceManager<Texture>::Register("Title", "Assets/Image/TitleString.png");
+	ResourceManager<Animator>::Register("ResultAnimation");
+	ResourceManager<AnimationClip>::Register("ResultMovie", "ResultMovie", 0, 43, 60.0f);
+	ResourceManager<Animator>::Get("ResultAnimation").SetClip(ResourceManager<AnimationClip>::Get("ResultMovie"));
 
 	ResourceManager<AnimationClip>::Register("Click", "Click", 0, 52, 60.0f);
 

@@ -90,7 +90,7 @@ void Graphics::DrawTexture(const Texture& texture, Rect rect)
 	SDL_RenderTexture(m_renderer, texture.Get(), nullptr, &sdlRect);
 }
 
-void Graphics::DrawText(const Font& font, const std::string& text, Vector2 pos, Color color)
+void Graphics::DrawText(const Font& font, const std::string& text, Vector2 pos, Color color, bool isCenter)
 {
 	SDL_Color sdlColor
 	{
@@ -114,11 +114,12 @@ void Graphics::DrawText(const Font& font, const std::string& text, Vector2 pos, 
 		SDL_DestroySurface(surface);
 		return;
 	}
-
+	float t = 0.5f;
+	if (!isCenter) t = 0.0f;
 	SDL_FRect dst
 	{
-		pos.x - surface->w * 0.5f,
-		pos.y - surface->h * 0.5f,
+		pos.x - surface->w * t,
+		pos.y - surface->h * t,
 		static_cast<float>(surface->w),
 		static_cast<float>(surface->h)
 	};

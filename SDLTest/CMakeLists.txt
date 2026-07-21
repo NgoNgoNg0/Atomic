@@ -52,7 +52,7 @@ add_executable(SDLTest
     "Framework/Button.h"
     "Framework/Timer.cpp"
     "Framework/Timer.h"
- "Ball.cpp" "Ball.h" "BallManager.cpp" "BallManager.h")
+ "Ball.cpp" "Ball.h" "BallManager.cpp" "BallManager.h" "Pipette.cpp" "Pipette.h" "ResultScene.cpp" "ResultScene.h")
 
 target_link_libraries(SDLTest
     PRIVATE

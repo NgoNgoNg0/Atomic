@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 
 #include <functional>
 #include <memory>
@@ -17,7 +17,8 @@ public:
     {
         if (m_factories.contains(name))
         {
-            throw std::runtime_error("Resource already registered: " + name);
+            //throw std::runtime_error("Resource already registered: " + name);
+            return;
         }
 
         auto tuple = std::make_tuple(std::forward<Args>(args)...);

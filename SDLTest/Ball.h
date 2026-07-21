@@ -27,19 +27,23 @@ public:
 	void AddVelocity(Vector2 velocity);
 	void SetVelocity(Vector2 velocity);
 	void SetPosition(Vector2 position);
-	Vector2 GetPosition();
+	void SetRadius(float rad);
+	Vector2 GetPosition() const;
 	Vector2 GetVelocity();
-	float GetRadius();
+	float GetRadius() const;
 	float GetMass();
 	float GetElasticity();
 	void SetRemoveFlag(bool flag);
 	bool GetRemoveFlag() const;
-	int GetID();
+	int GetID() const;
+	int GetScore() const;
+	AtomicStatus GetStatus();
 
 private:
 	Vector2 m_position;
 	Vector2 m_velocity;
 	AtomicStatus m_status;
 	bool m_removeFlag;
+	float m_radius;
 
 };

@@ -1,7 +1,9 @@
 #pragma once
 
 #include "Ball.h"
+#include "Pipette.h"
 #include "Framework/Rect.h"
+#include "Framework/AudioSource.h"
 
 #include <vector>
 #include <array>
@@ -87,19 +89,27 @@ public:
 	static void Update();
 	static void Draw();
 
+	static int GetScore();
+	static bool isGameOver();
+
 private:
 	static void AddBall();
+	static void CheckPipetteUnderBalls();
 	static bool ResolveCollision(int i, int j);
 	static bool ResolveWallCollision(int i);
 	static bool MatchReactionPair(const Reaction& reaction, int id1, int id2);
 	static const Reaction* FindReactionByPair(int id1, int id2);
 
+	inline static int m_score;
+	inline static bool m_isGameOver;
 	inline static float m_gravity;
 	inline static std::vector<Ball> m_balls;
+	inline static Ball m_nextBall;
 	inline static Ball m_predictionBall;
 	inline static Ball m_exchangeBall;
 	inline static AtomicStatus m_atomicStatus[47];
 	inline static Rect m_box;
+	inline static Pipette m_pipette;
 
 	inline static std::array<Reaction, 51> kReactions = {
 	Reaction{ O, O, O2, NONE },

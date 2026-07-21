@@ -1,17 +1,43 @@
-#include "BallManager.h"
+﻿#include "BallManager.h"
 
+#include "Ball.h"
+
+#include "Framework/SceneManager.h"
 #include "Framework/Graphics.h"
 #include "Framework/Mouse.h"
 #include "Framework/Color.h"
 #include "Framework/Rect.h"
+#include "Framework/Vector2.h"
+#include "Framework/ResourceManager.h"
+#include "Framework/Texture.h"
+#include "Framework/Font.h"
+#include "Framework/AudioClip.h"
+
+#include "TitleScene.h"
+#include "Pipette.h"
 
 #include <random>
 #include <numeric>
+#include <cmath>
+#include <vector>
+#include <algorithm>
+#include <memory>
 
 void BallManager::Initialize()
 {
+	ResourceManager<Texture>::Register("Line", "Assets/Image/DottedLine.png");
+	ResourceManager<Font>::Register("Score", "Assets/Fonts/HGRPP1.TTC", Graphics::GetWindowSize(14 / 108.f).y);
+	ResourceManager<AudioClip>::Register("AddSound", "Assets/Sounds/AddSound.mp3");
+	ResourceManager<AudioClip>::Register("CollisionSound", "Assets/Sounds/CollisionSound.mp3");
+	ResourceManager<AudioClip>::Register("AntiCollisionSound", "Assets/Sounds/AntiCollisionSound.mp3");
+	ResourceManager<AudioClip>::Register("ChangeBallSound", "Assets/Sounds/ChangeBallSound.mp3");
+	ResourceManager<AudioSource>::Register("SE");
+
 	m_gravity = Graphics::GetWindowSize(1.0f / 5400.0f).y;
 	m_box = Rect{ Graphics::GetWindowSize(0.05f).x * 2.06f, Graphics::GetWindowSize(0.2f).y, Graphics::GetWindowSize(0.6f).x * 0.975f - Graphics::GetWindowSize(0.05f).x * 2.06f, Graphics::GetWindowSize(1.0f).y * 0.97f - Graphics::GetWindowSize(0.2f).y };
+	m_pipette = Pipette(m_box);
+	m_score = 0;
+	m_isGameOver = false;
 
 	m_atomicStatus[NONE] = AtomicStatus{ NONE, "", 0, Color{0, 0, 0}, 0.0f };
 	m_atomicStatus[ANTIMATTER] = AtomicStatus{ ANTIMATTER, "", 1, Color{0, 0, 0}, 1.0f };
@@ -66,16 +92,49 @@ void BallManager::Initialize()
 	m_atomicStatus[NaClO3] = AtomicStatus{ NaClO3, "NaClO3", 5, Color{ 93,  33, 191}, m_atomicStatus[Na].mass + m_atomicStatus[Cl].mass + m_atomicStatus[O].mass * 3.0f };
 	m_atomicStatus[H2CO3] = AtomicStatus{ H2CO3,  "H2CO3",  6, Color{255,  87, 252}, m_atomicStatus[H].mass * 2.0f + m_atomicStatus[C].mass + m_atomicStatus[O].mass * 3.0f };
 	m_atomicStatus[CH3OH] = AtomicStatus{ CH3OH,  "CH3OH",  6, Color{ 76,   0, 255}, m_atomicStatus[C].mass + m_atomicStatus[H].mass * 4.0f + m_atomicStatus[O].mass };
+
+	static std::mt19937 rng{ std::random_device{}() };
+	std::uniform_int_distribution<int> dist(1, 8);
+	int value = dist(rng);
+	m_nextBall = Ball(Vector2{ Mouse::GetPos().x, Graphics::GetWindowSize(0.2f).y }, m_atomicStatus[value]);
+	m_predictionBall = Ball(Vector2{ Graphics::GetWindowSize(0.889f).x, Graphics::GetWindowSize(0.737f).y }, m_atomicStatus[NONE]);
+	m_exchangeBall = Ball(Vector2{ Graphics::GetWindowSize(0.699f).x, Graphics::GetWindowSize(0.737f).y }, m_atomicStatus[NONE]);
+	m_balls.clear();
+
 }
 
 void BallManager::Update()
 {
+	const float moveLimit = Graphics::GetWindowSize(5.0f / 108.0f).y;
+	const float clampedX = std::min(m_box.x + m_box.width - moveLimit, std::max(m_box.x + moveLimit, static_cast<float>(Mouse::GetPos().x)));
+	m_nextBall.SetPosition(Vector2{ clampedX, Graphics::GetWindowSize(0.2f).y });
 	if (Mouse::GetButtonDown(MouseButton::Left)) AddBall();
+	m_pipette.Update();
 	for (auto& b : m_balls) b.Update();
 	for (auto& b : m_balls) b.AddVelocity(Vector2{0, m_gravity});
 
 	static std::random_device rd;
 	static std::mt19937 rng(rd());
+
+	if (Mouse::GetButtonDown(MouseButton::Right))
+	{
+		ResourceManager<AudioSource>::Get("SE").SetClip(ResourceManager<AudioClip>::Get("ChangeBallSound"));
+		ResourceManager<AudioSource>::Get("SE").Play(0);
+		int nowID = m_nextBall.GetID();
+		Vector2 nowPos = m_exchangeBall.GetPosition();
+
+		m_nextBall = Ball(m_nextBall.GetPosition(), m_atomicStatus[m_exchangeBall.GetID()]);
+		m_exchangeBall = Ball(nowPos, m_atomicStatus[nowID]);
+
+		if (m_nextBall.GetID() == NONE)
+		{
+			static std::mt19937 rn{ std::random_device{}() };
+			std::uniform_int_distribution<int> dis(1, 8);
+			int value = dis(rn);
+			m_nextBall = Ball(m_nextBall.GetPosition(), m_atomicStatus[value]);
+		}
+		m_exchangeBall.SetRadius(Graphics::GetWindowSize(0.09f).y);
+	}
 
 	for (int iter = 0; iter < 30; ++iter)
 	{
@@ -119,6 +178,9 @@ void BallManager::Update()
 		}
 
 	}
+
+	CheckPipetteUnderBalls();
+
 	m_balls.erase(
 		std::remove_if(
 			m_balls.begin(),
@@ -126,16 +188,76 @@ void BallManager::Update()
 			[](const Ball& ball) { return ball.GetRemoveFlag(); }),
 		m_balls.end());
 
+	for (auto& b : m_balls)
+	{
+		if (b.GetRemoveFlag())
+		{
+			continue;
+		}
+		if (m_box.y > b.GetPosition().y - b.GetRadius())
+		{
+			m_isGameOver = true;
+		}
+	}
 }
 
 void BallManager::Draw()
 {
+	Rect rect = m_pipette.GetRect();
+	Graphics::DrawTexture(ResourceManager<Texture>::Get("Line"), Rect{ rect.x - Graphics::GetWindowSize(0.005f).x, rect.y + rect.height, Graphics::GetWindowSize(0.01f).x, Graphics::GetWindowSize(0.97f).y - rect.y - rect.height });
 	for (auto& b : m_balls) b.Draw();
+	m_nextBall.Draw();
+	m_predictionBall.Draw();
+	m_exchangeBall.Draw();
+	m_pipette.Draw();
+	Graphics::DrawText(ResourceManager<Font>::Get("Score"), std::to_string(m_score), Vector2{ Graphics::GetWindowSize(0.79f).x, Graphics::GetWindowSize(0.35f).y }, Colors::White);
 }
 
 void BallManager::AddBall()
 {
-	m_balls.emplace_back(Mouse::GetPos(), m_atomicStatus[O]);
+	static std::mt19937 rng{ std::random_device{}() };
+	std::uniform_int_distribution<int> dist(1, 8);
+	int value = dist(rng);
+
+	ResourceManager<AudioSource>::Get("SE").SetClip(ResourceManager<AudioClip>::Get("AddSound"));
+	ResourceManager<AudioSource>::Get("SE").Play(0);
+	m_balls.emplace_back(Vector2{Mouse::GetPos().x, Graphics::GetWindowSize(0.25f).y }, m_nextBall.GetStatus());
+
+	m_nextBall = Ball(Vector2{ Mouse::GetPos().x, Graphics::GetWindowSize(0.2f).y }, m_atomicStatus[value]);
+}
+
+void BallManager::CheckPipetteUnderBalls()
+{
+	float x = m_nextBall.GetPosition().x;
+	float nearestY = Graphics::GetWindowSize(1.0f).y;
+	int BID = NONE;
+	int FID = NONE;
+	const Reaction* reaction;
+
+	for (const Ball& ball : m_balls)
+	{
+		if (ball.GetRemoveFlag())
+		{
+			continue;
+		}
+
+		Vector2 pos = ball.GetPosition();
+		float rad = ball.GetRadius();
+
+		if (pos.x + rad >= x && x >= pos.x - rad && nearestY > pos.y - rad)
+		{
+			BID = ball.GetID();
+		}
+
+	}
+
+	reaction = FindReactionByPair(m_nextBall.GetID(), BID);
+
+	if (reaction == nullptr) FID = NONE;
+	else FID = reaction->product;
+	m_predictionBall = Ball(Vector2{ Graphics::GetWindowSize(0.889f).x, Graphics::GetWindowSize(0.737f).y }, m_atomicStatus[FID]);
+	m_predictionBall.SetRadius(Graphics::GetWindowSize(0.09f).y);
+
 }
 
 bool BallManager::ResolveCollision(int i, int j)
@@ -187,10 +309,22 @@ bool BallManager::ResolveCollision(int i, int j)
 
 	if (vn >= 0.f) return false;
 
+	if (m_balls[i].GetID() == ANTIMATTER || m_balls[j].GetID() == ANTIMATTER)
+	{
+		ResourceManager<AudioSource>::Get("SE").SetClip(ResourceManager<AudioClip>::Get("AntiCollisionSound"));
+		ResourceManager<AudioSource>::Get("SE").Play(0);
+		m_balls[i].SetRemoveFlag(true);
+		m_balls[j].SetRemoveFlag(true);
+		return false;
+	}
+
 	const Reaction* reaction = FindReactionByPair(m_balls[i].GetID(), m_balls[j].GetID());
 
 	if (reaction != nullptr)
 	{
+		ResourceManager<AudioSource>::Get("SE").SetClip(ResourceManager<AudioClip>::Get("CollisionSound"));
+		ResourceManager<AudioSource>::Get("SE").Play(0);
+		m_score += m_balls[i].GetScore() + m_balls[j].GetScore();
 		m_balls[i].SetRemoveFlag(true);
 		m_balls[j].SetRemoveFlag(true);
 
@@ -288,4 +422,14 @@ const Reaction* BallManager::FindReactionByPair(int id1, int id2)
 		}
 	}
 	return nullptr;
+}
+
+int BallManager::GetScore()
+{
+	return m_score;
+}
+
+bool BallManager::isGameOver()
+{
+	return m_isGameOver;
 }
