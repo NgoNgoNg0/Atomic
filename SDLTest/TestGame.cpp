@@ -26,7 +26,7 @@ TestGame::TestGame()
 void TestGame::Initialize()
 {
     ResourceManager<Texture>::Register("S", "./Assets/Image/S.png");
-    ResourceManager<Font>::Register("Default", "Assets/Fonts/HGRPP1.TTC", 32);
+    ResourceManager<Font>::Register("Default", "Assets/Fonts/MochiyPopOne-Regular.ttf", 32);
     ResourceManager<AudioClip>::Register("Add", "Assets/Sounds/AddSound.mp3");
     ResourceManager<Texture>::RegisterSequence("TS", "Assets/Moves/SingleClick/SingleClick_", ".png", 0, 52);
     ResourceManager<AnimationClip>::Register("TS", "TS", 0, 52, 60.f);

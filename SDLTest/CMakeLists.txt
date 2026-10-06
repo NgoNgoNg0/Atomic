@@ -52,6 +52,8 @@ add_executable(SDLTest
     "Framework/Button.h"
     "Framework/Timer.cpp"
     "Framework/Timer.h"
+    "Framework/Persistence.cpp"
+    "Framework/Persistence.h"
     "Framework/ClickEffect.cpp"
     "Framework/ClickEffect.h"
  "Chemistry.cpp" "Chemistry.h" "Ball.cpp" "Ball.h" "BallManager.cpp" "BallManager.h" "Pipette.cpp" "Pipette.h" "ResultScene.cpp" "ResultScene.h")
@@ -64,11 +66,25 @@ target_link_libraries(SDLTest
         SDL3_mixer::SDL3_mixer
 )
 
-add_custom_command(TARGET SDLTest POST_BUILD
-    COMMAND ${CMAKE_COMMAND} -E copy_directory
-        ${CMAKE_SOURCE_DIR}/Assets
-        $<TARGET_BUNDLE_DIR:SDLTest>/Assets
-)
+if (EMSCRIPTEN)
+    # Web build: assets are packed into the virtual file system at /Assets.
+    set_target_properties(SDLTest PROPERTIES SUFFIX ".html")
+    target_compile_options(SDLTest PRIVATE -fexceptions)
+    target_link_options(SDLTest PRIVATE
+        -fexceptions
+        -lidbfs.js
+        -sALLOW_MEMORY_GROWTH=1
+        -sINITIAL_MEMORY=268435456
+        --preload-file ${CMAKE_SOURCE_DIR}/Assets@/Assets
+        --shell-file ${CMAKE_CURRENT_SOURCE_DIR}/web/shell.html
+    )
+else()
+    add_custom_command(TARGET SDLTest POST_BUILD
+        COMMAND ${CMAKE_COMMAND} -E copy_directory
+            ${CMAKE_SOURCE_DIR}/Assets
+            $<TARGET_BUNDLE_DIR:SDLTest>/Assets
+    )
+endif()
 
 # Custom Info.plist (enables 120 Hz rendering on ProMotion iPhones via CADisableMinimumFrameDurationOnPhone).
 set_target_properties(SDLTest PROPERTIES

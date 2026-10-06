@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>元素パズル</title>
+<style>
+  html, body { margin: 0; height: 100%; background: #000; overflow: hidden; }
+  canvas { display: block; outline: none; touch-action: none; }
+  #status { position: fixed; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center;
+            color: #fff; font: 16px/1.6 sans-serif; background: #000; }
+  #status progress { width: min(60vw, 360px); }
+</style>
+</head>
+<body>
+<div id="status"><div id="statusText">読み込み中…</div><progress id="progress" value="0" max="100"></progress></div>
+<!-- SDL moves the canvas around in fill-document mode; keep it alone in its own parent. -->
+<div id="stage"><canvas id="canvas" tabindex="-1" oncontextmenu="event.preventDefault()"></canvas></div>
+<script>
+  var statusEl = document.getElementById('status');
+  var textEl = document.getElementById('statusText');
+  var progressEl = document.getElementById('progress');
+  var Module = {
+    canvas: document.getElementById('canvas'),
+    print: function (t) { console.log(t); },
+    printErr: function (t) { console.error(t); },
+    setStatus: function (text) {
+      var m = text && text.match(/\((\d+(?:\.\d+)?)\/(\d+)\)/);
+      if (m) { progressEl.value = (m[1] / m[2]) * 100; }
+      if (!text) { statusEl.style.display = 'none'; }
+      else { textEl.textContent = text; }
+    },
+    onAbort: function (what) { statusEl.style.display = 'flex'; textEl.textContent = 'エラーが発生しました: ' + what; }
+  };
+</script>
+{{{ SCRIPT }}}
+</body>
+</html>

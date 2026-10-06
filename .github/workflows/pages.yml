@@ -1,0 +1,71 @@
+name: Deploy web build to GitHub Pages
+
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: mymindstorm/setup-emsdk@v14
+        with:
+          version: latest
+          actions-cache-folder: emsdk-cache
+
+      - name: Cache vcpkg binaries
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/vcpkg
+          key: vcpkg-wasm32-emscripten-${{ hashFiles('vcpkg.json', 'vcpkg-configuration.json') }}
+
+      - name: Install dependencies (vcpkg, wasm32-emscripten)
+        run: >
+          $VCPKG_INSTALLATION_ROOT/vcpkg install
+          --triplet wasm32-emscripten
+          --x-manifest-root=.
+          --x-install-root=$GITHUB_WORKSPACE/vcpkg_wasm
+
+      - name: Configure
+        run: >
+          cmake -S . -B build-web -DCMAKE_BUILD_TYPE=Release
+          -DCMAKE_TOOLCHAIN_FILE=$VCPKG_INSTALLATION_ROOT/scripts/buildsystems/vcpkg.cmake
+          -DVCPKG_CHAINLOAD_TOOLCHAIN_FILE=$EMSDK/upstream/emscripten/cmake/Modules/Platform/Emscripten.cmake
+          -DVCPKG_TARGET_TRIPLET=wasm32-emscripten
+          -DVCPKG_INSTALLED_DIR=$GITHUB_WORKSPACE/vcpkg_wasm
+          -DVCPKG_MANIFEST_INSTALL=OFF
+
+      - name: Build
+        run: cmake --build build-web --parallel
+
+      - name: Assemble site
+        run: |
+          mkdir site
+          cp build-web/SDLTest/SDLTest.js build-web/SDLTest/SDLTest.wasm build-web/SDLTest/SDLTest.data site/
+          cp build-web/SDLTest/SDLTest.html site/index.html
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

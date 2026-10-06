@@ -15,6 +15,7 @@
 #include "Framework/Color.h"
 #include "Framework/Rect.h"
 #include "Framework/Mouse.h"
+#include "Framework/Persistence.h"
 
 #include <fstream>
 #include <string>
@@ -43,8 +44,8 @@ PlayScene::PlayScene()
 	ResourceManager<Texture>::Register("Really", "Assets/Image/Really.png");
 	ResourceManager<Texture>::Register("HighScore", "Assets/Image/HighScore.png");
 	ResourceManager<Texture>::RegisterSequence("PopUp", "Assets/Image/PopUp", ".png", 0, 7);
-	ResourceManager<Font>::Register("Default", "Assets/Fonts/HGRPP1.TTC", 32);
-	ResourceManager<Font>::Register("HighScoreFont", "Assets/Fonts/HGRPP1.TTC", Graphics::GetWindowSize(8.0f / 108.f).y);
+	ResourceManager<Font>::Register("Default", "Assets/Fonts/MochiyPopOne-Regular.ttf", 32);
+	ResourceManager<Font>::Register("HighScoreFont", "Assets/Fonts/MochiyPopOne-Regular.ttf", Graphics::GetWindowSize(8.0f / 108.f).y);
 	ResourceManager<AudioClip>::Register("PlayBGM", "Assets/Sounds/PlayBGM.mp3");
 	ResourceManager<AudioClip>::Register("GameOverSound", "Assets/Sounds/GameOverSound.mp3");
 	ResourceManager<AudioClip>::Register("ButtonSound", "Assets/Sounds/ButtonSound.mp3");
@@ -99,6 +100,9 @@ PlayScene::~PlayScene()
                 
                 // 内部変数も更新
                 m_highScore = BallManager::GetScore();
+
+                // Webではブラウザの保存領域へ書き出す(他のプラットフォームでは何もしない)
+                Persistence::Flush();
             }
             
             // 4. SDLが確保したメモリを解放する
@@ -216,7 +220,7 @@ void PlayScene::Draw()
 	Graphics::DrawTexture(ResourceManager<Texture>::Get("HighScore"), Rect{Graphics::GetWindowSize(0.62f).x, Graphics::GetWindowSize(0.425f).y, Graphics::GetWindowSize(0.16f).x, Graphics::GetWindowSize(0.105f).y});
 	m_howToPlayButton.Draw();
 	m_retirementButton.Draw();
-	Graphics::DrawText(ResourceManager<Font>::Get("HighScoreFont"), std::to_string(m_highScore), Vector2{ Graphics::GetWindowSize(0.8f).x, Graphics::GetWindowSize(0.443f).y }, Color{255, 239, 108}, false);
+	Graphics::DrawText(ResourceManager<Font>::Get("HighScoreFont"), std::to_string(m_highScore), Vector2{ Graphics::GetWindowSize(0.8f).x, Graphics::GetWindowSize(0.416f).y }, Color{255, 239, 108}, false);
 	BallManager::Draw();
 	Graphics::DrawTexture(ResourceManager<Texture>::Get("BeakerUp"), Rect{ Graphics::GetWindowSize(0.05f).x, Graphics::GetWindowSize(0.2f).y, Graphics::GetWindowSize(0.55f).x, Graphics::GetWindowSize(0.8f).y });
 

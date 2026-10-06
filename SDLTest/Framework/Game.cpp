@@ -7,6 +7,11 @@
 #include "Mouse.h"
 #include "Time.h"
 #include "Audio.h"
+#include "Persistence.h"
+
+#ifdef __EMSCRIPTEN__
+#include <emscripten/emscripten.h>
+#endif
 
 Game::Game(Vector2 WindowSize)
 	: m_isRunning(true)
@@ -24,26 +29,52 @@ void Game::Run()
 	Initialize();
 	Time::Initialize();
 
+#ifdef __EMSCRIPTEN__
+	// Saved data must be loaded from the browser's storage before the game reads it.
+	Persistence::Initialize();
+
+	// The browser drives the loop (requestAnimationFrame); this call does not return.
+	emscripten_set_main_loop_arg(
+		[](void* game) { static_cast<Game*>(game)->RunFrame(); },
+		this, 0, true);
+#else
 	while (m_isRunning)
 	{
-		Uint64 frameStart = SDL_GetPerformanceCounter();
-		ProcessEvents();
-		Time::Update();
-		Input::Update();
-		Mouse::Update();
-		Update();
-		RunFixedUpdates();
-		Graphics::BeginFrame();
-		Draw();
-		Graphics::EndFrame();
-		WaitForNextFrame(frameStart);
+		RunFrame();
 	}
 
 	Finalize();
 	Graphics::Finalize();
 	Audio::Finalize();
 	SDL_Quit();
+#endif
+}
 
+void Game::RunFrame()
+{
+	if (!Persistence::IsReady())
+	{
+		return;
+	}
+
+	Uint64 frameStart = SDL_GetPerformanceCounter();
+	ProcessEvents();
+	Time::Update();
+	Input::Update();
+	Mouse::Update();
+	Update();
+	RunFixedUpdates();
+	Graphics::BeginFrame();
+	Draw();
+	Graphics::EndFrame();
+#ifdef __EMSCRIPTEN__
+	if (!m_isRunning)
+	{
+		emscripten_cancel_main_loop();
+	}
+#else
+	WaitForNextFrame(frameStart);
+#endif
 }
 
 void Game::RunFixedUpdates()
