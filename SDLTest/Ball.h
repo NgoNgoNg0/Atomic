@@ -34,7 +34,7 @@ public:
 	void SetPosition(Vector2 position);
 	void SetRadius(float rad);
 	Vector2 GetPosition() const;
-	Vector2 GetVelocity();
+	Vector2 GetVelocity() const;
 	float GetRadius() const;
 	float GetMass();
 	float GetElasticity();
