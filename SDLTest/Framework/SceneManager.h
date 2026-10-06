@@ -10,6 +10,7 @@ public:
 
 	static void ChangeScene(std::unique_ptr<Scene> newScene);
 	static void Update();
+	static void FixedUpdate();
 	static void Draw();
 
 private:

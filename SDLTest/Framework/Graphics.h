@@ -18,7 +18,7 @@ public:
 	static void DrawRect(Rect rect, Color color);
 	static void DrawCircle(const Vector2& center, float radius, Color color);
 	static void DrawTexture(const Texture& texture, Rect rect);
-	static void DrawText(const Font& font, const std::string& text, Vector2 pos, Color color, bool isCenter = true);
+	static void DrawText(const Font& font, const std::string& text, Vector2 pos, Color color, bool isCenter = true, float maxWidth = 0.0f);
 	static Vector2 GetWindowSize(float reito);
 	// static void DrawTexture(TextureHandle texture, float x, float y);
 

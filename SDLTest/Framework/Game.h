@@ -13,14 +13,17 @@ public:
 protected:
 	virtual void Initialize() {};
 	virtual void Update() {};
+	virtual void FixedUpdate() {};
 	virtual void Draw() {};
 	virtual void Finalize() {};
 
 private:
 	void ProcessEvents();
+	void RunFixedUpdates();
 	void WaitForNextFrame(Uint64 frameStart);
 	bool m_isRunning;
 	Window m_window;
 	int m_targetFPS;
+	float m_fixedAccumulator = 0.0f;
 
 };

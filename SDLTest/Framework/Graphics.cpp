@@ -90,7 +90,7 @@ void Graphics::DrawTexture(const Texture& texture, Rect rect)
 	SDL_RenderTexture(m_renderer, texture.Get(), nullptr, &sdlRect);
 }
 
-void Graphics::DrawText(const Font& font, const std::string& text, Vector2 pos, Color color, bool isCenter)
+void Graphics::DrawText(const Font& font, const std::string& text, Vector2 pos, Color color, bool isCenter, float maxWidth)
 {
 	SDL_Color sdlColor
 	{
@@ -116,12 +116,22 @@ void Graphics::DrawText(const Font& font, const std::string& text, Vector2 pos, 
 	}
 	float t = 0.5f;
 	if (!isCenter) t = 0.0f;
+
+	// Shrink (keeping the aspect ratio) when the text is wider than the allowed width.
+	float scale = 1.0f;
+	if (maxWidth > 0.0f && surface->w > maxWidth)
+	{
+		scale = maxWidth / surface->w;
+	}
+	const float width = surface->w * scale;
+	const float height = surface->h * scale;
+
 	SDL_FRect dst
 	{
-		pos.x - surface->w * t,
-		pos.y - surface->h * t,
-		static_cast<float>(surface->w),
-		static_cast<float>(surface->h)
+		pos.x - width * t,
+		pos.y - height * t,
+		width,
+		height
 	};
 
 	SDL_RenderTexture(m_renderer, texture, nullptr, &dst);

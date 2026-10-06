@@ -16,6 +16,8 @@ enum class MouseButton
 class Mouse
 {
 public:
+    // Feed SDL button events so presses shorter than a frame are not missed.
+    static void HandleEvent(const SDL_Event& event);
     static void Update();
 
     static Vector2& GetPos();
@@ -36,7 +38,15 @@ private:
 
     inline static Vector2 m_pos = {0.f, 0.f};
 
+    // Held state as of the latest event processed.
+    inline static Uint32 m_heldButtons = 0;
+    // Button transitions recorded since the previous Update.
+    inline static Uint32 m_pendingDown = 0;
+    inline static Uint32 m_pendingUp = 0;
+
+    // State exposed for the current frame.
     inline static Uint32 m_currentButtons = 0;
-    inline static Uint32 m_previousButtons = 0;
+    inline static Uint32 m_downButtons = 0;
+    inline static Uint32 m_upButtons = 0;
 };
 

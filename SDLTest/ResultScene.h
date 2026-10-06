@@ -2,6 +2,7 @@
 
 #include "Framework/Scene.h"
 #include "Framework/Animator.h"
+#include "Framework/ClickEffect.h"
 #include "Framework/Timer.h"
 #include "Framework/Button.h"
 #include "Framework/AudioSource.h"
@@ -27,7 +28,6 @@ private:
 	AudioSource m_SE;
 	AudioSource m_BGM;
 	std::string m_rank;
-	Animator m_click;
-	Rect m_clickPos;
+	ClickEffect m_click;
 
 };

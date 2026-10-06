@@ -12,6 +12,11 @@ void SceneManager::Update()
 	if (m_currentScene) m_currentScene->Update();
 }
 
+void SceneManager::FixedUpdate()
+{
+	if (m_currentScene) m_currentScene->FixedUpdate();
+}
+
 void SceneManager::Draw()
 {
 	if (m_currentScene) m_currentScene->Draw();

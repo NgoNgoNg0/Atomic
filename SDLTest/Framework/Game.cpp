@@ -14,7 +14,7 @@ Game::Game(Vector2 WindowSize)
 	, m_targetFPS(120)
 {
 	SDL_Init(SDL_INIT_VIDEO);
-	Audio::Initialize();
+    Audio::Initialize();
 	TTF_Init();
 	Graphics::Initialize(m_window.Get(), WindowSize);
 }
@@ -22,6 +22,7 @@ Game::Game(Vector2 WindowSize)
 void Game::Run()
 {
 	Initialize();
+	Time::Initialize();
 
 	while (m_isRunning)
 	{
@@ -31,6 +32,7 @@ void Game::Run()
 		Input::Update();
 		Mouse::Update();
 		Update();
+		RunFixedUpdates();
 		Graphics::BeginFrame();
 		Draw();
 		Graphics::EndFrame();
@@ -44,6 +46,20 @@ void Game::Run()
 
 }
 
+void Game::RunFixedUpdates()
+{
+	m_fixedAccumulator += Time::DeltaTime();
+
+	// Time::DeltaTime is clamped, so this loop is bounded.
+	while (m_fixedAccumulator >= Time::kFixedTimeStep)
+	{
+		FixedUpdate();
+		m_fixedAccumulator -= Time::kFixedTimeStep;
+	}
+
+	Time::SetFixedAlpha(m_fixedAccumulator / Time::kFixedTimeStep);
+}
+
 void Game::Quit()
 {
 	m_isRunning = false;
@@ -55,6 +71,8 @@ void Game::ProcessEvents()
 
 	while (SDL_PollEvent(&event))
 	{
+		Mouse::HandleEvent(event);
+
 		if (event.type == SDL_EVENT_QUIT)
 		{
 			m_isRunning = false;

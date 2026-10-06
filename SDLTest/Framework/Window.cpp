@@ -6,7 +6,7 @@ Window::Window(const std::string& title, Vector2 size)
 	: m_window(nullptr)
 	, m_size(size)
 {
-	m_window = SDL_CreateWindow(title.c_str(), size.x, size.y, SDL_WINDOW_RESIZABLE);
+	m_window = SDL_CreateWindow(title.c_str(), size.x, size.y, SDL_WINDOW_FULLSCREEN | SDL_WINDOW_HIGH_PIXEL_DENSITY);
 	SDL_SetWindowAspectRatio(m_window, 16.0f / 9.0f, 16.0f / 9.0f);
 }
 

@@ -7,6 +7,9 @@
 
 namespace
 {
+	// Widest text allowed, as a fraction of the ball's diameter.
+	constexpr float kTextWidthRatio = 0.8f;
+
 	static const char* subscript[] =
 	{
 		"\xE2\x82\x80",
@@ -39,6 +42,7 @@ namespace
 
 Ball::Ball(Vector2 pos, AtomicStatus status)
 	: m_position(pos)
+	, m_previousPosition(pos)
 	, m_velocity(Vector2{0, 0})
 	, m_status(status)
 	, m_removeFlag(false)
@@ -55,18 +59,36 @@ Ball::~Ball()
 
 void Ball::Update()
 {
+	m_previousPosition = m_position;
 	m_position.x += m_velocity.x;
 	m_position.y += m_velocity.y;
 }
 
 void Ball::Draw()
 {
+	DrawAt(m_position);
+}
+
+void Ball::DrawInterpolated(float alpha)
+{
+	DrawAt(Vector2{
+		m_previousPosition.x + (m_position.x - m_previousPosition.x) * alpha,
+		m_previousPosition.y + (m_position.y - m_previousPosition.y) * alpha });
+}
+
+void Ball::DrawAt(Vector2 position)
+{
 	Color color = Colors::Black;
 	if (m_status.ID == 0) return;
 	if (m_status.ID == 1) color = Colors::White;
-	Graphics::DrawCircle(m_position, GetRadius(), color);
-	Graphics::DrawCircle(m_position, GetRadius() * 0.95, m_status.color);
-	Graphics::DrawText(ResourceManager<Font>::Get(m_status.name), m_status.name, m_position, Colors::Black);
+	Graphics::DrawCircle(position, GetRadius(), color);
+	Graphics::DrawCircle(position, GetRadius() * 0.95, m_status.color);
+	Graphics::DrawText(ResourceManager<Font>::Get(m_status.name), m_status.name, position, Colors::Black, true, GetRadius() * 2.0f * kTextWidthRatio);
+}
+
+void Ball::ResetInterpolation()
+{
+	m_previousPosition = m_position;
 }
 
 void Ball::AddVelocity(Vector2 velocity)
@@ -135,7 +157,7 @@ int Ball::GetScore() const
 	return m_status.level * 20;
 }
 
-AtomicStatus Ball::GetStatus()
+AtomicStatus Ball::GetStatus() const
 {
 	return m_status;
 }
