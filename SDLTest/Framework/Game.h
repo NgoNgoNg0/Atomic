@@ -20,6 +20,7 @@ protected:
 private:
 	void ProcessEvents();
 	void RunFixedUpdates();
+	void RunFrame();
 	void WaitForNextFrame(Uint64 frameStart);
 	bool m_isRunning;
 	Window m_window;

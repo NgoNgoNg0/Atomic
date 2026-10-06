@@ -15,6 +15,7 @@
 #include "Framework/Color.h"
 #include "Framework/Rect.h"
 #include "Framework/Mouse.h"
+#include "Framework/Persistence.h"
 
 #include <fstream>
 #include <string>
@@ -99,6 +100,9 @@ PlayScene::~PlayScene()
                 
                 // 内部変数も更新
                 m_highScore = BallManager::GetScore();
+
+                // Webではブラウザの保存領域へ書き出す(他のプラットフォームでは何もしない)
+                Persistence::Flush();
             }
             
             // 4. SDLが確保したメモリを解放する
