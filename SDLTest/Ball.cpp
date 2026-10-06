@@ -49,7 +49,7 @@ Ball::Ball(Vector2 pos, AtomicStatus status)
 	, m_radius(Graphics::GetWindowSize(5.0f / 108.0f).y + Graphics::GetWindowSize(5.0f / 216.0f).y * (status.level - 1))
 {
 	m_status.name = ToSubscript(m_status.name);
-	ResourceManager<Font>::Register(m_status.name, "Assets/Fonts/calibrib.ttf", Graphics::GetWindowSize(1.0f / 27.0f).y + Graphics::GetWindowSize(1.0f / 360.0f).y * m_status.level);
+	ResourceManager<Font>::Register(m_status.name, "Assets/Fonts/MPLUS1p-Bold.ttf", Graphics::GetWindowSize(1.0f / 27.0f).y + Graphics::GetWindowSize(1.0f / 360.0f).y * m_status.level);
 }
 
 Ball::~Ball()

@@ -29,7 +29,7 @@
 void BallManager::Initialize()
 {
 	ResourceManager<Texture>::Register("Line", "Assets/Image/DottedLine.png");
-	ResourceManager<Font>::Register("Score", "Assets/Fonts/HGRPP1.TTC", Graphics::GetWindowSize(14 / 108.f).y);
+	ResourceManager<Font>::Register("Score", "Assets/Fonts/MochiyPopOne-Regular.ttf", Graphics::GetWindowSize(14 / 108.f).y);
 	ResourceManager<AudioClip>::Register("AddSound", "Assets/Sounds/AddSound.mp3");
 	ResourceManager<AudioClip>::Register("CollisionSound", "Assets/Sounds/CollisionSound.mp3");
 	ResourceManager<AudioClip>::Register("AntiCollisionSound", "Assets/Sounds/AntiCollisionSound.mp3");

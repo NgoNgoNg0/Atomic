@@ -29,7 +29,7 @@ ResultScene::ResultScene(int score, int highScore)
 	ResourceManager<Texture>::Register("C", "Assets/Image/C.png");
 	ResourceManager<Texture>::Register("ScoreString", "Assets/Image/ScoreString.png");
 	ResourceManager<Texture>::Register("ScoreUpdate", "Assets/Image/ScoreUpdate.png");
-	ResourceManager<Font>::Register("ResultScoreFont", "Assets/Fonts/HGRPP1.TTC", Graphics::GetWindowSize(20 / 54.0f).y);
+	ResourceManager<Font>::Register("ResultScoreFont", "Assets/Fonts/MochiyPopOne-Regular.ttf", Graphics::GetWindowSize(20 / 54.0f).y);
 	ResourceManager<AudioClip>::Register("S", "Assets/Sounds/SAResultBGM.mp3");
 	ResourceManager<AudioClip>::Register("A", "Assets/Sounds/SAResultBGM.mp3");
 	ResourceManager<AudioClip>::Register("B", "Assets/Sounds/BResultBGM.mp3");

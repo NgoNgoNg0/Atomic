@@ -43,8 +43,8 @@ PlayScene::PlayScene()
 	ResourceManager<Texture>::Register("Really", "Assets/Image/Really.png");
 	ResourceManager<Texture>::Register("HighScore", "Assets/Image/HighScore.png");
 	ResourceManager<Texture>::RegisterSequence("PopUp", "Assets/Image/PopUp", ".png", 0, 7);
-	ResourceManager<Font>::Register("Default", "Assets/Fonts/HGRPP1.TTC", 32);
-	ResourceManager<Font>::Register("HighScoreFont", "Assets/Fonts/HGRPP1.TTC", Graphics::GetWindowSize(8.0f / 108.f).y);
+	ResourceManager<Font>::Register("Default", "Assets/Fonts/MochiyPopOne-Regular.ttf", 32);
+	ResourceManager<Font>::Register("HighScoreFont", "Assets/Fonts/MochiyPopOne-Regular.ttf", Graphics::GetWindowSize(8.0f / 108.f).y);
 	ResourceManager<AudioClip>::Register("PlayBGM", "Assets/Sounds/PlayBGM.mp3");
 	ResourceManager<AudioClip>::Register("GameOverSound", "Assets/Sounds/GameOverSound.mp3");
 	ResourceManager<AudioClip>::Register("ButtonSound", "Assets/Sounds/ButtonSound.mp3");
