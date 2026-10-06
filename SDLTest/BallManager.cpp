@@ -26,6 +26,23 @@
 #include <algorithm>
 #include <memory>
 
+namespace
+{
+	// Contacts are handled slightly before the balls actually overlap, so a ball resting on
+	// another ball or the floor keeps a zero approach speed instead of sinking in and being pushed back.
+	constexpr float kContactSkin = 0.5f;
+
+	// Impacts slower than this (px per fixed step, about two steps of gravity) do not bounce.
+	// Without it, resting balls keep bouncing by tiny amounts and never settle.
+	constexpr float kRestitutionThreshold = 3.0f;
+
+	// When every ball has been slower than kSleepSpeed (px per fixed step) for kSleepSteps steps in a row,
+	// the pile is considered at rest and physics stops until the number of balls changes.
+	// The solver never converges exactly, so a pile left running keeps trembling slightly.
+	constexpr float kSleepSpeed = 2.0f;
+	constexpr int kSleepSteps = 30;
+}
+
 void BallManager::Initialize()
 {
 	ResourceManager<Texture>::Register("Line", "Assets/Image/DottedLine.png");
@@ -43,6 +60,8 @@ void BallManager::Initialize()
 	m_pipette = Pipette(m_box);
 	m_score = 0;
 	m_isGameOver = false;
+	m_asleep = false;
+	m_restSteps = 0;
 
 	static std::mt19937 rng{ std::random_device{}() };
 	std::uniform_int_distribution<int> dist(1, 8);
@@ -101,10 +120,21 @@ void BallManager::FixedUpdate()
 	static std::random_device rd;
 	static std::mt19937 rng(rd());
 
-	for (auto& b : m_balls) b.Update();
-	for (auto& b : m_balls) b.AddVelocity(Vector2{ 0, m_gravity * kGravityPerStep });
+	// A ball was added or removed (dropped, reacted, destroyed): wake the pile up.
+	if (m_asleep && m_balls.size() != m_sleepBallCount)
+	{
+		m_asleep = false;
+		m_restSteps = 0;
+	}
 
-	for (int iter = 0; iter < 30; ++iter)
+	if (!m_asleep)
+	{
+		for (auto& b : m_balls) b.Update();
+		for (auto& b : m_balls) b.AddVelocity(Vector2{ 0, m_gravity * kGravityPerStep });
+	}
+
+	const int solverIterations = m_asleep ? 0 : 30;
+	for (int iter = 0; iter < solverIterations; ++iter)
 	{
 		const int n = static_cast<int>(m_balls.size());
 		if (n <= 0)
@@ -163,6 +193,28 @@ void BallManager::FixedUpdate()
 		if (m_box.y > b.GetPosition().y - b.GetRadius())
 		{
 			m_isGameOver = true;
+		}
+	}
+
+	if (!m_asleep)
+	{
+		float fastest = 0.f;
+		for (const auto& b : m_balls)
+		{
+			const Vector2 v = b.GetVelocity();
+			fastest = std::max(fastest, std::hypot(v.x, v.y));
+		}
+
+		m_restSteps = (fastest < kSleepSpeed) ? m_restSteps + 1 : 0;
+		if (m_restSteps >= kSleepSteps && !m_balls.empty())
+		{
+			for (auto& b : m_balls)
+			{
+				b.SetVelocity(Vector2{ 0.f, 0.f });
+				b.ResetInterpolation();
+			}
+			m_asleep = true;
+			m_sleepBallCount = m_balls.size();
 		}
 	}
 }
@@ -252,7 +304,8 @@ bool BallManager::ResolveCollision(int i, int j)
 	float distSq = dx * dx + dy * dy;
 	float sumR = static_cast<float>(r1 + r2);
 
-	if (distSq >= sumR * sumR) return false;
+	const float contactDist = sumR + kContactSkin;
+	if (distSq >= contactDist * contactDist) return false;
 
 	//int ball1ID = m_balls[i].GetAtomicID();
 	//int ball2ID = m_balls[j].GetAtomicID();
@@ -275,8 +328,8 @@ bool BallManager::ResolveCollision(int i, int j)
 	float dvy = v2.y - v1.y;
 	float vn = dvx * nx + dvy * ny;
 
-	if (vn >= 0.f) return false;
-
+	// Antimatter and chemical reactions happen on contact, whether or not the balls are still moving
+	// towards each other. (A pile at rest used to trigger them through its small tremble.)
 	if (m_balls[i].GetID() == kAntimatter || m_balls[j].GetID() == kAntimatter)
 	{
 		ResourceManager<AudioSource>::Get("SE").SetClip(ResourceManager<AudioClip>::Get("AntiCollisionSound"));
@@ -302,7 +355,9 @@ bool BallManager::ResolveCollision(int i, int j)
 
 	}
 
-	float e = std::min(e1, e2);
+	if (vn >= 0.f) return false;
+
+	float e = (-vn > kRestitutionThreshold) ? std::min(e1, e2) : 0.f;
 	float J = -(1.f + e) * vn / (1.f / m1 + 1.f / m2);
 
 	v1.x -= J * nx / m1;
@@ -311,7 +366,7 @@ bool BallManager::ResolveCollision(int i, int j)
 	v2.y += J * ny / m2;
 
 	constexpr float kPercent = 0.8f;
-	float overlap = sumR - dist;
+	float overlap = std::max(0.f, sumR - dist);
 	float correction = overlap * kPercent / (1 / m1 + 1 / m2);
 	constexpr float baumgarteFactor = 0.15f;
 	float baumgarteVelocity = baumgarteFactor * overlap;
@@ -344,23 +399,30 @@ bool BallManager::ResolveWallCollision(int i)
 
 	bool resolved = false;
 
-	if (pos.x - rad < m_box.x)
+	// Bounce only if the ball is moving into the wall, and only if it is fast enough.
+	auto bounce = [&](float& v, bool movingIntoWall)
 	{
-		pos.x = m_box.x + rad;
-		vel.x = -vel.x * e;
+		if (!movingIntoWall) return;
+		v = (std::abs(v) > kRestitutionThreshold) ? -v * e : 0.f;
+	};
+
+	if (pos.x - rad < m_box.x + kContactSkin)
+	{
+		pos.x = std::max(pos.x, m_box.x + rad);
+		bounce(vel.x, vel.x < 0.f);
 		resolved = true;
 	}
-	if (pos.x + rad > m_box.x + m_box.width)
+	if (pos.x + rad > m_box.x + m_box.width - kContactSkin)
 	{
-		pos.x = m_box.x + m_box.width - rad;
-		vel.x = -vel.x * e;
+		pos.x = std::min(pos.x, m_box.x + m_box.width - rad);
+		bounce(vel.x, vel.x > 0.f);
 		resolved = true;
 	}
 
-	if (pos.y + rad > m_box.y + m_box.height)
+	if (pos.y + rad > m_box.y + m_box.height - kContactSkin)
 	{
-		pos.y = m_box.y + m_box.height - rad;
-		vel.y = -vel.y * e;
+		pos.y = std::min(pos.y, m_box.y + m_box.height - rad);
+		bounce(vel.y, vel.y > 0.f);
 		resolved = true;
 	}
 

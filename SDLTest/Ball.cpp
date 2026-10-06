@@ -117,7 +117,7 @@ Vector2 Ball::GetPosition() const
 	return m_position;
 }
 
-Vector2 Ball::GetVelocity()
+Vector2 Ball::GetVelocity() const
 {
 	return m_velocity;
 }
