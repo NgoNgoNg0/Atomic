@@ -220,7 +220,7 @@ void PlayScene::Draw()
 	Graphics::DrawTexture(ResourceManager<Texture>::Get("HighScore"), Rect{Graphics::GetWindowSize(0.62f).x, Graphics::GetWindowSize(0.425f).y, Graphics::GetWindowSize(0.16f).x, Graphics::GetWindowSize(0.105f).y});
 	m_howToPlayButton.Draw();
 	m_retirementButton.Draw();
-	Graphics::DrawText(ResourceManager<Font>::Get("HighScoreFont"), std::to_string(m_highScore), Vector2{ Graphics::GetWindowSize(0.8f).x, Graphics::GetWindowSize(0.443f).y }, Color{255, 239, 108}, false);
+	Graphics::DrawText(ResourceManager<Font>::Get("HighScoreFont"), std::to_string(m_highScore), Vector2{ Graphics::GetWindowSize(0.8f).x, Graphics::GetWindowSize(0.416f).y }, Color{255, 239, 108}, false);
 	BallManager::Draw();
 	Graphics::DrawTexture(ResourceManager<Texture>::Get("BeakerUp"), Rect{ Graphics::GetWindowSize(0.05f).x, Graphics::GetWindowSize(0.2f).y, Graphics::GetWindowSize(0.55f).x, Graphics::GetWindowSize(0.8f).y });
 
