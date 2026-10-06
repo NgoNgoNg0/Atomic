@@ -32,7 +32,7 @@ void Button::Update()
 	{
 		m_isRiding = true;
 
-		if (Mouse::GetButtonDown(MouseButton::Left))
+		if (Mouse::GetButtonUp(MouseButton::Left))
 		{
 			m_isClicked = true;
 		}

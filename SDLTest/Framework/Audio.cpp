@@ -4,9 +4,11 @@
 #include <SDL3_mixer/SDL_mixer.h>
 
 #include <stdexcept>
+#include <iostream>
 
 bool Audio::Initialize()
 {
+    SDL_Init(SDL_INIT_AUDIO);
     if (!MIX_Init())
     {
         throw std::runtime_error(SDL_GetError());
@@ -19,6 +21,7 @@ bool Audio::Initialize()
 
     if (!m_mixer)
     {
+        std::cout << "ERROR" << SDL_GetError();
         throw std::runtime_error(SDL_GetError());
     }
 

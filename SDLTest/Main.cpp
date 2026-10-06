@@ -1,11 +1,12 @@
 #include <SDL3/SDL.h>
 #include <SDL3_image/SDL_image.h>
+#include <SDL3/SDL_main.h>
 #include <iostream>
 
 #include "TestGame.h"
 #include "AtomicGame.h"
 
-int main()
+int main(int argc, char* argv[])
 {
     int version = SDL_VERSION;
     std::cout << "SDL3 Version      : " << version << '\n';

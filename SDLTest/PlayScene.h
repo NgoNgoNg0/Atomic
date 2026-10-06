@@ -4,7 +4,7 @@
 #include "Framework/Button.h"
 #include "Framework/Timer.h"
 #include "Framework/AudioSource.h"
-#include "Framework/Animator.h"
+#include "Framework/ClickEffect.h"
 
 class PlayScene : public Scene
 {
@@ -13,6 +13,7 @@ public:
 	~PlayScene();
 
 	virtual void Update() override;
+	virtual void FixedUpdate() override;
 	virtual void Draw() override;
 
 private:
@@ -29,8 +30,7 @@ private:
 	Timer m_timer;
 	AudioSource m_BGM;
 	AudioSource m_ButtonSE;
-	Animator m_click;
-	Rect m_clickPos;
+	ClickEffect m_click;
 
 };
 

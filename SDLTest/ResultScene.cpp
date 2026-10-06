@@ -37,7 +37,7 @@ ResultScene::ResultScene(int score, int highScore)
 	ResourceManager<Animator>::Get("ResultAnimation").Play(false);
 	m_timer.Start(0.0f);
 	m_delay.Start(0.9f);
-	m_click.SetClip(ResourceManager<AnimationClip>::Get("Click"));
+	m_click.Initialize();
 	m_SE.SetClip(ResourceManager<AudioClip>::Get("ButtonSound"));
 	if (m_score < 1500)
 	{
@@ -86,9 +86,7 @@ void ResultScene::Update()
 	}
 	if (Mouse::GetButtonDown(MouseButton::Left))
 	{
-		m_click.Play(false);
-		float effectSize = Graphics::GetWindowSize(0.2f).y;
-		m_clickPos = Rect{ Mouse::GetPos().x - effectSize / 2, Mouse::GetPos().y - effectSize / 2, effectSize, effectSize };
+		m_click.Trigger();
 	}
 }
 
@@ -106,5 +104,5 @@ void ResultScene::Draw()
 			Graphics::DrawTexture(ResourceManager<Texture>::Get("ScoreUpdate"), Rect{ Graphics::GetWindowSize(0.75).x, 0, Graphics::GetWindowSize(0.23).x, Graphics::GetWindowSize(0.15).y });
 		}
 	}
-	Graphics::DrawTexture(m_click.GetTexture(), m_clickPos);
+	m_click.Draw();
 }

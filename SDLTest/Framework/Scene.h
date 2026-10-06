@@ -10,6 +10,7 @@ protected:
 public:
 	virtual ~Scene() = default;
 	virtual void Update() = 0;
+	virtual void FixedUpdate() {}
 	virtual void Draw() = 0;
 
 };

@@ -20,6 +20,7 @@
 #include <string>
 #include <memory>
 #include <iostream>
+#include <filesystem>
 
 PlayScene::PlayScene()
 	: m_howToPlayButton("Assets/Image/HowToBefor.png", "Assets/Image/HowToAfter.png", Rect{ Graphics::GetWindowSize(0.75f).x, 0, Graphics::GetWindowSize(0.25f).x, Graphics::GetWindowSize(0.17f).y })
@@ -47,26 +48,63 @@ PlayScene::PlayScene()
 	ResourceManager<AudioClip>::Register("PlayBGM", "Assets/Sounds/PlayBGM.mp3");
 	ResourceManager<AudioClip>::Register("GameOverSound", "Assets/Sounds/GameOverSound.mp3");
 	ResourceManager<AudioClip>::Register("ButtonSound", "Assets/Sounds/ButtonSound.mp3");
-	m_click.SetClip(ResourceManager<AnimationClip>::Get("Click"));
+	m_click.Initialize();
 	m_BGM.SetClip(ResourceManager<AudioClip>::Get("PlayBGM"));
 	m_ButtonSE.SetClip(ResourceManager<AudioClip>::Get("ButtonSound"));
 	m_BGM.Play(-1);
 
-	std::fstream file("Assets/Data/HighScore.txt");
-	file >> m_highScore;
-	file.close();
+    char* pref_path = SDL_GetPrefPath("MyCompany", "MyGame");
+    if (pref_path)
+    {
+        std::filesystem::path load_path(pref_path);
+        load_path /= "HighScore.txt";
+        
+        std::ifstream file(load_path);
+        if (file.is_open())
+        {
+            file >> m_highScore;
+            file.close();
+        }
+        else
+        {
+            m_highScore = 0; // ファイルがない場合は初期値
+        }
+        SDL_free(pref_path);
+    }
+
 
 	BallManager::Initialize();
 }
 
 PlayScene::~PlayScene()
 {
-	std::fstream file("Assets/Data/HighScore.txt");
-	if (BallManager::GetScore() > m_highScore) 
-	{
-		file << BallManager::GetScore();
-	}
-	file.close();
+    if (BallManager::GetScore() > m_highScore)
+    {
+        // 1. SDL3を使って、このアプリ専用の安全な書き込み可能パスを取得
+        // 引数: "組織名や開発者名", "アプリ名" （自由に変更してください）
+        char* pref_path = SDL_GetPrefPath("MyCompany", "MyGame");
+        
+        if (pref_path)
+        {
+            // 2. 取得したパスとファイル名を結合する
+            std::filesystem::path save_path(pref_path);
+            save_path /= "HighScore.txt";
+            
+            // 3. ファイルを開いて書き込む（ios::out を明示）
+            std::ofstream file(save_path, std::ios::out | std::ios::trunc);
+            if (file.is_open())
+            {
+                file << BallManager::GetScore();
+                file.close();
+                
+                // 内部変数も更新
+                m_highScore = BallManager::GetScore();
+            }
+            
+            // 4. SDLが確保したメモリを解放する
+            SDL_free(pref_path);
+        }
+    }
 }
 
 void PlayScene::Update()
@@ -128,9 +166,7 @@ void PlayScene::Update()
 		}
 		if (Mouse::GetButtonDown(MouseButton::Left))
 		{
-			m_click.Play(false);
-			float effectSize = Graphics::GetWindowSize(0.2f).y;
-			m_clickPos = Rect{ Mouse::GetPos().x - effectSize / 2, Mouse::GetPos().y - effectSize / 2, effectSize, effectSize };
+			m_click.Trigger();
 		}
 		break;
 	case retire:
@@ -149,13 +185,24 @@ void PlayScene::Update()
 		}
 		if (Mouse::GetButtonDown(MouseButton::Left))
 		{
-			m_click.Play(false);
-			float effectSize = Graphics::GetWindowSize(0.2f).y;
-			m_clickPos = Rect{ Mouse::GetPos().x - effectSize / 2, Mouse::GetPos().y - effectSize / 2, effectSize, effectSize };
+			m_click.Trigger();
 		}
 		break;
 	default:
 		break;
+	}
+}
+
+void PlayScene::FixedUpdate()
+{
+	// Physics only runs while playing, mirroring the condition in Update().
+	if (m_currentShow == play && !m_timer.IsRunning())
+	{
+		BallManager::FixedUpdate();
+	}
+	else
+	{
+		BallManager::ResetInterpolation();
 	}
 }
 
@@ -195,5 +242,5 @@ void PlayScene::Draw()
 	default:
 		break;
 	}
-	Graphics::DrawTexture(m_click.GetTexture(), m_clickPos);
+	m_click.Draw();
 }

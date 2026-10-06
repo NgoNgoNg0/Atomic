@@ -1,4 +1,4 @@
-﻿find_package(SDL3 CONFIG REQUIRED)
+find_package(SDL3 CONFIG REQUIRED)
 find_package(SDL3_image CONFIG REQUIRED)
 find_package(SDL3_ttf CONFIG REQUIRED)
 find_package(SDL3_mixer CONFIG REQUIRED)
@@ -52,7 +52,9 @@ add_executable(SDLTest
     "Framework/Button.h"
     "Framework/Timer.cpp"
     "Framework/Timer.h"
- "Ball.cpp" "Ball.h" "BallManager.cpp" "BallManager.h" "Pipette.cpp" "Pipette.h" "ResultScene.cpp" "ResultScene.h")
+    "Framework/ClickEffect.cpp"
+    "Framework/ClickEffect.h"
+ "Chemistry.cpp" "Chemistry.h" "Ball.cpp" "Ball.h" "BallManager.cpp" "BallManager.h" "Pipette.cpp" "Pipette.h" "ResultScene.cpp" "ResultScene.h")
 
 target_link_libraries(SDLTest
     PRIVATE
@@ -65,8 +67,26 @@ target_link_libraries(SDLTest
 add_custom_command(TARGET SDLTest POST_BUILD
     COMMAND ${CMAKE_COMMAND} -E copy_directory
         ${CMAKE_SOURCE_DIR}/Assets
-        $<TARGET_FILE_DIR:SDLTest>/Assets
+        $<TARGET_BUNDLE_DIR:SDLTest>/Assets
 )
+
+# Custom Info.plist (enables 120 Hz rendering on ProMotion iPhones via CADisableMinimumFrameDurationOnPhone).
+set_target_properties(SDLTest PROPERTIES
+    MACOSX_BUNDLE_INFO_PLIST ${CMAKE_CURRENT_SOURCE_DIR}/Info.plist.in
+)
+
+# App icon (Icon Composer). Only meaningful for the Xcode generator.
+if (CMAKE_GENERATOR STREQUAL "Xcode")
+    set(ATOMIC_ICON "${CMAKE_SOURCE_DIR}/AtomicIcon.icon")
+    target_sources(SDLTest PRIVATE ${ATOMIC_ICON})
+    set_source_files_properties(${ATOMIC_ICON} PROPERTIES
+        XCODE_EXPLICIT_FILE_TYPE folder.iconcomposer.icon
+        MACOSX_PACKAGE_LOCATION Resources
+    )
+    set_target_properties(SDLTest PROPERTIES
+        XCODE_ATTRIBUTE_ASSETCATALOG_COMPILER_APPICON_NAME AtomicIcon
+    )
+endif()
 
 if (CMAKE_VERSION VERSION_GREATER 3.12)
     set_property(TARGET SDLTest PROPERTY CXX_STANDARD 20)
