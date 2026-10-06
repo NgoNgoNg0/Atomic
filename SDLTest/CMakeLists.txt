@@ -79,7 +79,11 @@ if (EMSCRIPTEN)
         --shell-file ${CMAKE_CURRENT_SOURCE_DIR}/web/shell.html
     )
 else()
+    # Remove the previous copy first so assets deleted from Assets/ (for example old fonts)
+    # do not linger in the app bundle.
     add_custom_command(TARGET SDLTest POST_BUILD
+        COMMAND ${CMAKE_COMMAND} -E remove_directory
+            $<TARGET_BUNDLE_DIR:SDLTest>/Assets
         COMMAND ${CMAKE_COMMAND} -E copy_directory
             ${CMAKE_SOURCE_DIR}/Assets
             $<TARGET_BUNDLE_DIR:SDLTest>/Assets
