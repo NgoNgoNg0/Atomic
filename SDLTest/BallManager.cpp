@@ -62,6 +62,7 @@ void BallManager::Initialize()
 	m_isGameOver = false;
 	m_asleep = false;
 	m_restSteps = 0;
+	m_restBallCount = 0;
 
 	static std::mt19937 rng{ std::random_device{}() };
 	std::uniform_int_distribution<int> dist(1, 8);
@@ -125,6 +126,14 @@ void BallManager::FixedUpdate()
 	{
 		m_asleep = false;
 		m_restSteps = 0;
+	}
+
+	// Count rest time only while the same balls are in the beaker. Otherwise the count keeps
+	// growing in an empty beaker and a ball dropped into it would fall asleep in mid-air.
+	if (m_balls.size() != m_restBallCount)
+	{
+		m_restSteps = 0;
+		m_restBallCount = m_balls.size();
 	}
 
 	if (!m_asleep)
@@ -206,7 +215,7 @@ void BallManager::FixedUpdate()
 		}
 
 		m_restSteps = (fastest < kSleepSpeed) ? m_restSteps + 1 : 0;
-		if (m_restSteps >= kSleepSteps && !m_balls.empty())
+		if (m_restSteps >= kSleepSteps)
 		{
 			for (auto& b : m_balls)
 			{

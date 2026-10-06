@@ -44,6 +44,7 @@ private:
 	inline static bool m_isGameOver;
 	inline static bool m_asleep = false;
 	inline static int m_restSteps = 0;
+	inline static size_t m_restBallCount = 0;
 	inline static size_t m_sleepBallCount = 0;
 	inline static float m_gravity;
 	inline static std::vector<Ball> m_balls;
