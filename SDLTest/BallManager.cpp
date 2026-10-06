@@ -88,7 +88,8 @@ void BallManager::Update()
     }
 	m_pipette.Update();
 
-	if (ResourceManager<Button>::Get("ChangeBox").isMouseClicked())
+	// The exchange box button or a right click swaps the ball in hand with the held one.
+	if (ResourceManager<Button>::Get("ChangeBox").isMouseClicked() || Mouse::GetButtonDown(MouseButton::Right))
 	{
 		ResourceManager<AudioSource>::Get("SE").SetClip(ResourceManager<AudioClip>::Get("ChangeBallSound"));
 		ResourceManager<AudioSource>::Get("SE").Play(0);
